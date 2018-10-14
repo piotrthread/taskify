@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './ToDoList.scss';
+import { Link } from 'react-router-dom';
 import Task from '../../components/task/Task.jsx';
 import Loader from '../../components/loader/Loader.jsx';
 
@@ -7,34 +8,51 @@ class ToDoList extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            data: null,
-            loading: true
+            data: [],
+            loading: true,
+            adding: false
         };
     }
 
     componentDidMount() {
         this.loadData();
       }
-    
-      loadData = () => {
-          this.setState({loading: true},() => {
-        fetch("http://localhost:3000/tasks")
-        .then(res => res.json())
-        .then(data => {
-            setTimeout(() => {this.setState({ data, loading: false })},1000);
-          })});
-      }
 
+      loadData = () => {
+        this.setState({loading: true},() => {
+            fetch("https://coderslabproject.firebaseio.com/tasks.json",{method: "GET"})
+            .then(res => res.json())
+            .then((data = {}) => {
+                data = Object.keys(data).reduce((dataAsArray, key) => {
+                    const todo = data[key];
+                    todo.id = key;
+                    dataAsArray.push(todo);
+
+                    return dataAsArray;
+                }, []);
+
+                this.setState({ data, loading: false });
+              })});
+        }
+        
+        removeData = (id) => {
+            
+                fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,{method: "DELETE"})
+                .then(this.loadData);
+                
+            }  
+    
     render(){
         return <React.Fragment>
             {this.state.loading 
             ? <Loader /> 
             :<div className="toDoList-main">
             <ul className="list">
-                 {this.state.data.map((element,index) => {
-                    return <li key={index}><Task taskTitle={element.title} taskDesc={element.desc} /></li>;
+                 {this.state.data.filter(Boolean).map((element) => {//filtruje zeby nie dodawac nulla
+                    return <li key={element.id}><Task taskTitle={element.title} taskDesc={element.desc} id={element.id} remove={this.removeData} /></li>;
                 })}
             </ul>
+            <Link to="/addTask">Add new Task</Link>
             </div>}
         </React.Fragment>;
     }
