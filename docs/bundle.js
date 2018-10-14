@@ -129,14 +129,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  height: 93vh; }\n  .addTask .close {\n    position: absolute;\n    width: 30px;\n    height: 30px;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 45px;\n    top: 55px; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 30px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg); }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 30px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg); }\n  .addTask form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 80%; }\n    .addTask form input {\n      width: 70vw;\n      height: 50px;\n      margin: 10px;\n      padding: 10px;\n      outline: none;\n      border-radius: 0px;\n      font-size: 16px;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form input::placeholder {\n        font-size: 16px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px;\n    transform: rotate(0);\n    transition: all .3s; }\n  .addTask .addBtnActive {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px;\n    transition: all .3s;\n    transform: rotate(180deg); }\n", ""]);
+exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  height: 93vh; }\n  .addTask .close {\n    position: absolute;\n    width: 30px;\n    height: 30px;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 45px;\n    top: 55px; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 30px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg); }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 30px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg); }\n  .addTask form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 80%; }\n    .addTask form input {\n      width: 70vw;\n      height: 50px;\n      margin: 10px;\n      padding: 10px;\n      outline: none;\n      border-radius: 0px;\n      font-size: 16px;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form input::placeholder {\n        font-size: 16px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px; }\n", ""]);
 
 // exports
 exports.locals = {
 	"addTask": "addTask",
 	"close": "close",
-	"addBtn": "addBtn",
-	"addBtnActive": "addBtnActive"
+	"addBtn": "addBtn"
 };
 
 /***/ }),
@@ -258,14 +257,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 90vw;\n  height: 93vh;\n  position: relative;\n  padding: 15px; }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 96.5%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .addBtn {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px;\n    transform: rotate(0);\n    transition: all .3s; }\n  .toDoList-main .addBtnActive {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px;\n    transition: all .3s;\n    transform: rotate(180deg); }\n", ""]);
+exports.push([module.i, ".toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 90vw;\n  height: 93vh;\n  position: relative;\n  padding: 15px; }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 96.5%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .addBtn {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px; }\n", ""]);
 
 // exports
 exports.locals = {
 	"toDoList-main": "toDoList-main",
 	"list": "list",
-	"addBtn": "addBtn",
-	"addBtnActive": "addBtnActive"
+	"addBtn": "addBtn"
 };
 
 /***/ }),
@@ -27593,11 +27591,7 @@ var AddTask = function (_React$Component) {
                     title: _this.state.taskTitle
                 })
             }).then(function () {
-                _this.setState({ addClass: !_this.state.addClass }, function () {
-                    setTimeout(function () {
-                        _this.props.history.push("/");
-                    }, 300);
-                });
+                _this.props.history.push("/");
             });
         };
 
@@ -27627,7 +27621,7 @@ var AddTask = function (_React$Component) {
                         null,
                         _react2.default.createElement('input', { type: 'text', placeholder: 'Your task here...', onChange: this.handleTitle })
                     ),
-                    _react2.default.createElement('img', { src: './images/add.svg', className: this.state.addClass ? "addBtnActive" : "addBtn", onClick: this.addTask })
+                    _react2.default.createElement('img', { src: './images/add.svg', className: 'addBtn', onClick: this.addTask })
                 )
             );
         }
@@ -28348,14 +28342,6 @@ var ToDoList = function (_React$Component) {
             }).then(_this.loadData);
         };
 
-        _this.linkToAddTask = function () {
-            _this.setState({ addClass: !_this.state.addClass }, function () {
-                setTimeout(function () {
-                    _this.props.history.push("/addTask");
-                }, 300);
-            });
-        };
-
         _this.state = {
             data: [],
             loading: true,
@@ -28392,7 +28378,11 @@ var ToDoList = function (_React$Component) {
                             );
                         })
                     ),
-                    _react2.default.createElement('img', { src: './images/add.svg', className: this.state.addClass ? "addBtnActive" : "addBtn", onClick: this.linkToAddTask })
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/addTask' },
+                        _react2.default.createElement('img', { src: './images/add.svg', className: 'addBtn' })
+                    )
                 )
             );
         }

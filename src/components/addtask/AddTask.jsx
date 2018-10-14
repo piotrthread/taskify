@@ -28,11 +28,7 @@ class AddTask extends React.Component{
                 )
             })
         .then(() => {
-            this.setState({addClass: !this.state.addClass}, () => {
-                setTimeout(()=>{
-                    this.props.history.push("/");
-                },300);
-            });
+            this.props.history.push("/");
         });
     }
 
@@ -47,7 +43,7 @@ class AddTask extends React.Component{
                         <form>
                             <input type="text" placeholder="Your task here..." onChange={this.handleTitle}/>
                         </form>
-                        <img src="./images/add.svg" className={this.state.addClass ? "addBtnActive" : "addBtn"} onClick={this.addTask}></img>
+                        <img src="./images/add.svg" className="addBtn" onClick={this.addTask}></img>
                     </div>
                 </React.Fragment>;
     }

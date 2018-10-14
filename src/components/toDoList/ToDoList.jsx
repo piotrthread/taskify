@@ -53,14 +53,6 @@ class ToDoList extends React.Component{
         .then(this.loadData);
     }  
     
-    linkToAddTask = () =>{
-        this.setState({addClass: !this.state.addClass}, () => {
-            setTimeout(()=>{
-                this.props.history.push("/addTask");
-            },300);
-        });
-    }
-    
     render(){
         return <React.Fragment>
                     {this.state.loading 
@@ -73,7 +65,7 @@ class ToDoList extends React.Component{
                                             </li>;
                                 })}
                             </ul>
-                            <img src="./images/add.svg" className={this.state.addClass ? "addBtnActive" : "addBtn"} onClick={this.linkToAddTask}/>
+                            <Link to="/addTask"><img src="./images/add.svg" className="addBtn"/></Link>
                         </div>}
                </React.Fragment>;
     }
