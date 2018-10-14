@@ -12,7 +12,8 @@ class ToDoList extends React.Component{
         super(props);
         this.state = {
             data: [],
-            loading: true
+            loading: true,
+            addClass: false
         };
     }
 
@@ -53,9 +54,11 @@ class ToDoList extends React.Component{
     }  
     
     linkToAddTask = () =>{
-        setTimeout(()=>{
-            this.props.history.push("/addTask");
-        },300);
+        this.setState({addClass: !this.state.addClass}, () => {
+            setTimeout(()=>{
+                this.props.history.push("/addTask");
+            },300);
+        });
     }
     
     render(){
@@ -70,7 +73,7 @@ class ToDoList extends React.Component{
                                             </li>;
                                 })}
                             </ul>
-                            <img src="./images/add.svg" className="addBtn" onClick={this.linkToAddTask}/>
+                            <img src="./images/add.svg" className={this.state.addClass ? "addBtnActive" : "addBtn"} onClick={this.linkToAddTask}/>
                         </div>}
                </React.Fragment>;
     }
