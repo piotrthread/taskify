@@ -129,11 +129,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "form {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n\n.backlistLink {\n  margin: 20px; }\n", ""]);
+exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  height: 93vh; }\n  .addTask .close {\n    position: absolute;\n    width: 30px;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 45px;\n    top: 55px; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 30px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg); }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 30px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg); }\n  .addTask form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 80%; }\n    .addTask form input {\n      width: 70vw;\n      height: 50px;\n      margin: 10px;\n      padding: 10px;\n      outline: none;\n      border-radius: 0px;\n      font-size: 16px;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form input::placeholder {\n        font-size: 16px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px;\n    transition: all .3s; }\n    .addTask .addBtn:active {\n      transform: rotate(180deg); }\n", ""]);
 
 // exports
 exports.locals = {
-	"backlistLink": "backlistLink"
+	"addTask": "addTask",
+	"close": "close",
+	"addBtn": "addBtn"
 };
 
 /***/ }),
@@ -150,7 +152,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Raleway', sans-serif; }\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  background-image: linear-gradient(90deg, #00c3ff 17%, #00ffdd 100%);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Raleway', sans-serif; }\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  background-image: linear-gradient(45deg, #f6cac9 35%, #91a7d0 100%);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n", ""]);
 
 // exports
 
@@ -169,7 +171,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".loader {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .loader svg {\n    width: 80px;\n    height: 80px;\n    transform: rotate(0deg);\n    animation: loading 1s infinite linear; }\n  .loader path {\n    fill: none;\n    stroke-width: 9px;\n    stroke: url(#gradient);\n    transform-origin: 50% 50%;\n    transform: rotate(90deg);\n    stroke-dasharray: 200;\n    stroke-dashoffset: 20; }\n\n@keyframes loading {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n", ""]);
+exports.push([module.i, ".loader {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  opacity: .5; }\n  .loader svg {\n    width: 80px;\n    height: 80px;\n    transform: rotate(0deg);\n    animation: loading 1s infinite linear; }\n  .loader path {\n    fill: none;\n    stroke-width: 9px;\n    stroke: url(#gradient);\n    transform-origin: 50% 50%;\n    transform: rotate(90deg);\n    stroke-dasharray: 200;\n    stroke-dashoffset: 20; }\n\n@keyframes loading {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n", ""]);
 
 // exports
 exports.locals = {
@@ -212,11 +214,12 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".task h1 {\n  font-size: 17px;\n  font-family: 'Open Sans', sans-serif; }\n\n.task p {\n  font-size: 12px;\n  color: gray; }\n", ""]);
+exports.push([module.i, ".task {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 25px;\n  padding-top: 27px; }\n  .task h1 {\n    font-size: 14px;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif; }\n  .task .delete {\n    width: 20px;\n    height: 20px;\n    opacity: .7; }\n", ""]);
 
 // exports
 exports.locals = {
-	"task": "task"
+	"task": "task",
+	"delete": "delete"
 };
 
 /***/ }),
@@ -254,12 +257,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(255, 255, 255, 0.9);\n  width: 90vw;\n  height: 93vh;\n  position: relative;\n  padding: 15px; }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    overflow-scrolling: touch;\n    -webkit-overflow-scrolling: touch;\n    width: 100%;\n    height: 90%; }\n    .toDoList-main ul.list li {\n      background-color: white;\n      padding: 15px;\n      height: 90px;\n      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }\n      .toDoList-main ul.list li:not(:first-child) {\n        margin-top: 15px; }\n", ""]);
+exports.push([module.i, ".toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 90vw;\n  height: 93vh;\n  position: relative;\n  padding: 15px; }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 96.5%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .addBtn {\n    width: 50px;\n    height: 50px;\n    opacity: .7;\n    margin-top: 25px;\n    transition: all .3s; }\n    .toDoList-main .addBtn:active {\n      transform: rotate(180deg); }\n", ""]);
 
 // exports
 exports.locals = {
 	"toDoList-main": "toDoList-main",
-	"list": "list"
+	"list": "list",
+	"addBtn": "addBtn"
 };
 
 /***/ }),
@@ -27580,25 +27584,25 @@ var AddTask = function (_React$Component) {
             _this.setState({ taskTitle: e.target.value });
         };
 
-        _this.handleDesc = function (e) {
-            _this.setState({ taskDesc: e.target.value });
-        };
-
         _this.addTask = function () {
             fetch('https://coderslabproject.firebaseio.com/tasks.json', {
                 method: "POST",
                 body: JSON.stringify({
-                    title: _this.state.taskTitle,
-                    desc: _this.state.taskDesc
+                    title: _this.state.taskTitle
                 })
             }).then(function () {
-                return _this.props.history.push("/");
+                setTimeout(function () {
+                    _this.props.history.push("/");
+                }, 300);
             });
         };
 
+        _this.linkToRoot = function () {
+            _this.props.history.push("/");
+        };
+
         _this.state = {
-            taskTitle: "",
-            taskDesc: ""
+            taskTitle: ""
         };
         return _this;
     }
@@ -27612,22 +27616,13 @@ var AddTask = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'addTask' },
+                    _react2.default.createElement('div', { className: 'close', onClick: this.linkToRoot }),
                     _react2.default.createElement(
                         'form',
                         null,
-                        _react2.default.createElement('input', { type: 'text', placeholder: 'Task title', onChange: this.handleTitle }),
-                        _react2.default.createElement('textarea', { placeholder: 'Task description', onChange: this.handleDesc })
+                        _react2.default.createElement('input', { type: 'text', placeholder: 'Your task here...', onChange: this.handleTitle })
                     ),
-                    _react2.default.createElement(
-                        'span',
-                        { className: 'addTaskBtn', onClick: this.addTask },
-                        'ADD'
-                    ),
-                    _react2.default.createElement(
-                        _reactRouterDom.Link,
-                        { to: '/', className: 'backlistLink' },
-                        'Back to list'
-                    )
+                    _react2.default.createElement('img', { src: './images/add.svg', className: 'addBtn', onClick: this.addTask })
                 )
             );
         }
@@ -28087,16 +28082,7 @@ var Task = function (_React$Component) {
                         null,
                         this.props.taskTitle
                     ),
-                    _react2.default.createElement(
-                        'p',
-                        null,
-                        this.props.taskDesc
-                    ),
-                    _react2.default.createElement(
-                        'button',
-                        { onClick: this.removeData },
-                        'done'
-                    )
+                    _react2.default.createElement('img', { src: './images/bin.svg', className: 'delete', onClick: this.removeData })
                 )
             );
         }
@@ -28205,7 +28191,7 @@ var Taskify = function (_React$Component) {
         };
 
         _this.state = {
-            loggedIn: false
+            loggedIn: true
         };
         return _this;
     }
@@ -28335,13 +28321,17 @@ var ToDoList = function (_React$Component) {
                 }).then(function () {
                     var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
-                    data = Object.keys(data).reduce(function (dataAsArray, key) {
-                        var todo = data[key];
-                        todo.id = key;
-                        dataAsArray.push(todo);
-                        return dataAsArray;
-                    }, []);
-                    _this.setState({ data: data, loading: false });
+                    if (data === null) {
+                        _this.setState({ data: [], loading: false });
+                    } else {
+                        data = Object.keys(data).reduce(function (dataAsArray, key) {
+                            var todo = data[key];
+                            todo.id = key;
+                            dataAsArray.push(todo);
+                            return dataAsArray;
+                        }, []);
+                        _this.setState({ data: data, loading: false });
+                    }
                 });
             });
         };
@@ -28351,6 +28341,12 @@ var ToDoList = function (_React$Component) {
             fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
                 method: "DELETE"
             }).then(_this.loadData);
+        };
+
+        _this.linkToAddTask = function () {
+            setTimeout(function () {
+                _this.props.history.push("/addTask");
+            }, 300);
         };
 
         _this.state = {
@@ -28384,15 +28380,11 @@ var ToDoList = function (_React$Component) {
                             return _react2.default.createElement(
                                 'li',
                                 { key: element.id },
-                                _react2.default.createElement(_Task2.default, { taskTitle: element.title, taskDesc: element.desc, id: element.id, remove: _this2.removeData })
+                                _react2.default.createElement(_Task2.default, { taskTitle: element.title, id: element.id, remove: _this2.removeData })
                             );
                         })
                     ),
-                    _react2.default.createElement(
-                        _reactRouterDom.Link,
-                        { to: '/addTask' },
-                        'Add new Task'
-                    )
+                    _react2.default.createElement('img', { src: './images/add.svg', className: 'addBtn', onClick: this.linkToAddTask })
                 )
             );
         }

@@ -1,8 +1,80 @@
-form{
-    display:flex;
+.addTask{
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-.backlistLink{
-    margin:20px;
+    height: 93vh;
+
+    .close{
+        position: absolute;
+        width:30px;
+        opacity:.7;
+        transform-origin: 50% 50%;
+        right:45px;
+        top:55px;
+
+        &:before{
+            content:"";
+            display: block;
+            background-color: white;
+            width:30px;
+            height: 2px;
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        
+        &:after{
+            content:"";
+            display: block;
+            background-color: white;
+            width:30px;
+            height: 2px;
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+    }
+
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:80%;
+        input{
+            width:70vw;
+            height:50px;
+            margin:10px;
+            padding:10px;
+            outline:none;
+            border-radius:0px;
+            font-size:16px;
+            color:rgba(0,0,0,.5);
+            border:1px solid rgba(255,255,255,.7);
+            background-color:rgba(255,255,255,.5);
+            caret-color:rgba(0,0,0,.3);
+            transition: all .5s;
+            font-weight:300;
+
+            &:focus{
+                background-color:rgba(255,255,255,.3);
+                border:1px solid rgba(255,255,255,.9);
+            }
+            
+            &::placeholder{
+                font-size:16px;
+                height:20px;
+                color:rgba(0,0,0,.3);
+            }
+        }
+    }
+
+    .addBtn{
+        width:50px;
+        height: 50px;
+        opacity:.7;
+        margin-top:25px;
+        transition: all .3s;
+
+        &:active{
+            transform: rotate(180deg);
+        }
+    }
 }

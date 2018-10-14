@@ -10,8 +10,7 @@ class Task extends React.Component{
         return <React.Fragment>
             <div className="task">
                 <h1>{this.props.taskTitle}</h1>
-                <p>{this.props.taskDesc}</p>
-                <button onClick={this.removeData}>done</button>
+                <img src="./images/bin.svg" className="delete" onClick={this.removeData}></img>
             </div>
         </React.Fragment>;
     }

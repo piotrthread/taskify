@@ -8,17 +8,12 @@ class AddTask extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            taskTitle:"",
-            taskDesc:""
+            taskTitle:""
         };
     }
 
     handleTitle = (e) => {
         this.setState({taskTitle: e.target.value});
-    }
-    
-    handleDesc = (e) => {
-        this.setState({taskDesc: e.target.value});
     }
 
     addTask = () => {
@@ -28,22 +23,28 @@ class AddTask extends React.Component{
                 body: JSON.stringify(
                     {
                         title: this.state.taskTitle, 
-                        desc: this.state.taskDesc
                     }
                 )
             })
-        .then(() => this.props.history.push("/"));
+        .then(() => {
+            setTimeout(() => {
+                this.props.history.push("/");
+            },300);
+        });
+    }
+
+    linkToRoot = () =>{
+            this.props.history.push("/");
     }
     
     render(){
         return <React.Fragment>
                     <div className="addTask">
+                    <div className="close" onClick={this.linkToRoot}></div>
                         <form>
-                            <input type="text" placeholder="Task title" onChange={this.handleTitle}/>
-                            <textarea placeholder="Task description" onChange={this.handleDesc}/>
+                            <input type="text" placeholder="Your task here..." onChange={this.handleTitle}/>
                         </form>
-                        <span className="addTaskBtn" onClick={this.addTask}>ADD</span>
-                        <Link to="/" className="backlistLink">Back to list</Link>
+                        <img src="./images/add.svg" className="addBtn" onClick={this.addTask}></img>
                     </div>
                 </React.Fragment>;
     }

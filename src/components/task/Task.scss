@@ -1,12 +1,21 @@
 .task{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:25px;
+    padding-top:27px;
 
     h1{
-        font-size:17px;
-        font-family: 'Open Sans', sans-serif;
+        font-size:14px;
+        font-weight: 300;
+        color:white;
+        font-family: 'Raleway', sans-serif;
     }
-    p{
-        font-size:12px;
-        color:gray;
+
+    .delete{
+        width:20px;
+        height:20px;
+        opacity:.7;
     }
+    
 }

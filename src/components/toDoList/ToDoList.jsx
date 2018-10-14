@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Task from '../../components/task/Task.jsx';
 import Loader from '../../components/loader/Loader.jsx';
 //-------------Style
-import css from './ToDoList.scss';
+import css from './ToDoList.scss'; 
 
 class ToDoList extends React.Component{
     constructor(props){
@@ -28,15 +28,20 @@ class ToDoList extends React.Component{
             })
             .then(res => res.json())
             .then((data = {}) => {
-                data = Object.keys(data).reduce((dataAsArray, key) => {
-                    const todo = data[key];
-                    todo.id = key;
-                    dataAsArray.push(todo);
-                    return dataAsArray;
-                }, []);
-                this.setState({ data, loading: false });
-              })});
-        }  
+                if(data === null){
+                    this.setState({ data: [], loading: false });
+                }else{
+                    data = Object.keys(data).reduce((dataAsArray, key) => {
+                        const todo = data[key];
+                        todo.id = key;
+                        dataAsArray.push(todo);
+                        return dataAsArray;
+                    }, []);
+                    this.setState({ data, loading: false });
+                }
+            });
+        });
+    }  
         
     removeData = (id) => {
             
@@ -45,7 +50,13 @@ class ToDoList extends React.Component{
                 method: "DELETE"
             })
         .then(this.loadData);
-    }      
+    }  
+    
+    linkToAddTask = () =>{
+        setTimeout(()=>{
+            this.props.history.push("/addTask");
+        },300);
+    }
     
     render(){
         return <React.Fragment>
@@ -55,11 +66,11 @@ class ToDoList extends React.Component{
                             <ul className="list">
                                 {this.state.data.filter(Boolean).map((element) => {//filtruje zeby nie dodawac nulla
                                     return <li key={element.id}>
-                                                <Task taskTitle={element.title} taskDesc={element.desc} id={element.id} remove={this.removeData} />
+                                                <Task taskTitle={element.title} id={element.id} remove={this.removeData} />
                                             </li>;
                                 })}
                             </ul>
-                            <Link to="/addTask">Add new Task</Link>
+                            <img src="./images/add.svg" className="addBtn" onClick={this.linkToAddTask}/>
                         </div>}
                </React.Fragment>;
     }
