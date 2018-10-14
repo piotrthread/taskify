@@ -25,32 +25,43 @@
             height:50px;
             margin:10px;
             padding:10px;
+            outline:none;
             border-radius:0px;
+            color:rgba(0,0,0,.5);
             border:1px solid rgba(255,255,255,.7);
             background-color:rgba(255,255,255,.5);
+            caret-color:rgba(0,0,0,.3);
+            transition: all .5s;
+
+            &:focus{
+                background-color:rgba(255,255,255,.3);
+                border:1px solid rgba(255,255,255,.9);
+            }
             
             &::placeholder{
                 font-size:13px;
                 height:20px;
-                color:rgba(0,0,0,.5);
+                color:rgba(0,0,0,.3);
             }
         }
 
         button{
-            width:50%;
-            height:60px;
+            width:45%;
+            height:50px;
             font-size:15px;
             border:0;
             border-radius:30px;
             background-color: white;
-            color:rgba(0,0,0,.8);
+            color:rgba(0,0,0,.6);
             margin-top:25px;
+            outline:none;
         }
     }
     p{
         color:rgba(0,0,0,.4);
+        font-size:12px;
         font-family: 'Raleway', sans-serif;
-        margin:20px;
+        margin:25px;
         text-decoration: underline;
     }
 }

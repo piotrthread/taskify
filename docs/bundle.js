@@ -191,7 +191,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.login {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .login h1 {\n    color: white;\n    font-family: 'Open Sans', sans-serif;\n    margin: 20px; }\n  .login form {\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .login form input {\n      width: 70vw;\n      height: 50px;\n      margin: 10px;\n      padding: 10px;\n      border-radius: 0px;\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5); }\n      .login form input::placeholder {\n        font-size: 13px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.5); }\n    .login form button {\n      width: 50%;\n      height: 60px;\n      font-size: 15px;\n      border: 0;\n      border-radius: 30px;\n      background-color: white;\n      color: rgba(0, 0, 0, 0.8);\n      margin-top: 25px; }\n  .login p {\n    color: rgba(0, 0, 0, 0.4);\n    font-family: 'Raleway', sans-serif;\n    margin: 20px;\n    text-decoration: underline; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.login {\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .login h1 {\n    color: white;\n    font-family: 'Open Sans', sans-serif;\n    margin: 20px; }\n  .login form {\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .login form input {\n      width: 70vw;\n      height: 50px;\n      margin: 10px;\n      padding: 10px;\n      outline: none;\n      border-radius: 0px;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s; }\n      .login form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .login form input::placeholder {\n        font-size: 13px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.3); }\n    .login form button {\n      width: 45%;\n      height: 50px;\n      font-size: 15px;\n      border: 0;\n      border-radius: 30px;\n      background-color: white;\n      color: rgba(0, 0, 0, 0.6);\n      margin-top: 25px;\n      outline: none; }\n  .login p {\n    color: rgba(0, 0, 0, 0.4);\n    font-size: 12px;\n    font-family: 'Raleway', sans-serif;\n    margin: 25px;\n    text-decoration: underline; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -27563,7 +27563,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //-------------Build
+
+//------------Style
+
 
 var AddTask = function (_React$Component) {
     _inherits(AddTask, _React$Component);
@@ -27582,12 +27585,13 @@ var AddTask = function (_React$Component) {
         };
 
         _this.addTask = function () {
-            console.log(_this.props);
-            fetch('https://coderslabproject.firebaseio.com/tasks.json', { method: "POST",
+            fetch('https://coderslabproject.firebaseio.com/tasks.json', {
+                method: "POST",
                 body: JSON.stringify({
                     title: _this.state.taskTitle,
                     desc: _this.state.taskDesc
-                }) }).then(function () {
+                })
+            }).then(function () {
                 return _this.props.history.push("/");
             });
         };
@@ -27690,15 +27694,15 @@ var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/i
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _Taskify = __webpack_require__(/*! ../../components/taskify/Taskify.jsx */ "./src/components/taskify/Taskify.jsx");
+
+var _Taskify2 = _interopRequireDefault(_Taskify);
+
 var _reactTransitionGroup = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
 
 var _App = __webpack_require__(/*! ./App.scss */ "./src/components/app/App.scss");
 
 var _App2 = _interopRequireDefault(_App);
-
-var _Taskify = __webpack_require__(/*! ../../components/taskify/Taskify.jsx */ "./src/components/taskify/Taskify.jsx");
-
-var _Taskify2 = _interopRequireDefault(_Taskify);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27706,7 +27710,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //-------------Build
+
+//------------Components
+
+//------------Style
+
 
 var App = function (_React$Component) {
     _inherits(App, _React$Component);
@@ -27902,28 +27911,39 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //---------------Build
+
+//--------------Style
+
 
 var Login = function (_React$Component) {
     _inherits(Login, _React$Component);
 
-    function Login() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
+    function Login(props) {
         _classCallCheck(this, Login);
 
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
+        var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this, props));
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Login.__proto__ || Object.getPrototypeOf(Login)).call.apply(_ref, [this].concat(args))), _this), _this.login = function (e) {
+        _this.handleEmail = function (e) {
+            _this.setState({ email: e.target.value });
+        };
+
+        _this.handlePassword = function (e) {
+            _this.setState({ password: e.target.value });
+        };
+
+        _this.login = function (e) {
             e.preventDefault();
-            if (typeof _this.props.login === 'function') {
+            if (typeof _this.props.login === 'function' && _this.state.email === "admin@admin.pl" && _this.state.password === "12345") {
                 _this.props.login();
             }
-        }, _temp), _possibleConstructorReturn(_this, _ret);
+        };
+
+        _this.state = {
+            email: "",
+            password: ""
+        };
+        return _this;
     }
 
     _createClass(Login, [{
@@ -27945,8 +27965,8 @@ var Login = function (_React$Component) {
                     _react2.default.createElement(
                         'form',
                         null,
-                        _react2.default.createElement('input', { type: 'email', placeholder: 'e-mail' }),
-                        _react2.default.createElement('input', { type: 'password', placeholder: 'password' }),
+                        _react2.default.createElement('input', { type: 'email', placeholder: 'e-mail', onChange: this.handleEmail }),
+                        _react2.default.createElement('input', { type: 'password', placeholder: 'password', onChange: this.handlePassword }),
                         _react2.default.createElement(
                             'button',
                             { onClick: function onClick(e) {
@@ -28139,12 +28159,6 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Taskify = __webpack_require__(/*! ./Taskify.scss */ "./src/components/taskify/Taskify.scss");
-
-var _Taskify2 = _interopRequireDefault(_Taskify);
-
-var _reactTransitionGroup = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
-
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
 var _AddTask = __webpack_require__(/*! ../../components/addtask/AddTask.jsx */ "./src/components/addtask/AddTask.jsx");
@@ -28159,13 +28173,24 @@ var _ToDoList = __webpack_require__(/*! ../../components/todolist/ToDoList.jsx *
 
 var _ToDoList2 = _interopRequireDefault(_ToDoList);
 
+var _Taskify = __webpack_require__(/*! ./Taskify.scss */ "./src/components/taskify/Taskify.scss");
+
+var _Taskify2 = _interopRequireDefault(_Taskify);
+
+var _reactTransitionGroup = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //-----------Build
+
+//------------Components
+
+//-----------Style
+
 
 var Taskify = function (_React$Component) {
     _inherits(Taskify, _React$Component);
@@ -28266,10 +28291,6 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _ToDoList = __webpack_require__(/*! ./ToDoList.scss */ "./src/components/todolist/ToDoList.scss");
-
-var _ToDoList2 = _interopRequireDefault(_ToDoList);
-
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
 var _Task = __webpack_require__(/*! ../../components/task/Task.jsx */ "./src/components/task/Task.jsx");
@@ -28280,13 +28301,22 @@ var _Loader = __webpack_require__(/*! ../../components/loader/Loader.jsx */ "./s
 
 var _Loader2 = _interopRequireDefault(_Loader);
 
+var _ToDoList = __webpack_require__(/*! ./ToDoList.scss */ "./src/components/todolist/ToDoList.scss");
+
+var _ToDoList2 = _interopRequireDefault(_ToDoList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //--------------Build
+
+//-------------Components
+
+//-------------Style
+
 
 var ToDoList = function (_React$Component) {
     _inherits(ToDoList, _React$Component);
@@ -28298,7 +28328,9 @@ var ToDoList = function (_React$Component) {
 
         _this.loadData = function () {
             _this.setState({ loading: true }, function () {
-                fetch("https://coderslabproject.firebaseio.com/tasks.json", { method: "GET" }).then(function (res) {
+                fetch("https://coderslabproject.firebaseio.com/tasks.json", {
+                    method: "GET"
+                }).then(function (res) {
                     return res.json();
                 }).then(function () {
                     var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -28307,10 +28339,8 @@ var ToDoList = function (_React$Component) {
                         var todo = data[key];
                         todo.id = key;
                         dataAsArray.push(todo);
-
                         return dataAsArray;
                     }, []);
-
                     _this.setState({ data: data, loading: false });
                 });
             });
@@ -28318,13 +28348,14 @@ var ToDoList = function (_React$Component) {
 
         _this.removeData = function (id) {
 
-            fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', { method: "DELETE" }).then(_this.loadData);
+            fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
+                method: "DELETE"
+            }).then(_this.loadData);
         };
 
         _this.state = {
             data: [],
-            loading: true,
-            adding: false
+            loading: true
         };
         return _this;
     }
