@@ -254,7 +254,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(255, 255, 255, 0.9);\n  width: 90vw;\n  height: 93vh;\n  position: relative;\n  padding: 15px; }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow: scroll;\n    overflow-scrolling: touch;\n    -webkit-overflow-scrolling: touch;\n    width: 100%;\n    height: 90%; }\n    .toDoList-main ul.list li {\n      background-color: white;\n      padding: 15px;\n      height: 90px;\n      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }\n      .toDoList-main ul.list li:not(:first-child) {\n        margin-top: 15px; }\n", ""]);
+exports.push([module.i, ".toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgba(255, 255, 255, 0.8);\n  border: 1px solid rgba(255, 255, 255, 0.9);\n  width: 90vw;\n  height: 93vh;\n  position: relative;\n  padding: 15px; }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    overflow-scrolling: touch;\n    -webkit-overflow-scrolling: touch;\n    width: 100%;\n    height: 90%; }\n    .toDoList-main ul.list li {\n      background-color: white;\n      padding: 15px;\n      height: 90px;\n      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }\n      .toDoList-main ul.list li:not(:first-child) {\n        margin-top: 15px; }\n", ""]);
 
 // exports
 exports.locals = {
