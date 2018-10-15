@@ -2,35 +2,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 93vh;
+    width:25vw;
+    height:45vw;
+    position: relative;
+    padding:15px;
+    border:1px solid rgba(255,255,255,.3);
 
     .close{
         position: absolute;
+        cursor: pointer;
         width:30px;
         height: 30px;
         opacity:.7;
         transform-origin: 50% 50%;
         right:45px;
-        top:55px;
+        top:45px;
 
         &:before{
             content:"";
             display: block;
             background-color: white;
             width:30px;
+            top:13px;
             height: 2px;
             position: absolute;
             transform: rotate(45deg);
+            transition: all .3s;
         }
         
         &:after{
             content:"";
             display: block;
             background-color: white;
+            top:13px;
             width:30px;
             height: 2px;
             position: absolute;
             transform: rotate(-45deg);
+            transition: all .3s;
+        }
+
+        &:hover{
+            &:after{
+                transform: rotate(45deg);
+            }
+
+            &:before{
+                transform: rotate(135deg);
+            }
         }
     }
 
@@ -38,9 +57,10 @@
         display:flex;
         flex-direction: column;
         align-items: center;
-        margin-top:80%;
+        width:100%;
+        margin-top:17vw;
         input{
-            width:70vw;
+            width:90%;
             height:50px;
             margin:10px;
             padding:10px;
@@ -68,9 +88,53 @@
     }
 
     .addBtn{
-        width:50px;
-        height: 50px;
-        opacity:.7;
-        margin-top:25px;
+        width:3vw;
+        height: 3vw;
+        border-radius: 1.5vw;
+        margin-top:35px;
+        border:1px solid white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+
+        &:before{
+            content: "";
+            display: block;
+            background-color: white;
+            z-index: 1;
+            position: absolute;
+            width:2px;
+            border-radius: 1px;
+            height:3%;
+            transform-origin: 50% 50%;
+            transition: all .3s;
+        }
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: white;
+            z-index: 1;
+            width:5%;
+            border-radius: 1px;
+            height:2px;
+            transform-origin: 50% 50%;
+            transition: all .3s;
+        }
+
+        &:hover{
+            background-color: rgba(255,255,255,.3);
+
+            &:before{
+                transform: rotate(180deg);
+            }
+
+            &:after{
+                transform: rotate(180deg);
+            }
+        }
     }
 }

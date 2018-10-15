@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 //-------------Components
 import Task from '../../components/task/Task.jsx';
 import Loader from '../../components/loader/Loader.jsx';
+import AddTask from '../../components/addtask/AddTask.jsx';
 //-------------Style
 import css from './ToDoList.scss'; 
 
@@ -49,9 +50,12 @@ class ToDoList extends React.Component{
         fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
             {
                 method: "DELETE"
-            })
-        .then(this.loadData);
+            });
     }  
+
+    linkToAddTask = () => {
+        this.props.history.push("/addTask");
+    }
     
     render(){
         return <React.Fragment>
@@ -65,8 +69,11 @@ class ToDoList extends React.Component{
                                             </li>;
                                 })}
                             </ul>
-                            <Link to="/addTask"><img src="./images/add.svg" className="addBtn"/></Link>
-                        </div>}
+                            <div className="menuWrapper">
+                                <div className="addBtn" onClick={this.linkToAddTask}></div>
+                                <img src="./images/bin.svg" className="binIcon" onClick={this.loadData}/>
+                            </div>
+                            </div>}
                </React.Fragment>;
     }
 }

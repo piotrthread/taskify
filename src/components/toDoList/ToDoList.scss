@@ -1,18 +1,27 @@
+@keyframes bin{
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(15deg)}
+    50%{transform: rotate(-15deg)}
+    75%{transform: rotate(15deg)}
+    100%{transform: rotate(0deg)}
+}
+
 .toDoList-main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:90vw;
-    height:93vh;
+    width:25vw;
+    height:45vw;
     position: relative;
-    padding:15px;
+    padding:33px 15px;
+    border:1px solid rgba(255,255,255,.3);
 
     ul.list{
         list-style-type: none;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         width:90%;
-        height:96.5%;
+        height:90%;
 
         &::-webkit-scrollbar { 
             display: none; 
@@ -25,10 +34,71 @@
         }
     }
 
-    .addBtn{
-        width:50px;
-        height: 50px;
-        opacity:.7;
-        margin-top:25px;
+    .menuWrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:85%;
+        margin-top:35px;
+
+        .binIcon{
+            cursor: pointer;
+            transition: all .3;
+
+            &:hover{
+                animation: bin .3s ease forwards;
+            }
+        }
+
+        .addBtn{
+            width:3vw;
+            height: 3vw;
+            border-radius: 1.5vw;
+            border:1px solid white;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left:44%;
+            transition: all .3s;
+
+            &:before{
+                content: "";
+                display: block;
+                background-color: white;
+                z-index: 1;
+                position: absolute;
+                width:2px;
+                border-radius: 1px;
+                height:3%;
+                transform-origin: 50% 50%;
+                transition: all .3s;
+            }
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: white;
+                z-index: 1;
+                width:5%;
+                border-radius: 1px;
+                height:2px;
+                transform-origin: 50% 50%;
+                transition: all .3s;
+            }
+
+            &:hover{
+                background-color: rgba(255,255,255,.3);
+
+                &:before{
+                    transform: rotate(180deg);
+                }
+
+                &:after{
+                    transform: rotate(180deg);
+                }
+            }
+        }
     }
 }

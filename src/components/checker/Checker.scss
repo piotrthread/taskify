@@ -1,0 +1,21 @@
+.checker{
+    width:20px;
+    height: 20px;
+    position: relative;
+    border:1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .iconUnchecked{
+        opacity:0;
+    }
+
+    .iconChecked{
+        opacity:1;
+    }
+
+
+}

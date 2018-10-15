@@ -1,16 +1,26 @@
 import React from 'react';
 import css from './Task.scss';
+import Checker from '../../components/checker/Checker.jsx';
 
 class Task extends React.Component{
-    removeData = () => {
-        this.props.remove(this.props.id);
+    constructor(props){
+        super(props);
+        this.state = {
+            done:false
+        };
     }
-    
+
+    doneTask = () => {
+        this.setState({done: true}, () => {
+            this.props.remove(this.props.id);
+        });
+    }
+
     render(){
         return <React.Fragment>
             <div className="task">
-                <h1>{this.props.taskTitle}</h1>
-                <img src="./images/bin.svg" className="delete" onClick={this.removeData}></img>
+                <h1 className={this.state.done ? "done" : "toBeDone"}>{this.props.taskTitle}</h1>
+                <Checker check={this.doneTask}/>
             </div>
         </React.Fragment>;
     }

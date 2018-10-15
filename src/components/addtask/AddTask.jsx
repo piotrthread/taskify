@@ -43,7 +43,7 @@ class AddTask extends React.Component{
                         <form>
                             <input type="text" placeholder="Your task here..." onChange={this.handleTitle}/>
                         </form>
-                        <img src="./images/add.svg" className="addBtn" onClick={this.addTask}></img>
+                        <div className="addBtn" onClick={this.addTask}></div>
                     </div>
                 </React.Fragment>;
     }
