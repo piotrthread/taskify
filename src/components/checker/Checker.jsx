@@ -12,7 +12,7 @@ class Checker extends React.Component{
 
     checkTask = () => {
         this.props.check();
-        this.setState({checked: true});
+        this.setState({checked: !this.state.checked});
     }
 
     render(){

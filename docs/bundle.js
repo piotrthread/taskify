@@ -696,7 +696,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 15px;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 30px;\n    height: 30px;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 45px;\n    top: 45px; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 30px;\n      top: 13px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: 13px;\n      width: 30px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 17vw; }\n    .addTask form input {\n      width: 90%;\n      height: 50px;\n      margin: 10px;\n      padding: 10px;\n      outline: none;\n      border-radius: 0px;\n      font-size: 16px;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form input::placeholder {\n        font-size: 16px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    margin-top: 35px;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 3%;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 5%;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n", ""]);
+exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 15px;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 30px;\n    height: 30px;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 45px;\n    top: 45px; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 25px;\n      top: 13px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: 13px;\n      width: 25px;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 17vw; }\n    .addTask form input {\n      width: 90%;\n      height: 50px;\n      margin: 10px;\n      padding: 10px;\n      outline: none;\n      border-radius: 0px;\n      font-size: 16px;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form input::placeholder {\n        font-size: 16px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    margin-top: 35px;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 3%;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 5%;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n", ""]);
 
 // exports
 exports.locals = {
@@ -31477,15 +31477,21 @@ var AddTask = function (_React$Component) {
         };
 
         _this.state = {
-            taskTitle: "",
-            addClass: false
+            taskTitle: ""
         };
         return _this;
     }
 
     _createClass(AddTask, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.inputTask.focus();
+        }
+    }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             return _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
@@ -31496,7 +31502,9 @@ var AddTask = function (_React$Component) {
                     _react2.default.createElement(
                         'form',
                         null,
-                        _react2.default.createElement('input', { type: 'text', placeholder: 'Your task here...', onChange: this.handleTitle })
+                        _react2.default.createElement('input', { type: 'text', placeholder: 'Your task here...', onChange: this.handleTitle, ref: function ref(input) {
+                                _this2.inputTask = input;
+                            } })
                     ),
                     _react2.default.createElement('div', { className: 'addBtn', onClick: this.addTask })
                 )
@@ -31691,7 +31699,7 @@ var Checker = function (_React$Component) {
 
         _this.checkTask = function () {
             _this.props.check();
-            _this.setState({ checked: true });
+            _this.setState({ checked: !_this.state.checked });
         };
 
         _this.state = {
@@ -32045,8 +32053,8 @@ var Task = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Task.__proto__ || Object.getPrototypeOf(Task)).call(this, props));
 
         _this.doneTask = function () {
-            _this.setState({ done: true }, function () {
-                _this.props.remove(_this.props.id);
+            _this.setState({ done: !_this.state.done }, function () {
+                _this.props.check(_this.props.id);
             });
         };
 
@@ -32285,6 +32293,8 @@ var _ToDoList2 = _interopRequireDefault(_ToDoList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -32328,11 +32338,33 @@ var ToDoList = function (_React$Component) {
             });
         };
 
-        _this.removeData = function (id) {
+        _this.checkData = function (id) {
+            if (_this.state.toRemove.indexOf(id) == -1) {
+                _this.state.toRemove.push(id);
+            } else {
+                _this.state.toRemove.splice(_this.state.toRemove.indexOf(id), 1);
+            }
+        };
 
-            fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
-                method: "DELETE"
-            });
+        _this.deleteCheckedData = function () {
+            if (_this.state.toRemove.length > 0) {
+                var remove = new Promise(function (res, rej) {
+                    _this.state.toRemove.map(function (url) {
+
+                        fetch('https://coderslabproject.firebaseio.com/tasks/' + url + '.json', {
+                            method: "DELETE"
+                        }).then(function () {
+                            var tempArr = _this.state.toRemove;
+                            tempArr.splice(tempArr.indexOf(url), 1);
+                            _this.setState({ toRemove: [].concat(_toConsumableArray(tempArr)) });
+                        }).then(function () {
+                            if (_this.state.toRemove.length == 0) {
+                                _this.loadData();
+                            }
+                        });
+                    });
+                });
+            }
         };
 
         _this.linkToAddTask = function () {
@@ -32341,8 +32373,8 @@ var ToDoList = function (_React$Component) {
 
         _this.state = {
             data: [],
-            loading: true,
-            addClass: false
+            loading: false,
+            toRemove: []
         };
         return _this;
     }
@@ -32371,7 +32403,7 @@ var ToDoList = function (_React$Component) {
                             return _react2.default.createElement(
                                 'li',
                                 { key: element.id },
-                                _react2.default.createElement(_Task2.default, { taskTitle: element.title, id: element.id, remove: _this2.removeData })
+                                _react2.default.createElement(_Task2.default, { taskTitle: element.title, id: element.id, check: _this2.checkData })
                             );
                         })
                     ),
@@ -32379,7 +32411,7 @@ var ToDoList = function (_React$Component) {
                         'div',
                         { className: 'menuWrapper' },
                         _react2.default.createElement('div', { className: 'addBtn', onClick: this.linkToAddTask }),
-                        _react2.default.createElement('img', { src: './images/bin.svg', className: 'binIcon', onClick: this.loadData })
+                        _react2.default.createElement('img', { src: './images/bin.svg', className: 'binIcon', onClick: this.deleteCheckedData })
                     )
                 )
             );

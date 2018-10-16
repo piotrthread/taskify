@@ -8,8 +8,7 @@ class AddTask extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            taskTitle:"",
-            addClass: false
+            taskTitle:""
         };
     }
 
@@ -35,13 +34,17 @@ class AddTask extends React.Component{
     linkToRoot = () =>{
             this.props.history.push("/");
     }
+
+    componentDidMount(){
+        this.inputTask.focus(); 
+     }
     
     render(){
         return <React.Fragment>
                     <div className="addTask">
                     <div className="close" onClick={this.linkToRoot}></div>
                         <form>
-                            <input type="text" placeholder="Your task here..." onChange={this.handleTitle}/>
+                            <input type="text" placeholder="Your task here..." onChange={this.handleTitle} ref={(input) => { this.inputTask = input; }}/>
                         </form>
                         <div className="addBtn" onClick={this.addTask}></div>
                     </div>

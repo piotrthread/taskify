@@ -13,8 +13,8 @@ class ToDoList extends React.Component{
         super(props);
         this.state = {
             data: [],
-            loading: true,
-            addClass: false
+            loading: false,
+            toRemove:[]
         };
     }
 
@@ -45,12 +45,33 @@ class ToDoList extends React.Component{
         });
     }  
         
-    removeData = (id) => {
-            
-        fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
-            {
-                method: "DELETE"
-            });
+    checkData = (id) => {
+        if(this.state.toRemove.indexOf(id) == -1){
+            this.state.toRemove.push(id);
+        } else{
+            this.state.toRemove.splice(this.state.toRemove.indexOf(id),1);
+        }
+    }
+    
+    deleteCheckedData = () => {
+        if(this.state.toRemove.length >0){
+            const remove = new Promise((res, rej) => {
+                this.state.toRemove.map(url => {
+                    
+                        fetch(`https://coderslabproject.firebaseio.com/tasks/${url}.json`,
+                        {
+                            method: "DELETE"
+                        })
+                        .then(() => {
+                            let tempArr = this.state.toRemove;
+                            tempArr.splice(tempArr.indexOf(url),1);
+                            this.setState({toRemove: [...tempArr]});
+                        })
+                        .then(() => {if(this.state.toRemove.length == 0){this.loadData();}});
+
+                });
+            }); 
+        }
     }  
 
     linkToAddTask = () => {
@@ -65,13 +86,13 @@ class ToDoList extends React.Component{
                             <ul className="list">
                                 {this.state.data.filter(Boolean).map((element) => {//filtruje zeby nie dodawac nulla
                                     return <li key={element.id}>
-                                                <Task taskTitle={element.title} id={element.id} remove={this.removeData} />
+                                                <Task taskTitle={element.title} id={element.id} check={this.checkData} />
                                             </li>;
                                 })}
                             </ul>
                             <div className="menuWrapper">
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
-                                <img src="./images/bin.svg" className="binIcon" onClick={this.loadData}/>
+                                <img src="./images/bin.svg" className="binIcon" onClick={this.deleteCheckedData}/>
                             </div>
                             </div>}
                </React.Fragment>;

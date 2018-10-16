@@ -11,8 +11,8 @@ class Task extends React.Component{
     }
 
     doneTask = () => {
-        this.setState({done: true}, () => {
-            this.props.remove(this.props.id);
+        this.setState({done: !this.state.done}, () => {
+            this.props.check(this.props.id);
         });
     }
 
