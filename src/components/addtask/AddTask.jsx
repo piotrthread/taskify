@@ -23,6 +23,7 @@ class AddTask extends React.Component{
                 body: JSON.stringify(
                     {
                         title: this.state.taskTitle, 
+                        done: false
                     }
                 )
             })

@@ -19,8 +19,8 @@ class Task extends React.Component{
     render(){
         return <React.Fragment>
             <div className="task">
-                <h1 className={this.state.done ? "done" : "toBeDone"}>{this.props.taskTitle}</h1>
-                <Checker check={this.doneTask}/>
+                <h1 className={(this.props.done || this.state.done) ? "done" : "toBeDone"}>{this.props.taskTitle}</h1>
+                <Checker check={this.doneTask} done={this.props.done}/>
             </div>
         </React.Fragment>;
     }

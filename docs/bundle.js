@@ -849,12 +849,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 33px 15px;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 85%;\n    margin-top: 35px; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-left: 44%;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 3%;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 5%;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n", ""]);
+exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 33px 15px;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 15px; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 85%;\n    margin-top: 35px; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-left: 44%;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 3%;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 5%;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n", ""]);
 
 // exports
 exports.locals = {
 	"toDoList-main": "toDoList-main",
 	"list": "list",
+	"emptyMessage": "emptyMessage",
 	"menuWrapper": "menuWrapper",
 	"binIcon": "binIcon",
 	"bin": "bin",
@@ -31465,7 +31466,8 @@ var AddTask = function (_React$Component) {
             fetch('https://coderslabproject.firebaseio.com/tasks.json', {
                 method: "POST",
                 body: JSON.stringify({
-                    title: _this.state.taskTitle
+                    title: _this.state.taskTitle,
+                    done: false
                 })
             }).then(function () {
                 _this.props.history.push("/");
@@ -31717,7 +31719,7 @@ var Checker = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'checker', onClick: this.checkTask },
-                    _react2.default.createElement('img', { src: './images/checked.svg', className: this.state.checked ? "iconChecked" : "iconUnchecked" })
+                    _react2.default.createElement('img', { src: './images/checked.svg', className: this.state.checked || this.props.done ? "iconChecked" : "iconUnchecked" })
                 )
             );
         }
@@ -32075,10 +32077,10 @@ var Task = function (_React$Component) {
                     { className: 'task' },
                     _react2.default.createElement(
                         'h1',
-                        { className: this.state.done ? "done" : "toBeDone" },
+                        { className: this.props.done || this.state.done ? "done" : "toBeDone" },
                         this.props.taskTitle
                     ),
-                    _react2.default.createElement(_Checker2.default, { check: this.doneTask })
+                    _react2.default.createElement(_Checker2.default, { check: this.doneTask, done: this.props.done })
                 )
             );
         }
@@ -32332,6 +32334,11 @@ var ToDoList = function (_React$Component) {
                             dataAsArray.push(todo);
                             return dataAsArray;
                         }, []);
+                        data.forEach(function (task) {
+                            if (task.done) {
+                                _this.state.toRemove.push(task.id);
+                            }
+                        });
                         _this.setState({ data: data, loading: false });
                     }
                 });
@@ -32340,9 +32347,38 @@ var ToDoList = function (_React$Component) {
 
         _this.checkData = function (id) {
             if (_this.state.toRemove.indexOf(id) == -1) {
-                _this.state.toRemove.push(id);
+                fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
+                    method: "GET"
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (res) {
+                    fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
+                        method: "PUT",
+                        body: JSON.stringify({
+                            title: res.title,
+                            done: true
+                        })
+                    });
+                }).then(function () {
+                    _this.state.toRemove.push(id);
+                });
             } else {
-                _this.state.toRemove.splice(_this.state.toRemove.indexOf(id), 1);
+                fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
+                    method: "GET"
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (res) {
+                    console.log(res);
+                    fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
+                        method: "PUT",
+                        body: JSON.stringify({
+                            title: res.title,
+                            done: false
+                        })
+                    });
+                }).then(function () {
+                    _this.state.toRemove.splice(_this.state.toRemove.indexOf(id), 1);
+                });
             }
         };
 
@@ -32395,7 +32431,7 @@ var ToDoList = function (_React$Component) {
                 this.state.loading ? _react2.default.createElement(_Loader2.default, null) : _react2.default.createElement(
                     'div',
                     { className: 'toDoList-main' },
-                    _react2.default.createElement(
+                    this.state.data.length > 0 ? _react2.default.createElement(
                         'ul',
                         { className: 'list' },
                         this.state.data.filter(Boolean).map(function (element) {
@@ -32403,9 +32439,17 @@ var ToDoList = function (_React$Component) {
                             return _react2.default.createElement(
                                 'li',
                                 { key: element.id },
-                                _react2.default.createElement(_Task2.default, { taskTitle: element.title, id: element.id, check: _this2.checkData })
+                                _react2.default.createElement(_Task2.default, { taskTitle: element.title, id: element.id, check: _this2.checkData, done: element.done })
                             );
                         })
+                    ) : _react2.default.createElement(
+                        'div',
+                        { className: 'emptyMessage' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Tasks? You did them all...'
+                        )
                     ),
                     _react2.default.createElement(
                         'div',

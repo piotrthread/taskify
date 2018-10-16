@@ -39,17 +39,59 @@ class ToDoList extends React.Component{
                         dataAsArray.push(todo);
                         return dataAsArray;
                     }, []);
+                    data.forEach((task) => {
+                        if(task.done){
+                            this.state.toRemove.push(task.id);
+                        }
+                    });
                     this.setState({ data, loading: false });
+                        
                 }
-            });
+            });              
         });
     }  
         
     checkData = (id) => {
         if(this.state.toRemove.indexOf(id) == -1){
-            this.state.toRemove.push(id);
+            fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
+            {
+                method: "GET"
+            })
+            .then(res => res.json())
+            .then(res => {
+                fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
+            {
+                method: "PUT",
+                body: JSON.stringify(
+                    { 
+                        title: res.title,
+                        done: true
+                    }
+                )
+            }
+            )})
+            .then(() => {this.state.toRemove.push(id);});
+            
         } else{
-            this.state.toRemove.splice(this.state.toRemove.indexOf(id),1);
+            fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
+            {
+                method: "GET"
+            })
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+                fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
+            {
+                method: "PUT",
+                body: JSON.stringify(
+                    { 
+                        title: res.title,
+                        done: false
+                    }
+                )
+            }
+            )})
+            .then(() => {this.state.toRemove.splice(this.state.toRemove.indexOf(id),1);});
         }
     }
     
@@ -83,13 +125,15 @@ class ToDoList extends React.Component{
                     {this.state.loading 
                         ? <Loader /> 
                         :<div className="toDoList-main">
-                            <ul className="list">
+                            {   this.state.data.length > 0
+                                ?<ul className="list">
                                 {this.state.data.filter(Boolean).map((element) => {//filtruje zeby nie dodawac nulla
                                     return <li key={element.id}>
-                                                <Task taskTitle={element.title} id={element.id} check={this.checkData} />
+                                                <Task taskTitle={element.title} id={element.id} check={this.checkData} done={element.done}/>
                                             </li>;
                                 })}
-                            </ul>
+                            </ul> 
+                            : <div className="emptyMessage"><h1>Tasks? You did them all...</h1></div>}
                             <div className="menuWrapper">
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
                                 <img src="./images/bin.svg" className="binIcon" onClick={this.deleteCheckedData}/>

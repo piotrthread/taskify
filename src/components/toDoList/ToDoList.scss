@@ -34,6 +34,21 @@
         }
     }
 
+    .emptyMessage{
+        width:90%;
+        height:90%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            text-align: center;
+        color: rgba(255,255,255,.7);
+        font-size: 15px;
+        }
+    }
+
     .menuWrapper{
         display:flex;
         flex-direction: row;
