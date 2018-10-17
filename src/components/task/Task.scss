@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:25px;
-    padding-top:27px;
+    padding:2vw;
+    padding-top:2.2vw;
 
     .toBeDone{
-        font-size:14px;
+        font-size:1vw;
         font-weight: 300;
         color:white;
         font-family: 'Raleway', sans-serif;
@@ -19,15 +19,15 @@
             height:1px;
             background-color: white;
             width:0%;
-            top:8px;
+            top:.6vw;
             left:-5%;
             opacity:.7;
-            transition: all .4s;
+            transition: all .2s;
         }
     }
 
     .done{
-        font-size:14px;
+        font-size:1vw;
         font-weight: 300;
         color:white;
         font-family: 'Raleway', sans-serif;
@@ -40,18 +40,10 @@
             height:1px;
             background-color: white;
             width:110%;
-            top:8px;
+            top:.6vw;
             left:-5%;
             opacity:.7;
-            transition: all .4s;
+            transition: all .2s;
         }
     }
-
-    .doneBtn{
-        width:20px;
-        height:20px;
-        opacity:.7;
-        cursor: pointer;
-    }
-    
 }

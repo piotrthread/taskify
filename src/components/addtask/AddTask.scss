@@ -5,25 +5,25 @@
     width:25vw;
     height:45vw;
     position: relative;
-    padding:15px;
+    padding:1.5vw;
     border:1px solid rgba(255,255,255,.3);
 
     .close{
         position: absolute;
         cursor: pointer;
-        width:30px;
-        height: 30px;
+        width:2vw;
+        height: 2vw;
         opacity:.7;
         transform-origin: 50% 50%;
-        right:45px;
-        top:45px;
+        right:2vw;
+        top:2.3vw;
 
         &:before{
             content:"";
             display: block;
             background-color: white;
-            width:25px;
-            top:13px;
+            width:2vw;
+            top:.85vw;
             height: 2px;
             position: absolute;
             transform: rotate(45deg);
@@ -34,8 +34,8 @@
             content:"";
             display: block;
             background-color: white;
-            top:13px;
-            width:25px;
+            top:.85vw;
+            width:2vw;
             height: 2px;
             position: absolute;
             transform: rotate(-45deg);
@@ -61,12 +61,12 @@
         margin-top:17vw;
         input{
             width:90%;
-            height:50px;
-            margin:10px;
-            padding:10px;
+            height:3.5vw;
+            margin:.8vw;
+            padding:1.2vw;
             outline:none;
             border-radius:0px;
-            font-size:16px;
+            font-size:1vw;
             color:rgba(0,0,0,.5);
             border:1px solid rgba(255,255,255,.7);
             background-color:rgba(255,255,255,.5);
@@ -80,8 +80,8 @@
             }
             
             &::placeholder{
-                font-size:16px;
-                height:20px;
+                font-size:1vw;
+                height:2vw;
                 color:rgba(0,0,0,.3);
             }
         }
@@ -91,7 +91,7 @@
         width:3vw;
         height: 3vw;
         border-radius: 1.5vw;
-        margin-top:35px;
+        margin-top:3vw;
         border:1px solid white;
         cursor: pointer;
         display: flex;

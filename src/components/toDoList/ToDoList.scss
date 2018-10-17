@@ -13,7 +13,7 @@
     width:25vw;
     height:45vw;
     position: relative;
-    padding:33px 15px;
+    padding:2.8vw 1.5vw;
     border:1px solid rgba(255,255,255,.3);
 
     ul.list{
@@ -45,7 +45,8 @@
         h1{
             text-align: center;
         color: rgba(255,255,255,.7);
-        font-size: 15px;
+        font-size: 1.3vw;
+        font-weight: 300;
         }
     }
 
@@ -53,11 +54,14 @@
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width:85%;
-        margin-top:35px;
+        margin-top:3vw;
 
         .binIcon{
             cursor: pointer;
+            width:2.3vw;
+            height:2.3vw;
             transition: all .3;
 
             &:hover{
