@@ -15,10 +15,14 @@ class Checker extends React.Component{
         this.setState({checked: !this.state.checked});
     }
 
+    componentDidMount(){
+        this.setState({checked: this.props.done});
+    }
+
     render(){
         return <React.Fragment>
             <div className="checker" onClick={this.checkTask}>
-                <img src="./images/checked.svg" className={this.state.checked || this.props.done ? "iconChecked" : "iconUnchecked"}/>
+                <img src="./images/checked.svg" className={this.state.checked ? "iconChecked" : "iconUnchecked"}/>
             </div>
                 </React.Fragment>;
     }

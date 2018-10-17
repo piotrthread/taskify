@@ -138,7 +138,7 @@ class ToDoList extends React.Component{
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
                                 <img src="./images/bin.svg" className="binIcon" onClick={this.deleteCheckedData}/>
                             </div>
-                            </div>}
+                        </div>}
                </React.Fragment>;
     }
 }

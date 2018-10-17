@@ -31711,6 +31711,11 @@ var Checker = function (_React$Component) {
     }
 
     _createClass(Checker, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.setState({ checked: this.props.done });
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -31719,7 +31724,7 @@ var Checker = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'checker', onClick: this.checkTask },
-                    _react2.default.createElement('img', { src: './images/checked.svg', className: this.state.checked || this.props.done ? "iconChecked" : "iconUnchecked" })
+                    _react2.default.createElement('img', { src: './images/checked.svg', className: this.state.checked ? "iconChecked" : "iconUnchecked" })
                 )
             );
         }
@@ -32067,6 +32072,11 @@ var Task = function (_React$Component) {
     }
 
     _createClass(Task, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.setState({ done: this.props.done });
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -32077,7 +32087,7 @@ var Task = function (_React$Component) {
                     { className: 'task' },
                     _react2.default.createElement(
                         'h1',
-                        { className: this.props.done || this.state.done ? "done" : "toBeDone" },
+                        { className: this.state.done ? "done" : "toBeDone" },
                         this.props.taskTitle
                     ),
                     _react2.default.createElement(_Checker2.default, { check: this.doneTask, done: this.props.done })

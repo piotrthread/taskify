@@ -15,11 +15,14 @@ class Task extends React.Component{
             this.props.check(this.props.id);
         });
     }
+    componentDidMount(){
+        this.setState({done: this.props.done});
+    }
 
     render(){
         return <React.Fragment>
             <div className="task">
-                <h1 className={(this.props.done || this.state.done) ? "done" : "toBeDone"}>{this.props.taskTitle}</h1>
+                <h1 className={(this.state.done) ? "done" : "toBeDone"}>{this.props.taskTitle}</h1>
                 <Checker check={this.doneTask} done={this.props.done}/>
             </div>
         </React.Fragment>;
