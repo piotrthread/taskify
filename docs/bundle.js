@@ -32200,7 +32200,7 @@ var Taskify = function (_React$Component) {
         };
 
         _this.state = {
-            loggedIn: true
+            loggedIn: false
         };
         return _this;
     }
