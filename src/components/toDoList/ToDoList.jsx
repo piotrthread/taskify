@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Task from '../../components/task/Task.jsx';
 import Loader from '../../components/loader/Loader.jsx';
 import AddTask from '../../components/addtask/AddTask.jsx';
+import CurrDate from '../../components/date/Date.jsx';
 //-------------Style
 import css from './ToDoList.scss'; 
 
@@ -138,6 +139,10 @@ class ToDoList extends React.Component{
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
                                 <img src="./images/bin.svg" className="binIcon" onClick={this.deleteCheckedData}/>
                             </div>
+                            <div className="widget1"></div>
+                            <div className="widget2"></div>
+                            <div className="widget3"><CurrDate /></div>
+                            <div className="widget4"></div>
                         </div>}
                </React.Fragment>;
     }

@@ -750,6 +750,28 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/date/Date.scss":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/date/Date.scss ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".dateWrapper {\n  width: 100%;\n  height: 100%;\n  padding: 1.5vw; }\n  .dateWrapper .time {\n    font-size: 3vw;\n    font-weight: 300;\n    text-align: center;\n    font-family: 'Open Sans';\n    color: rgba(255, 255, 255, 0.7); }\n", ""]);
+
+// exports
+exports.locals = {
+	"dateWrapper": "dateWrapper",
+	"time": "time"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/loader/Loader.scss":
 /*!************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/loader/Loader.scss ***!
@@ -849,7 +871,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-left: 44%;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 3%;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 5%;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n", ""]);
+exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-left: 44%;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 3%;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 5%;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n  .toDoList-main .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .toDoList-main .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n  .toDoList-main .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n  .toDoList-main .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -859,7 +881,11 @@ exports.locals = {
 	"menuWrapper": "menuWrapper",
 	"binIcon": "binIcon",
 	"bin": "bin",
-	"addBtn": "addBtn"
+	"addBtn": "addBtn",
+	"widget1": "widget1",
+	"widget2": "widget2",
+	"widget3": "widget3",
+	"widget4": "widget4"
 };
 
 /***/ }),
@@ -31768,6 +31794,136 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/components/date/Date.jsx":
+/*!**************************************!*\
+  !*** ./src/components/date/Date.jsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Date = __webpack_require__(/*! ./Date.scss */ "./src/components/date/Date.scss");
+
+var _Date2 = _interopRequireDefault(_Date);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CurrDate = function (_React$Component) {
+    _inherits(CurrDate, _React$Component);
+
+    function CurrDate(props) {
+        _classCallCheck(this, CurrDate);
+
+        var _this = _possibleConstructorReturn(this, (CurrDate.__proto__ || Object.getPrototypeOf(CurrDate)).call(this, props));
+
+        _this.state = {
+            currTime: ""
+        };
+        return _this;
+    }
+
+    _createClass(CurrDate, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            if (date.getMinutes().length < 2) {
+                minutes = "0" + date.getMinutes();
+            }
+            this.setState({ currTime: hours + ':' + minutes }, function () {
+                _this2.interval = setInterval(function () {
+                    var date = new Date();
+                    var hours = date.getHours();
+                    var minutes = date.getMinutes();
+                    if (date.getMinutes().length < 2) {
+                        minutes = "0" + date.getMinutes();
+                    }
+                    _this2.setState({ currTime: hours + ':' + minutes });
+                }, 60000);
+            });
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            clearInterval(this.interval);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'dateWrapper' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'time' },
+                        this.state.currTime
+                    )
+                )
+            );
+        }
+    }]);
+
+    return CurrDate;
+}(_react2.default.Component);
+
+exports.default = CurrDate;
+
+/***/ }),
+
+/***/ "./src/components/date/Date.scss":
+/*!***************************************!*\
+  !*** ./src/components/date/Date.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./Date.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/date/Date.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./src/components/loader/Loader.jsx":
 /*!******************************************!*\
   !*** ./src/components/loader/Loader.jsx ***!
@@ -32200,7 +32356,7 @@ var Taskify = function (_React$Component) {
         };
 
         _this.state = {
-            loggedIn: false
+            loggedIn: true
         };
         return _this;
     }
@@ -32299,6 +32455,10 @@ var _Loader2 = _interopRequireDefault(_Loader);
 var _AddTask = __webpack_require__(/*! ../../components/addtask/AddTask.jsx */ "./src/components/addtask/AddTask.jsx");
 
 var _AddTask2 = _interopRequireDefault(_AddTask);
+
+var _Date = __webpack_require__(/*! ../../components/date/Date.jsx */ "./src/components/date/Date.jsx");
+
+var _Date2 = _interopRequireDefault(_Date);
 
 var _ToDoList = __webpack_require__(/*! ./ToDoList.scss */ "./src/components/todolist/ToDoList.scss");
 
@@ -32467,7 +32627,15 @@ var ToDoList = function (_React$Component) {
                         { className: 'menuWrapper' },
                         _react2.default.createElement('div', { className: 'addBtn', onClick: this.linkToAddTask }),
                         _react2.default.createElement('img', { src: './images/bin.svg', className: 'binIcon', onClick: this.deleteCheckedData })
-                    )
+                    ),
+                    _react2.default.createElement('div', { className: 'widget1' }),
+                    _react2.default.createElement('div', { className: 'widget2' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'widget3' },
+                        _react2.default.createElement(_Date2.default, null)
+                    ),
+                    _react2.default.createElement('div', { className: 'widget4' })
                 )
             );
         }
