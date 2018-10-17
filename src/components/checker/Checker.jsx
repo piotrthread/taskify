@@ -23,6 +23,7 @@ class Checker extends React.Component{
         return <React.Fragment>
             <div className="checker" onClick={this.checkTask}>
                 <img src="./images/checked.svg" className={this.state.checked ? "iconChecked" : "iconUnchecked"}/>
+                <div className="checkerBg"></div>
             </div>
                 </React.Fragment>;
     }

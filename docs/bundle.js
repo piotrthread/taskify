@@ -738,13 +738,14 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".checker {\n  width: 20px;\n  height: 20px;\n  position: relative;\n  border: 1px solid white;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer; }\n  .checker .iconUnchecked {\n    opacity: 0; }\n  .checker .iconChecked {\n    opacity: 1; }\n", ""]);
+exports.push([module.i, ".checker {\n  width: 20px;\n  height: 20px;\n  position: relative;\n  border: 1px solid white;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer; }\n  .checker .iconUnchecked {\n    opacity: 0; }\n  .checker .iconChecked {\n    opacity: 1; }\n  .checker .checkerBg {\n    width: 20px;\n    height: 20px;\n    position: absolute;\n    top: 0;\n    left: 0;\n    background-color: rgba(255, 255, 255, 0.3);\n    opacity: 0;\n    transition: all .3s; }\n    .checker .checkerBg:hover {\n      opacity: 1; }\n", ""]);
 
 // exports
 exports.locals = {
 	"checker": "checker",
 	"iconUnchecked": "iconUnchecked",
-	"iconChecked": "iconChecked"
+	"iconChecked": "iconChecked",
+	"checkerBg": "checkerBg"
 };
 
 /***/ }),
@@ -31724,7 +31725,8 @@ var Checker = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'checker', onClick: this.checkTask },
-                    _react2.default.createElement('img', { src: './images/checked.svg', className: this.state.checked ? "iconChecked" : "iconUnchecked" })
+                    _react2.default.createElement('img', { src: './images/checked.svg', className: this.state.checked ? "iconChecked" : "iconUnchecked" }),
+                    _react2.default.createElement('div', { className: 'checkerBg' })
                 )
             );
         }
