@@ -830,7 +830,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".task {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 2vw;\n  padding-top: 2.2vw; }\n  .task .toBeDone {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    border: 1px solid black; }\n    .task .toBeDone:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 0%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n  .task .done {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative; }\n    .task .done:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 110%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n", ""]);
+exports.push([module.i, ".task {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  padding: 2vw;\n  padding-top: 2.2vw; }\n  .task .toBeDone {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    max-width: 12.5vw; }\n    .task .toBeDone:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 0%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n  .task .done {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    max-width: 12.5vw; }\n    .task .done:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 110%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -889,6 +889,27 @@ exports.locals = {
 	"widget2": "widget2",
 	"widget3": "widget3",
 	"widget4": "widget4"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/welcome/Welcome.scss":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/welcome/Welcome.scss ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".welcomeWrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .welcomeWrapper h1 {\n    color: white;\n    font-size: 2vw;\n    text-align: center;\n    font-family: 'Open Sans', sans-serif;\n    margin-bottom: 2.5vw; }\n  .welcomeWrapper p {\n    color: rgba(255, 255, 255, 0.7);\n    margin: 1vw 0;\n    font-size: 1.2vw;\n    font-weight: 300;\n    width: 90%;\n    text-align: center;\n    position: relative;\n    display: flex;\n    justify-content: center; }\n    .welcomeWrapper p:before {\n      position: absolute;\n      content: \"\";\n      display: block;\n      top: -1.5vw;\n      height: 1px;\n      width: 9vw;\n      background-color: rgba(255, 255, 255, 0.7); }\n    .welcomeWrapper p:after {\n      position: absolute;\n      content: \"\";\n      display: block;\n      bottom: -1.5vw;\n      height: 1px;\n      width: 9vw;\n      background-color: rgba(255, 255, 255, 0.7); }\n", ""]);
+
+// exports
+exports.locals = {
+	"welcomeWrapper": "welcomeWrapper"
 };
 
 /***/ }),
@@ -31844,7 +31865,7 @@ var getWeekDay = function getWeekDay() {
             return "Friday";
         case 6:
             return "Saturday";
-        case 7:
+        case 0:
             return "Sunday";
     }
 };
@@ -31880,29 +31901,29 @@ var getDayNum = function getDayNum() {
 var getMonth = function getMonth() {
     var month = new Date().getMonth();
     switch (month) {
-        case 1:
+        case 0:
             return "January";
-        case 2:
+        case 1:
             return "February";
-        case 3:
+        case 2:
             return "March";
-        case 4:
+        case 3:
             return "April";
-        case 5:
+        case 4:
             return "May";
-        case 6:
+        case 5:
             return "June";
-        case 7:
+        case 6:
             return "July";
-        case 8:
+        case 7:
             return "August";
-        case 9:
+        case 8:
             return "September";
-        case 10:
+        case 9:
             return "October";
-        case 11:
+        case 10:
             return "November";
-        case 12:
+        case 11:
             return "December";
     }
 };
@@ -32562,6 +32583,10 @@ var _Date = __webpack_require__(/*! ../../components/date/Date.jsx */ "./src/com
 
 var _Date2 = _interopRequireDefault(_Date);
 
+var _Welcome = __webpack_require__(/*! ../../components/welcome/Welcome.jsx */ "./src/components/welcome/Welcome.jsx");
+
+var _Welcome2 = _interopRequireDefault(_Welcome);
+
 var _ToDoList = __webpack_require__(/*! ./ToDoList.scss */ "./src/components/todolist/ToDoList.scss");
 
 var _ToDoList2 = _interopRequireDefault(_ToDoList);
@@ -32730,7 +32755,11 @@ var ToDoList = function (_React$Component) {
                         _react2.default.createElement('div', { className: 'addBtn', onClick: this.linkToAddTask }),
                         _react2.default.createElement('img', { src: './images/bin.svg', className: 'binIcon', onClick: this.deleteCheckedData })
                     ),
-                    _react2.default.createElement('div', { className: 'widget1' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'widget1' },
+                        _react2.default.createElement(_Welcome2.default, null)
+                    ),
                     _react2.default.createElement('div', { className: 'widget2' }),
                     _react2.default.createElement(
                         'div',
@@ -32759,6 +32788,110 @@ exports.default = ToDoList;
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./ToDoList.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/todolist/ToDoList.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/welcome/Welcome.jsx":
+/*!********************************************!*\
+  !*** ./src/components/welcome/Welcome.jsx ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Welcome = __webpack_require__(/*! ./Welcome.scss */ "./src/components/welcome/Welcome.scss");
+
+var _Welcome2 = _interopRequireDefault(_Welcome);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Welcome = function (_React$Component) {
+    _inherits(Welcome, _React$Component);
+
+    function Welcome() {
+        _classCallCheck(this, Welcome);
+
+        return _possibleConstructorReturn(this, (Welcome.__proto__ || Object.getPrototypeOf(Welcome)).apply(this, arguments));
+    }
+
+    _createClass(Welcome, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'welcomeWrapper' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        '@taskify'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Welcome to Taskify,',
+                        _react2.default.createElement('br', null),
+                        'Your personal task menager.'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Welcome;
+}(_react2.default.Component);
+
+exports.default = Welcome;
+
+/***/ }),
+
+/***/ "./src/components/welcome/Welcome.scss":
+/*!*********************************************!*\
+  !*** ./src/components/welcome/Welcome.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./Welcome.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/welcome/Welcome.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
