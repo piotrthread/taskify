@@ -762,11 +762,14 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".dateWrapper {\n  width: 100%;\n  height: 100%;\n  padding: 1.5vw; }\n  .dateWrapper .time {\n    font-size: 3vw;\n    font-weight: 300;\n    text-align: center;\n    font-family: 'Open Sans';\n    color: rgba(255, 255, 255, 0.7); }\n", ""]);
+exports.push([module.i, ".dateWrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-evenly;\n  font-family: 'Raleway', sans-serif;\n  width: 100%;\n  height: 100%;\n  padding: 1.5vw; }\n  .dateWrapper .weekDay {\n    color: rgba(255, 255, 255, 0.7);\n    font-size: 1.3vw;\n    font-weight: 300;\n    width: 80%;\n    padding: .5vw;\n    text-align: center; }\n  .dateWrapper .dayNum {\n    font-size: 5vw;\n    font-weight: 400;\n    text-align: center;\n    color: rgba(255, 255, 255, 0.7); }\n    .dateWrapper .dayNum p span {\n      font-size: 2.5vw; }\n  .dateWrapper .month {\n    font-size: 2vw;\n    font-weight: 300;\n    width: 70%;\n    padding: .5vw;\n    text-align: center;\n    color: rgba(255, 255, 255, 0.7);\n    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }\n  .dateWrapper .time {\n    font-size: 2vw;\n    font-weight: 300;\n    width: 80%;\n    padding: .5vw;\n    text-align: center;\n    color: rgba(255, 255, 255, 0.7);\n    border-top: 1px solid rgba(255, 255, 255, 0.5); }\n", ""]);
 
 // exports
 exports.locals = {
 	"dateWrapper": "dateWrapper",
+	"weekDay": "weekDay",
+	"dayNum": "dayNum",
+	"month": "month",
 	"time": "time"
 };
 
@@ -806,7 +809,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.login {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 30vw;\n  height: 50vh; }\n  .login h1 {\n    color: white;\n    font-family: 'Open Sans', sans-serif;\n    margin: 20px; }\n  .login form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%; }\n    .login form input {\n      width: 65%;\n      height: 40px;\n      margin: 10px;\n      padding: 10px;\n      outline: none;\n      border-radius: 0px;\n      font-size: 14px;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .login form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .login form input::placeholder {\n        font-size: 14px;\n        height: 20px;\n        color: rgba(0, 0, 0, 0.3); }\n    .login form button {\n      width: 30%;\n      height: 40px;\n      font-size: 13px;\n      border: 0;\n      border-radius: 30px;\n      background-color: white;\n      color: rgba(0, 0, 0, 0.6);\n      margin-top: 25px;\n      outline: none;\n      cursor: pointer; }\n  .login p {\n    color: rgba(0, 0, 0, 0.4);\n    font-size: 12px;\n    font-family: 'Raleway', sans-serif;\n    margin: 25px;\n    text-decoration: underline; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.login {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 25vw;\n  height: 45vw; }\n  .login h1 {\n    color: white;\n    font-size: 2.5vw;\n    font-family: 'Open Sans', sans-serif;\n    margin: 1.5vw; }\n  .login form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%; }\n    .login form input {\n      width: 65%;\n      height: 3vw;\n      margin: .8vw;\n      padding: .8vw;\n      outline: none;\n      border-radius: 0;\n      font-size: 1vw;\n      color: rgba(0, 0, 0, 0.3);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .login form input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .login form input::placeholder {\n        font-size: 1vw;\n        color: rgba(0, 0, 0, 0.3); }\n    .login form button {\n      width: 30%;\n      height: 3vw;\n      font-size: .9vw;\n      border: 0;\n      border-radius: 30px;\n      background-color: white;\n      color: rgba(0, 0, 0, 0.6);\n      margin-top: 25px;\n      outline: none;\n      cursor: pointer; }\n  .login p {\n    color: rgba(0, 0, 0, 0.4);\n    font-size: .9vw;\n    font-family: 'Raleway', sans-serif;\n    margin: 1.7vw;\n    text-decoration: underline; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -827,7 +830,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".task {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 2vw;\n  padding-top: 2.2vw; }\n  .task .toBeDone {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative; }\n    .task .toBeDone:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 0%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n  .task .done {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative; }\n    .task .done:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 110%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n", ""]);
+exports.push([module.i, ".task {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 2vw;\n  padding-top: 2.2vw; }\n  .task .toBeDone {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    border: 1px solid black; }\n    .task .toBeDone:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 0%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n  .task .done {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative; }\n    .task .done:before {\n      content: \"\";\n      display: block;\n      position: absolute;\n      height: 1px;\n      background-color: white;\n      width: 110%;\n      top: .6vw;\n      left: -5%;\n      opacity: .7;\n      transition: all .2s; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -871,7 +874,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-left: 44%;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 3%;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 5%;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n  .toDoList-main .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .toDoList-main .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n  .toDoList-main .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n  .toDoList-main .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n", ""]);
+exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-left: 44%;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 3%;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 5%;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n  .toDoList-main .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .toDoList-main .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n  .toDoList-main .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .toDoList-main .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -31826,6 +31829,84 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var getWeekDay = function getWeekDay() {
+    var dayNumber = new Date().getDay();
+    switch (dayNumber) {
+        case 1:
+            return "Monday";
+        case 2:
+            return "Tuesday";
+        case 3:
+            return "Wednesday";
+        case 4:
+            return "Thursday";
+        case 5:
+            return "Friday";
+        case 6:
+            return "Saturday";
+        case 7:
+            return "Sunday";
+    }
+};
+
+var getTime = function getTime() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    return hours + ':' + minutes;
+};
+
+var getDayNum = function getDayNum() {
+    var dayNum = new Date().getDate();
+    if (dayNum == 1 || dayNum == 21 || dayNum == 31) {
+        return dayNum + "st";
+    }
+    if (dayNum == 2 || dayNum == 22) {
+        return dayNum + "nd";
+    }
+    if (dayNum == 3 || dayNum == 23) {
+        return dayNum + "rd";
+    } else {
+        return dayNum + "th";
+    }
+};
+
+var getMonth = function getMonth() {
+    var month = new Date().getMonth();
+    switch (month) {
+        case 1:
+            return "January";
+        case 2:
+            return "February";
+        case 3:
+            return "March";
+        case 4:
+            return "April";
+        case 5:
+            return "May";
+        case 6:
+            return "June";
+        case 7:
+            return "July";
+        case 8:
+            return "August";
+        case 9:
+            return "September";
+        case 10:
+            return "October";
+        case 11:
+            return "November";
+        case 12:
+            return "December";
+    }
+};
+
 var CurrDate = function (_React$Component) {
     _inherits(CurrDate, _React$Component);
 
@@ -31835,7 +31916,10 @@ var CurrDate = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (CurrDate.__proto__ || Object.getPrototypeOf(CurrDate)).call(this, props));
 
         _this.state = {
-            currTime: ""
+            currTime: "",
+            currDay: "",
+            currDayNum: "",
+            currMonth: ""
         };
         return _this;
     }
@@ -31845,23 +31929,17 @@ var CurrDate = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            var date = new Date();
-            var hours = date.getHours();
-            var minutes = date.getMinutes();
-            if (date.getMinutes().length < 2) {
-                minutes = "0" + date.getMinutes();
-            }
-            this.setState({ currTime: hours + ':' + minutes }, function () {
+            this.setState({
+                currTime: getTime(),
+                currDay: getWeekDay(),
+                currDayNum: getDayNum(),
+                currMonth: getMonth()
+            }, function () {
                 _this2.interval = setInterval(function () {
-                    var date = new Date();
-                    var hours = date.getHours();
-                    var minutes = date.getMinutes();
-                    if (date.getMinutes().length < 2) {
-                        minutes = "0" + date.getMinutes();
-                    }
-                    _this2.setState({ currTime: hours + ':' + minutes });
+                    _this2.setState({ currTime: getTime() });
                 }, 60000);
             });
+            //-------------------
         }
     }, {
         key: 'componentWillUnmount',
@@ -31878,7 +31956,31 @@ var CurrDate = function (_React$Component) {
                     'div',
                     { className: 'dateWrapper' },
                     _react2.default.createElement(
+                        'p',
+                        { className: 'month' },
+                        this.state.currMonth
+                    ),
+                    _react2.default.createElement(
                         'h1',
+                        { className: 'dayNum' },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            this.state.currDayNum.slice(0, this.state.currDayNum.length - 2),
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                this.state.currDayNum.slice(this.state.currDayNum.length - 2)
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'h2',
+                        { className: 'weekDay' },
+                        this.state.currDay
+                    ),
+                    _react2.default.createElement(
+                        'p',
                         { className: 'time' },
                         this.state.currTime
                     )
@@ -32128,7 +32230,7 @@ var Login = function (_React$Component) {
                     _react2.default.createElement(
                         'p',
                         null,
-                        'Register for free...'
+                        'or Sign Up for free...'
                     )
                 )
             );
@@ -32356,7 +32458,7 @@ var Taskify = function (_React$Component) {
         };
 
         _this.state = {
-            loggedIn: true
+            loggedIn: false
         };
         return _this;
     }

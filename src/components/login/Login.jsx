@@ -38,7 +38,7 @@ class Login extends React.Component{
                             <input type="password" placeholder="password" onChange={this.handlePassword}/>
                             <button onClick={e => this.login(e)}>Log In</button>
                         </form>
-                        <p>Register for free...</p>
+                        <p>or Sign Up for free...</p>
                     </div>
                 </React.Fragment>;
     }
