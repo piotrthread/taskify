@@ -696,14 +696,15 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 2vw;\n    height: 2vw;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 2vw;\n    top: 2.3vw; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 2vw;\n      top: .85vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: .85vw;\n      width: 2vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form.taskTitle {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 15vw; }\n    .addTask form.taskTitle input {\n      width: 90%;\n      height: 3.5vw;\n      margin: .8vw;\n      padding: 1.2vw;\n      outline: none;\n      border-radius: 0px;\n      font-size: 1vw;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form.taskTitle input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form.taskTitle input::placeholder {\n        font-size: 1vw;\n        height: 2vw;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    margin-top: 1vw;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 3%;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 5%;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n", ""]);
+exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 2vw;\n    height: 2vw;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 2vw;\n    top: 2.3vw; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 2vw;\n      top: .85vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: .85vw;\n      width: 2vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form.taskTitle {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 15vw; }\n    .addTask form.taskTitle input {\n      width: 90%;\n      height: 3.5vw;\n      margin: .8vw;\n      padding: 1.2vw;\n      outline: none;\n      border-radius: 0px;\n      font-size: 1vw;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form.taskTitle input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form.taskTitle input::placeholder {\n        font-size: 1vw;\n        height: 2vw;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 3%;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 5%;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  width: 90%; }\n", ""]);
 
 // exports
 exports.locals = {
 	"addTask": "addTask",
 	"close": "close",
 	"taskTitle": "taskTitle",
-	"addBtn": "addBtn"
+	"addBtn": "addBtn",
+	"actions": "actions"
 };
 
 /***/ }),
@@ -776,6 +777,31 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/filter/Filter.scss":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/filter/Filter.scss ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".filterWrapper {\n  position: relative; }\n  .filterWrapper:after {\n    content: \"Filters\";\n    position: absolute;\n    color: white;\n    font-size: 1vw;\n    padding: .3vw .4vw;\n    border-radius: 1vw;\n    top: -2vw;\n    left: 2.6vw;\n    opacity: 0;\n    background-color: rgba(255, 255, 255, 0.2);\n    transition: all .3s; }\n  .filterWrapper:hover:after {\n    opacity: 1; }\n  .filterWrapper .filtersContainer {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n    border-radius: 2vw;\n    width: 9vw;\n    height: 3vw;\n    background-color: rgba(255, 255, 255, 0.2); }\n    .filterWrapper .filtersContainer .filterIcon {\n      position: relative;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      border-radius: 2vw;\n      width: 3vw;\n      height: 3vw;\n      cursor: pointer; }\n      .filterWrapper .filtersContainer .filterIcon img.icon {\n        position: relative;\n        width: 1.6vw;\n        height: 1.6vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon:before {\n        position: absolute;\n        content: \"\";\n        display: block;\n        border-radius: 2vw;\n        width: 3vw;\n        height: 3vw;\n        background-color: rgba(255, 255, 255, 0.2);\n        opacity: 0;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon:hover:before {\n        opacity: 1; }\n    .filterWrapper .filtersContainer .filterIconActive {\n      position: relative;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      border-radius: 2vw;\n      width: 3vw;\n      height: 3vw;\n      cursor: pointer; }\n      .filterWrapper .filtersContainer .filterIconActive img.icon {\n        position: relative;\n        width: 1.6vw;\n        height: 1.6vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIconActive:before {\n        position: absolute;\n        content: \"\";\n        display: block;\n        border-radius: 2vw;\n        width: 3vw;\n        height: 3vw;\n        background-color: rgba(145, 167, 208, 0.3);\n        opacity: 1;\n        transition: all .3; }\n", ""]);
+
+// exports
+exports.locals = {
+	"filterWrapper": "filterWrapper",
+	"filtersContainer": "filtersContainer",
+	"filterIcon": "filterIcon",
+	"icon": "icon",
+	"filterIconActive": "filterIconActive"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/groupselector/GroupSelector.scss":
 /*!**************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/groupselector/GroupSelector.scss ***!
@@ -788,7 +814,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".selector {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between; }\n  .selector .icon {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .icon:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 0;\n      transition: all .3s; }\n    .selector .icon:hover:before {\n      opacity: 1; }\n    .selector .icon img.home {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n  .selector .iconSelected {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0.2);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .iconSelected:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 0;\n      transition: all .3s; }\n    .selector .iconSelected:hover:before {\n      opacity: 1; }\n    .selector .iconSelected img.home {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n", ""]);
+exports.push([module.i, ".selector {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  width: 15vw; }\n  .selector .icon {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .icon:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 0;\n      transition: all .3s; }\n    .selector .icon:hover:before {\n      opacity: 1; }\n    .selector .icon img.home {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n  .selector .iconSelected {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0.2);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .iconSelected:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 1;\n      transition: all .3s; }\n    .selector .iconSelected:hover:before {\n      opacity: 1; }\n    .selector .iconSelected img.home {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -900,7 +926,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .filterIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw; }\n      .toDoList-main .menuWrapper .filterIcon:hover {\n        transform: rotateX(180deg); }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 1.3vw;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 1.3vw;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n  .toDoList-main .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .toDoList-main .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .toDoList-main .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .toDoList-main .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n", ""]);
+exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-right: 5vw;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 1.3vw;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 1.3vw;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n  .toDoList-main .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .toDoList-main .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .toDoList-main .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .toDoList-main .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -910,7 +936,6 @@ exports.locals = {
 	"menuWrapper": "menuWrapper",
 	"binIcon": "binIcon",
 	"bin": "bin",
-	"filterIcon": "filterIcon",
 	"addBtn": "addBtn",
 	"widget1": "widget1",
 	"widget2": "widget2",
@@ -31600,12 +31625,16 @@ var AddTask = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'groupIcons' },
-                        _react2.default.createElement(_GroupSelector2.default, { group: function group(e, text) {
-                                return _this2.chooseGroup(e, text);
-                            } })
-                    ),
-                    _react2.default.createElement('div', { className: 'addBtn', onClick: this.addTask })
+                        { className: 'actions' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'groupIcons' },
+                            _react2.default.createElement(_GroupSelector2.default, { group: function group(e, text) {
+                                    return _this2.chooseGroup(e, text);
+                                } })
+                        ),
+                        _react2.default.createElement('div', { className: 'addBtn', onClick: this.addTask })
+                    )
                 )
             );
         }
@@ -32073,6 +32102,156 @@ exports.default = CurrDate;
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./Date.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/date/Date.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/filter/Filter.jsx":
+/*!******************************************!*\
+  !*** ./src/components/filter/Filter.jsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Filter = __webpack_require__(/*! ./Filter.scss */ "./src/components/filter/Filter.scss");
+
+var _Filter2 = _interopRequireDefault(_Filter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Filter = function (_React$Component) {
+    _inherits(Filter, _React$Component);
+
+    function Filter(props) {
+        _classCallCheck(this, Filter);
+
+        var _this = _possibleConstructorReturn(this, (Filter.__proto__ || Object.getPrototypeOf(Filter)).call(this, props));
+
+        _this.filter = function (e, group) {
+            if (_this.state.filter == false && _this.state.filterBy !== group) {
+                _this.setState({ filter: !_this.state.filter, filterBy: group }, function () {
+                    _this.props.filter(e, group);
+                });
+            } else if (_this.state.filter == true && _this.state.filterBy == group) {
+                _this.setState({ filter: !_this.state.filter, filterBy: "" }, function () {
+                    _this.props.filter(e, "");
+                    _this.props.load();
+                });
+            } else if (_this.state.filter == true && _this.state.filterBy !== group) {
+                _this.setState({ filterBy: group }, function () {
+                    _this.props.filter(e, group);
+                });
+            }
+        };
+
+        _this.state = {
+            filter: false,
+            filterBy: ""
+        };
+        return _this;
+    }
+
+    _createClass(Filter, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.setState({
+                filter: this.props.isFiltered,
+                filterBy: this.props.filteredBy
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'filterWrapper' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'filtersContainer' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: this.state.filter && this.state.filterBy == "home" ? "filterIconActive" : "filterIcon", onClick: function onClick(e, group) {
+                                    return _this2.filter(e, "home");
+                                } },
+                            _react2.default.createElement('img', { src: './images/home.svg', className: 'icon' })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: this.state.filter && this.state.filterBy == "personal" ? "filterIconActive" : "filterIcon", onClick: function onClick(e, group) {
+                                    return _this2.filter(e, "personal");
+                                } },
+                            _react2.default.createElement('img', { src: './images/personal.svg', className: 'icon' })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: this.state.filter && this.state.filterBy == "work" ? "filterIconActive" : "filterIcon", onClick: function onClick(e, group) {
+                                    return _this2.filter(e, "work");
+                                } },
+                            _react2.default.createElement('img', { src: './images/work.svg', className: 'icon' })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Filter;
+}(_react2.default.Component);
+
+exports.default = Filter;
+
+/***/ }),
+
+/***/ "./src/components/filter/Filter.scss":
+/*!*******************************************!*\
+  !*** ./src/components/filter/Filter.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./Filter.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/filter/Filter.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -32767,6 +32946,10 @@ var _Welcome = __webpack_require__(/*! ../../components/welcome/Welcome.jsx */ "
 
 var _Welcome2 = _interopRequireDefault(_Welcome);
 
+var _Filter = __webpack_require__(/*! ../../components/filter/Filter.jsx */ "./src/components/filter/Filter.jsx");
+
+var _Filter2 = _interopRequireDefault(_Filter);
+
 var _ToDoList = __webpack_require__(/*! ./ToDoList.scss */ "./src/components/todolist/ToDoList.scss");
 
 var _ToDoList2 = _interopRequireDefault(_ToDoList);
@@ -32868,6 +33051,39 @@ var ToDoList = function (_React$Component) {
             }
         };
 
+        _this.filterData = function (e, group) {
+            if (group == "") {
+                _this.setState({ filtered: false, filteredBy: "" });
+            } else {
+                _this.setState({ loading: true }, function () {
+                    fetch('https://coderslabproject.firebaseio.com/tasks.json?orderBy="group"&equalTo="' + group + '"', {
+                        method: "GET"
+                    }).then(function (res) {
+                        return res.json();
+                    }).then(function () {
+                        var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                        if (data === null) {
+                            _this.setState({ data: [], loading: false });
+                        } else {
+                            data = Object.keys(data).reduce(function (dataAsArray, key) {
+                                var todo = data[key];
+                                todo.id = key;
+                                dataAsArray.push(todo);
+                                return dataAsArray;
+                            }, []);
+                            data.forEach(function (task) {
+                                if (task.done) {
+                                    _this.state.toRemove.push(task.id);
+                                }
+                            });
+                            _this.setState({ data: data, loading: false, filtered: true, filteredBy: group });
+                        }
+                    });
+                });
+            }
+        };
+
         _this.linkToAddTask = function () {
             _this.props.history.push("/addTask");
         };
@@ -32875,7 +33091,9 @@ var ToDoList = function (_React$Component) {
         _this.state = {
             data: [],
             loading: false,
-            toRemove: []
+            toRemove: [],
+            filteredBy: "",
+            filtered: false
         };
         return _this;
     }
@@ -32900,7 +33118,6 @@ var ToDoList = function (_React$Component) {
                         'ul',
                         { className: 'list' },
                         this.state.data.filter(Boolean).map(function (element) {
-                            //filtruje zeby nie dodawac nulla
                             return _react2.default.createElement(
                                 'li',
                                 { key: element.id },
@@ -32919,7 +33136,7 @@ var ToDoList = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'menuWrapper' },
-                        _react2.default.createElement('img', { src: './images/controls.svg', className: 'filterIcon' }),
+                        _react2.default.createElement(_Filter2.default, { filter: this.filterData, isFiltered: this.state.filtered, filteredBy: this.state.filteredBy, load: this.loadData }),
                         _react2.default.createElement('div', { className: 'addBtn', onClick: this.linkToAddTask }),
                         _react2.default.createElement('img', { src: './images/bin.svg', className: 'binIcon', onClick: this.deleteCheckedData })
                     ),

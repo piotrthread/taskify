@@ -55,10 +55,12 @@ class AddTask extends React.Component{
                         <form className="taskTitle">
                             <input type="text" placeholder="Your task here..." onChange={this.handleTitle} ref={(input) => { this.inputTask = input; }}/>
                         </form>
-                        <div className="groupIcons">
-                        <GroupSelector group={(e,text) => this.chooseGroup(e,text)}/>
+                        <div className="actions">
+                            <div className="groupIcons">
+                            <GroupSelector group={(e,text) => this.chooseGroup(e,text)}/>
+                            </div>
+                            <div className="addBtn" onClick={this.addTask}></div>
                         </div>
-                        <div className="addBtn" onClick={this.addTask}></div>
                     </div>
                 </React.Fragment>;
     }

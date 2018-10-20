@@ -1,0 +1,98 @@
+
+.filterWrapper{
+position: relative;
+    &:after{
+        content:"Filters";
+        position: absolute;
+        color:white;
+        font-size:1vw;
+        padding:.3vw .4vw;
+        border-radius:1vw;
+        top:-2vw;
+        left:2.6vw;
+        opacity:0;
+        background-color: rgba(255,255,255,.2);
+        transition:all .3s;
+    }
+    &:hover:after{
+        opacity:1;
+    }
+
+    .filtersContainer{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 2vw;
+        width:9vw;
+        height: 3vw;
+        background-color: rgba(255,255,255,.2);
+
+        .filterIcon{
+            position: relative;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2vw;
+            width:3vw;
+            height: 3vw;
+            cursor: pointer;
+
+            img.icon{
+                position: relative;
+                width:1.6vw;
+                height:1.6vw;
+                transition: all .3;
+            }
+
+            &:before{
+                position: absolute;
+                content:"";
+                display: block;
+                border-radius: 2vw;
+                width:3vw;
+                height: 3vw;
+                background-color: rgba(255,255,255,.2);
+                opacity:0;
+                transition: all .3;
+            }
+
+            &:hover:before{
+                opacity:1;
+            }
+        }
+
+        .filterIconActive{
+            position: relative;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2vw;
+            width:3vw;
+            height: 3vw;
+            cursor: pointer;
+
+            img.icon{
+                position: relative;
+                width:1.6vw;
+                height:1.6vw;
+                transition: all .3;
+            }
+
+            &:before{
+                position: absolute;
+                content:"";
+                display: block;
+                border-radius: 2vw;
+                width:3vw;
+                height: 3vw;
+                background-color:rgba(145, 167, 208,.3);
+                opacity:1;
+                transition: all .3;
+            }
+        }
+        
+    }
+}

@@ -69,15 +69,6 @@
             }
         }
 
-        .filterIcon{
-            cursor: pointer;
-            width:2.3vw;
-            height:2.3vw;
-
-            &:hover{
-                transform: rotateX(180deg);
-            }
-        }
 
         .addBtn{
             width:3vw;
@@ -89,6 +80,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-right:5vw;
             transition: all .3s;
 
             &:before{

@@ -7,6 +7,7 @@ import Loader from '../../components/loader/Loader.jsx';
 import AddTask from '../../components/addtask/AddTask.jsx';
 import CurrDate from '../../components/date/Date.jsx';
 import Welcome from '../../components/welcome/Welcome.jsx';
+import Filter from '../../components/filter/Filter.jsx';
 //-------------Style
 import css from './ToDoList.scss'; 
 
@@ -16,7 +17,9 @@ class ToDoList extends React.Component{
         this.state = {
             data: [],
             loading: false,
-            toRemove:[]
+            toRemove:[],
+            filteredBy:"",
+            filtered:false
         };
     }
 
@@ -105,6 +108,39 @@ class ToDoList extends React.Component{
         }
     }  
 
+    filterData = (e,group) => {
+        if(group == ""){
+            this.setState({filtered: false, filteredBy: ""});
+        }else{
+            this.setState({loading: true},() => {
+                fetch(`https://coderslabproject.firebaseio.com/tasks.json?orderBy="group"&equalTo="${group}"`,
+                {
+                    method: "GET"
+                })
+                .then(res => res.json())
+                .then((data = {}) => {
+                    if(data === null){
+                        this.setState({ data: [], loading: false });
+                    }else{
+                        data = Object.keys(data).reduce((dataAsArray, key) => {
+                            const todo = data[key];
+                            todo.id = key;
+                            dataAsArray.push(todo);
+                            return dataAsArray;
+                        }, []);
+                        data.forEach((task) => {
+                            if(task.done){
+                                this.state.toRemove.push(task.id);
+                            }
+                        });
+                        this.setState({ data, loading: false, filtered: true, filteredBy: group });
+                            
+                    }
+                });              
+            });
+        }   
+    }
+
     linkToAddTask = () => {
         this.props.history.push("/addTask");
     }
@@ -116,7 +152,7 @@ class ToDoList extends React.Component{
                         :<div className="toDoList-main">
                             {   this.state.data.length > 0
                                 ?<ul className="list">
-                                {this.state.data.filter(Boolean).map((element) => {//filtruje zeby nie dodawac nulla
+                                {this.state.data.filter(Boolean).map((element) => {
                                     return <li key={element.id}>
                                                 <Task taskTitle={element.title} group={element.group} id={element.id} check={this.checkData} done={element.done}/>
                                             </li>;
@@ -124,7 +160,7 @@ class ToDoList extends React.Component{
                             </ul> 
                             : <div className="emptyMessage"><h1>Tasks? You did them all...</h1></div>}
                             <div className="menuWrapper">
-                            <img src="./images/controls.svg" className="filterIcon" />
+                                <Filter filter={this.filterData} isFiltered={this.state.filtered} filteredBy={this.state.filteredBy} load={this.loadData}/>
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
                                 <img src="./images/bin.svg" className="binIcon" onClick={this.deleteCheckedData}/>
                             </div>

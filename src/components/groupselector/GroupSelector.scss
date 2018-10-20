@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width:15vw;
 
     .icon{
         position: relative;
@@ -15,7 +16,7 @@
         height:3vw;
         border-radius:1.5vw;
         background-color: rgba(255,255,255,0);
-        margin:1.5vw 1vw;
+        margin:1.5vw 1vw;;
         transition: all .3s;
         
    
@@ -82,7 +83,7 @@
             border-radius:.5vw;
             color:white;
             background-color:rgba(255,255,255,.2);
-            opacity:0;
+            opacity:1;
             transition: all .3s;
             
         }
