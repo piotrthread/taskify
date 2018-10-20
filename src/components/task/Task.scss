@@ -3,8 +3,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:2vw;
-    padding-top:2.2vw;
+    position: relative;
+    padding:1.5vw 1vw;
+
+    .taskIcon{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width:1.6vw;
+            height:1.6vw;
+        }
+    }
 
     .toBeDone{
         font-size:1vw;
@@ -13,6 +25,12 @@
         font-family: 'Raleway', sans-serif;
         position: relative;
         max-width: 12.5vw;
+        position: absolute;
+        left:4vw;
+
+        &::first-letter{
+            text-transform: capitalize;
+        }
 
         &:before{
             content:"";
@@ -35,7 +53,12 @@
         font-family: 'Raleway', sans-serif;
         position: relative;
         max-width: 12.5vw;
+        position: absolute;
+        left:4vw;
         
+        &::first-letter{
+            text-transform: capitalize;
+        }
 
         &:before{
             content:"";

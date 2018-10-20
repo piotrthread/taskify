@@ -22,11 +22,11 @@ class Login extends React.Component{
 
     login = (e) => {
         e.preventDefault();
-        if ( typeof this.props.login === 'function'
-            && this.state.email === "admin"
-            && this.state.password === "admin" ){
+        // if ( typeof this.props.login === 'function'
+        //     && this.state.email === "admin"
+        //     && this.state.password === "admin" ){
             this.props.login();
-        }
+        // }
     }
 
     render(){

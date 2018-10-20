@@ -1,0 +1,102 @@
+.selector{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon{
+        position: relative;
+        cursor: pointer;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:3vw;
+        height:3vw;
+        border-radius:1.5vw;
+        background-color: rgba(255,255,255,0);
+        margin:1.5vw 1vw;
+        transition: all .3s;
+        
+   
+
+        &:before{
+            content:attr(data-text);
+            text-transform: capitalize;
+            position: absolute;
+            padding:.3vw;
+            bottom:-1.8vw;
+            display:block;
+            z-index: 1;
+            height:.9vw;
+            text-align: center;
+            font-size: .8vw;
+            border-radius:.5vw;
+            color:white;
+            background-color:rgba(255,255,255,.2);
+            opacity:0;
+            transition: all .3s;
+            
+        }
+        &:hover:before{
+                opacity:1;
+        }
+        
+        img.home{
+            width:2vw;
+            height:2vw;
+            position: absolute;
+            
+
+            
+        }
+    }
+
+    .iconSelected{
+        position: relative;
+        cursor: pointer;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:3vw;
+        height:3vw;
+        border-radius:1.5vw;
+        background-color: rgba(255,255,255,.2);
+        margin:1.5vw 1vw;
+        transition: all .3s;
+        
+   
+
+        &:before{
+            content:attr(data-text);
+            text-transform: capitalize;
+            position: absolute;
+            padding:.3vw;
+            bottom:-1.8vw;
+            display:block;
+            z-index: 1;
+            height:.9vw;
+            text-align: center;
+            font-size: .8vw;
+            border-radius:.5vw;
+            color:white;
+            background-color:rgba(255,255,255,.2);
+            opacity:0;
+            transition: all .3s;
+            
+        }
+        &:hover:before{
+                opacity:1;
+        }
+        
+        img.home{
+            width:2vw;
+            height:2vw;
+            position: absolute;
+            
+
+            
+        }
+    }
+}

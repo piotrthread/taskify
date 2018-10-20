@@ -22,6 +22,9 @@ class Task extends React.Component{
     render(){
         return <React.Fragment>
             <div className="task">
+                <div className="taskIcon">
+                    <img src={"./images/"+ this.props.group +".svg"} />
+                </div>
                 <h1 className={(this.state.done) ? "done" : "toBeDone"}>{this.props.taskTitle}</h1>
                 <Checker check={this.doneTask} done={this.props.done}/>
             </div>

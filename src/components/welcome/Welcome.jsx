@@ -6,7 +6,7 @@ class Welcome extends React.Component{
         return <React.Fragment>
             <div className="welcomeWrapper">
             <h1>@taskify</h1>
-            <p>Welcome to Taskify,<br/>Your personal task menager.</p>
+            <p className="appdesc">Welcome to Taskify,<br/>Your personal task menager.</p>
             </div>
         </React.Fragment>;
     }

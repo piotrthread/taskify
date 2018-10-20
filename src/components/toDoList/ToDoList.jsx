@@ -55,44 +55,31 @@ class ToDoList extends React.Component{
         
     checkData = (id) => {
         if(this.state.toRemove.indexOf(id) == -1){
-            fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
-            {
-                method: "GET"
-            })
-            .then(res => res.json())
-            .then(res => {
+            
                 fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
             {
-                method: "PUT",
+                method: "PATCH",
                 body: JSON.stringify(
                     { 
-                        title: res.title,
                         done: true
                     }
                 )
             }
-            )})
+            )
             .then(() => {this.state.toRemove.push(id);});
             
         } else{
-            fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
-            {
-                method: "GET"
-            })
-            .then(res => res.json())
-            .then(res => {
-                console.log(res);
+
                 fetch(`https://coderslabproject.firebaseio.com/tasks/${id}.json`,
             {
-                method: "PUT",
+                method: "PATCH",
                 body: JSON.stringify(
                     { 
-                        title: res.title,
                         done: false
                     }
                 )
             }
-            )})
+            )
             .then(() => {this.state.toRemove.splice(this.state.toRemove.indexOf(id),1);});
         }
     }
@@ -131,12 +118,13 @@ class ToDoList extends React.Component{
                                 ?<ul className="list">
                                 {this.state.data.filter(Boolean).map((element) => {//filtruje zeby nie dodawac nulla
                                     return <li key={element.id}>
-                                                <Task taskTitle={element.title} id={element.id} check={this.checkData} done={element.done}/>
+                                                <Task taskTitle={element.title} group={element.group} id={element.id} check={this.checkData} done={element.done}/>
                                             </li>;
                                 })}
                             </ul> 
                             : <div className="emptyMessage"><h1>Tasks? You did them all...</h1></div>}
                             <div className="menuWrapper">
+                            <img src="./images/controls.svg" className="filterIcon" />
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
                                 <img src="./images/bin.svg" className="binIcon" onClick={this.deleteCheckedData}/>
                             </div>

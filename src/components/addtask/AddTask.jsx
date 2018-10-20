@@ -1,6 +1,8 @@
 //-------------Build
 import React from 'react';
 import { Link } from 'react-router-dom';
+//------------Components
+import GroupSelector from '../../components/groupselector/GroupSelector.jsx';
 //------------Style
 import css from './AddTask.scss';
 
@@ -8,12 +10,17 @@ class AddTask extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            taskTitle:""
+            taskTitle: "",
+            taskGroup: "personal"
         };
     }
 
     handleTitle = (e) => {
         this.setState({taskTitle: e.target.value});
+    }
+
+    chooseGroup = (e,text) => {
+        this.setState({taskGroup: text});
     }
 
     addTask = () => {
@@ -22,7 +29,8 @@ class AddTask extends React.Component{
                 method: "POST",
                 body: JSON.stringify(
                     {
-                        title: this.state.taskTitle, 
+                        title: this.state.taskTitle,
+                        group: this.state.taskGroup, 
                         done: false
                     }
                 )
@@ -44,9 +52,12 @@ class AddTask extends React.Component{
         return <React.Fragment>
                     <div className="addTask">
                     <div className="close" onClick={this.linkToRoot}></div>
-                        <form>
+                        <form className="taskTitle">
                             <input type="text" placeholder="Your task here..." onChange={this.handleTitle} ref={(input) => { this.inputTask = input; }}/>
                         </form>
+                        <div className="groupIcons">
+                        <GroupSelector group={(e,text) => this.chooseGroup(e,text)}/>
+                        </div>
                         <div className="addBtn" onClick={this.addTask}></div>
                     </div>
                 </React.Fragment>;
