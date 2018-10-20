@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactSVG from 'react-svg';
 import css from './Checker.scss';
 
 class Checker extends React.Component{
@@ -9,7 +8,7 @@ class Checker extends React.Component{
             checked: false
         };
     }
-
+    //handle check input
     checkTask = () => {
         this.props.check();
         this.setState({checked: !this.state.checked});
@@ -25,7 +24,7 @@ class Checker extends React.Component{
                 <img src="./images/checked.svg" className={this.state.checked ? "iconChecked" : "iconUnchecked"}/>
                 <div className="checkerBg"></div>
             </div>
-                </React.Fragment>;
+        </React.Fragment>;
     }
 }
 

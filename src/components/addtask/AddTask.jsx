@@ -1,6 +1,5 @@
 //-------------Build
 import React from 'react';
-import { Link } from 'react-router-dom';
 //------------Components
 import GroupSelector from '../../components/groupselector/GroupSelector.jsx';
 //------------Style
@@ -14,15 +13,15 @@ class AddTask extends React.Component{
             taskGroup: "personal"
         };
     }
-
+    //handle title input
     handleTitle = (e) => {
         this.setState({taskTitle: e.target.value});
     }
-
+    //handle group input
     chooseGroup = (e,text) => {
         this.setState({taskGroup: text});
     }
-
+    //post task to database
     addTask = () => {
         fetch(`https://coderslabproject.firebaseio.com/tasks.json`,
             {
@@ -39,7 +38,7 @@ class AddTask extends React.Component{
             this.props.history.push("/");
         });
     }
-
+    //go back to root
     linkToRoot = () =>{
             this.props.history.push("/");
     }
@@ -50,19 +49,19 @@ class AddTask extends React.Component{
     
     render(){
         return <React.Fragment>
-                    <div className="addTask">
-                    <div className="close" onClick={this.linkToRoot}></div>
-                        <form className="taskTitle">
-                            <input type="text" placeholder="Your task here..." onChange={this.handleTitle} ref={(input) => { this.inputTask = input; }}/>
-                        </form>
-                        <div className="actions">
-                            <div className="groupIcons">
-                            <GroupSelector group={(e,text) => this.chooseGroup(e,text)}/>
-                            </div>
-                            <div className="addBtn" onClick={this.addTask}></div>
-                        </div>
+            <div className="addTask">
+            <div className="close" onClick={this.linkToRoot}></div>
+                <form className="taskTitle">
+                    <input type="text" placeholder="Your task here..." onChange={this.handleTitle} ref={(input) => { this.inputTask = input; }}/>
+                </form>
+                <div className="actions">
+                    <div className="groupIcons">
+                    <GroupSelector group={(e,text) => this.chooseGroup(e,text)}/>
                     </div>
-                </React.Fragment>;
+                    <div className="addBtn" onClick={this.addTask}></div>
+                </div>
+            </div>
+        </React.Fragment>;
     }
 }
 

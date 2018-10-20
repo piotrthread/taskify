@@ -9,7 +9,7 @@ class Filter extends React.Component{
             filterBy: ""
         };
     }
-
+    //handle filtering
     filter = (e,group) => {
         if(this.state.filter == false && this.state.filterBy !== group){
             this.setState({filter: !this.state.filter, filterBy: group},() => {
@@ -38,9 +38,15 @@ class Filter extends React.Component{
         return <React.Fragment>
             <div className="filterWrapper">
                 <div className="filtersContainer">
-                <div className={this.state.filter && this.state.filterBy == "home" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"home")}><img src="./images/home.svg" className="icon" /></div>
-                <div className={this.state.filter && this.state.filterBy == "personal" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"personal")}><img src="./images/personal.svg" className="icon" /></div>
-                <div className={this.state.filter && this.state.filterBy == "work" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"work")}><img src="./images/work.svg" className="icon" /></div>
+                    <div className={this.state.filter && this.state.filterBy == "home" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"home")}>
+                        <img src="./images/home.svg" className="icon" />
+                    </div>
+                    <div className={this.state.filter && this.state.filterBy == "personal" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"personal")}>
+                        <img src="./images/personal.svg" className="icon" />
+                    </div>
+                    <div className={this.state.filter && this.state.filterBy == "work" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"work")}>
+                        <img src="./images/work.svg" className="icon" />
+                    </div>
                 </div>
             </div>
         </React.Fragment>;

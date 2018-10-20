@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Date.scss';
-
+//return current weekday name
 const getWeekDay = () => {
 let dayNumber = new Date().getDay();
     switch (dayNumber) {
@@ -13,7 +13,7 @@ let dayNumber = new Date().getDay();
         case 0 : return "Sunday";
     }
 }
-
+//return current time in HH:MM format
 const getTime = () => {
     let date = new Date();
     let hours = date.getHours();
@@ -22,7 +22,7 @@ const getTime = () => {
     if(minutes < 10){ minutes = "0" + minutes}
     return `${hours}:${minutes}`;
 }
-
+//return current day number in NN'th format
 const getDayNum = () => {
     let dayNum = new Date().getDate();
     if(dayNum == 1 || dayNum == 21 || dayNum == 31) {return dayNum + "st";}
@@ -30,7 +30,7 @@ const getDayNum = () => {
     if(dayNum == 3 || dayNum == 23) {return dayNum + "rd";}
     else {return dayNum + "th"}
 }
-
+//return current month name
 const getMonth = () => {
     let month = new Date().getMonth();
     switch (month) {

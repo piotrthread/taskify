@@ -8,7 +8,7 @@ class GroupSelector extends React.Component{
             selected:"personal"
         };
     }
-
+    //handle group choosing in add task
     selectOption = (e,text) => {
         this.setState({selected: text}, () => {
             this.props.group(e,text);
