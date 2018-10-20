@@ -32977,6 +32977,19 @@ var ToDoList = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (ToDoList.__proto__ || Object.getPrototypeOf(ToDoList)).call(this, props));
 
+        _this.getEmptyText = function () {
+            switch (_this.state.filteredBy) {
+                case "":
+                    return "Tasks? You did them all...";
+                case "home":
+                    return "Home sweet home. Enjoy it.";
+                case "personal":
+                    return "You reached Your goals ?";
+                case "work":
+                    return "Work done? So go home...";
+            }
+        };
+
         _this.loadData = function () {
             _this.setState({ loading: true }, function () {
                 fetch("https://coderslabproject.firebaseio.com/tasks.json", {
@@ -33045,6 +33058,8 @@ var ToDoList = function (_React$Component) {
                             if (_this.state.toRemove.length == 0) {
                                 _this.loadData();
                             }
+                        }).then(function () {
+                            _this.setState({ filtered: false, filteredBy: "" });
                         });
                     });
                 });
@@ -33108,6 +33123,7 @@ var ToDoList = function (_React$Component) {
         value: function render() {
             var _this2 = this;
 
+            var emptyMessage = this.getEmptyText();
             return _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
@@ -33130,7 +33146,7 @@ var ToDoList = function (_React$Component) {
                         _react2.default.createElement(
                             'h1',
                             null,
-                            'Tasks? You did them all...'
+                            emptyMessage
                         )
                     ),
                     _react2.default.createElement(

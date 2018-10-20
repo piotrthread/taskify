@@ -11,6 +11,7 @@ import Filter from '../../components/filter/Filter.jsx';
 //-------------Style
 import css from './ToDoList.scss'; 
 
+
 class ToDoList extends React.Component{
     constructor(props){
         super(props);
@@ -26,6 +27,15 @@ class ToDoList extends React.Component{
     componentDidMount() {
         this.loadData();
       }
+
+    getEmptyText = () => {
+        switch(this.state.filteredBy){
+            case "": return "Tasks? You did them all...";
+            case "home": return "Home sweet home. Enjoy it.";
+            case "personal": return "You reached Your goals ?";
+            case "work": return "Work done? So go home...";
+        }
+    }
 
     loadData = () => {
         this.setState({loading: true},() => {
@@ -101,7 +111,10 @@ class ToDoList extends React.Component{
                             tempArr.splice(tempArr.indexOf(url),1);
                             this.setState({toRemove: [...tempArr]});
                         })
-                        .then(() => {if(this.state.toRemove.length == 0){this.loadData();}});
+                        .then(() => {if(this.state.toRemove.length == 0){this.loadData();}})
+                        .then(() => {
+                            this.setState({filtered: false, filteredBy: ""});
+                        });
 
                 });
             }); 
@@ -146,6 +159,7 @@ class ToDoList extends React.Component{
     }
     
     render(){
+        let emptyMessage = this.getEmptyText();
         return <React.Fragment>
                     {this.state.loading 
                         ? <Loader /> 
@@ -158,7 +172,7 @@ class ToDoList extends React.Component{
                                             </li>;
                                 })}
                             </ul> 
-                            : <div className="emptyMessage"><h1>Tasks? You did them all...</h1></div>}
+                            : <div className="emptyMessage"><h1>{emptyMessage}</h1></div>}
                             <div className="menuWrapper">
                                 <Filter filter={this.filterData} isFiltered={this.state.filtered} filteredBy={this.state.filteredBy} load={this.loadData}/>
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
