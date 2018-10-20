@@ -129,7 +129,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 25vw;\n  height: 45vw;\n  position: relative;\n  padding: 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 2vw;\n    height: 2vw;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 2vw;\n    top: 2.3vw; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 2vw;\n      top: .85vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: .85vw;\n      width: 2vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form.taskTitle {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 15vw; }\n    .addTask form.taskTitle input {\n      width: 90%;\n      height: 3.5vw;\n      margin: .8vw;\n      padding: 1.2vw;\n      outline: none;\n      border-radius: 0px;\n      font-size: 1vw;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form.taskTitle input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form.taskTitle input::placeholder {\n        font-size: 1vw;\n        height: 2vw;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 3%;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 5%;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  width: 90%; }\n", ""]);
+exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  padding: 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 2vw;\n    height: 2vw;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 2vw;\n    top: 2.3vw; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 2vw;\n      top: .85vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: .85vw;\n      width: 2vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form.taskTitle {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 15vw; }\n    .addTask form.taskTitle input {\n      width: 90%;\n      height: 3.5vw;\n      margin: .8vw;\n      padding: 1.2vw;\n      outline: none;\n      border-radius: 0px;\n      font-size: 1vw;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form.taskTitle input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form.taskTitle input::placeholder {\n        font-size: 1vw;\n        height: 2vw;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 1.3vw;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 1.3vw;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  width: 90%; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -259,6 +259,34 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/list/List.scss":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/list/List.scss ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n@keyframes panelAnimation {\n  0% {\n    transform: scale(2);\n    opacity: 0; }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n    animation: none; } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3);\n  opacity: 0;\n  animation: panelAnimation .8s ease-in-out .7s forwards; }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-right: 5vw;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 1.3vw;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 1.3vw;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n", ""]);
+
+// exports
+exports.locals = {
+	"toDoList-main": "toDoList-main",
+	"panelAnimation": "panelAnimation",
+	"list": "list",
+	"emptyMessage": "emptyMessage",
+	"menuWrapper": "menuWrapper",
+	"binIcon": "binIcon",
+	"bin": "bin",
+	"addBtn": "addBtn"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/loader/Loader.scss":
 /*!************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/loader/Loader.scss ***!
@@ -271,7 +299,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".loader {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  opacity: .5; }\n  .loader svg {\n    width: 80px;\n    height: 80px;\n    transform: rotate(0deg);\n    animation: loading 1s infinite linear; }\n  .loader path {\n    fill: none;\n    stroke-width: 9px;\n    stroke: url(#gradient);\n    transform-origin: 50% 50%;\n    transform: rotate(90deg);\n    stroke-dasharray: 200;\n    stroke-dashoffset: 20; }\n\n@keyframes loading {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n", ""]);
+exports.push([module.i, ".loader {\n  width: 100%;\n  height: 90%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  opacity: .5; }\n  .loader svg {\n    width: 80px;\n    height: 80px;\n    transform: rotate(0deg);\n    animation: loading 1s infinite linear; }\n  .loader path {\n    fill: none;\n    stroke-width: 9px;\n    stroke: url(#gradient);\n    transform-origin: 50% 50%;\n    transform: rotate(90deg);\n    stroke-dasharray: 200;\n    stroke-dashoffset: 20; }\n\n@keyframes loading {\n  from {\n    transform: rotate(0deg); }\n  to {\n    transform: rotate(360deg); } }\n", ""]);
 
 // exports
 exports.locals = {
@@ -338,39 +366,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.taskify-main-container {\n  width: 100vw;\n  height: 100vh;\n  padding: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.taskify-main-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative; }\n  .taskify-main-container .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    opacity: 0;\n    animation: panelAnimation 1.2s ease-in forwards; }\n  .taskify-main-container .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw;\n    opacity: 0;\n    animation: panelAnimation 1s ease-in .4s forwards; }\n  .taskify-main-container .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw;\n    opacity: 0;\n    animation: panelAnimation .8s ease-in .6s forwards; }\n  .taskify-main-container .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    opacity: 0;\n    animation: panelAnimation .8s ease-in .2s forwards; }\n\n@keyframes panelAnimation {\n  0% {\n    transform: scale(2);\n    opacity: 0; }\n  100% {\n    transform: scale(1);\n    opacity: 1; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"taskify-main-container": "taskify-main-container"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/todolist/ToDoList.scss":
-/*!****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/todolist/ToDoList.scss ***!
-  \****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "@keyframes bin {\n  0% {\n    transform: rotate(0deg); }\n  25% {\n    transform: rotate(15deg); }\n  50% {\n    transform: rotate(-15deg); }\n  75% {\n    transform: rotate(15deg); }\n  100% {\n    transform: rotate(0deg); } }\n\n.toDoList-main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  padding: 2.8vw 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main ul.list {\n    list-style-type: none;\n    overflow-y: scroll;\n    -webkit-overflow-scrolling: touch;\n    width: 90%;\n    height: 90%; }\n    .toDoList-main ul.list::-webkit-scrollbar {\n      display: none; }\n    .toDoList-main ul.list li:not(:last-child) {\n      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }\n  .toDoList-main .emptyMessage {\n    width: 90%;\n    height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .toDoList-main .emptyMessage h1 {\n      text-align: center;\n      color: rgba(255, 255, 255, 0.7);\n      font-size: 1.3vw;\n      font-weight: 300; }\n  .toDoList-main .menuWrapper {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    margin-top: 3vw; }\n    .toDoList-main .menuWrapper .binIcon {\n      cursor: pointer;\n      width: 2.3vw;\n      height: 2.3vw;\n      transition: all .3; }\n      .toDoList-main .menuWrapper .binIcon:hover {\n        animation: bin .3s ease forwards; }\n    .toDoList-main .menuWrapper .addBtn {\n      width: 3vw;\n      height: 3vw;\n      border-radius: 1.5vw;\n      border: 1px solid white;\n      cursor: pointer;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      margin-right: 5vw;\n      transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:before {\n        content: \"\";\n        display: block;\n        background-color: white;\n        z-index: 1;\n        position: absolute;\n        width: 2px;\n        border-radius: 1px;\n        height: 1.3vw;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        background-color: white;\n        z-index: 1;\n        width: 1.3vw;\n        border-radius: 1px;\n        height: 2px;\n        transform-origin: 50% 50%;\n        transition: all .3s; }\n      .toDoList-main .menuWrapper .addBtn:hover {\n        background-color: rgba(255, 255, 255, 0.3); }\n        .toDoList-main .menuWrapper .addBtn:hover:before {\n          transform: rotate(180deg); }\n        .toDoList-main .menuWrapper .addBtn:hover:after {\n          transform: rotate(180deg); }\n  .toDoList-main .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .toDoList-main .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .toDoList-main .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .toDoList-main .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw; }\n", ""]);
-
-// exports
-exports.locals = {
-	"toDoList-main": "toDoList-main",
-	"list": "list",
-	"emptyMessage": "emptyMessage",
-	"menuWrapper": "menuWrapper",
-	"binIcon": "binIcon",
-	"bin": "bin",
-	"addBtn": "addBtn",
+	"taskify-main-container": "taskify-main-container",
 	"widget1": "widget1",
+	"panelAnimation": "panelAnimation",
 	"widget2": "widget2",
 	"widget3": "widget3",
 	"widget4": "widget4"
@@ -28557,6 +28559,290 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/components/list/List.jsx":
+/*!**************************************!*\
+  !*** ./src/components/list/List.jsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Task = __webpack_require__(/*! ../../components/task/Task.jsx */ "./src/components/task/Task.jsx");
+
+var _Task2 = _interopRequireDefault(_Task);
+
+var _Loader = __webpack_require__(/*! ../../components/loader/Loader.jsx */ "./src/components/loader/Loader.jsx");
+
+var _Loader2 = _interopRequireDefault(_Loader);
+
+var _Filter = __webpack_require__(/*! ../../components/filter/Filter.jsx */ "./src/components/filter/Filter.jsx");
+
+var _Filter2 = _interopRequireDefault(_Filter);
+
+var _List = __webpack_require__(/*! ./List.scss */ "./src/components/list/List.scss");
+
+var _List2 = _interopRequireDefault(_List);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //--------------Build
+
+//-------------Components
+
+//-------------Style
+
+
+var List = function (_React$Component) {
+    _inherits(List, _React$Component);
+
+    function List(props) {
+        _classCallCheck(this, List);
+
+        var _this = _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this, props));
+
+        _this.getEmptyText = function () {
+            switch (_this.state.filteredBy) {
+                case "":
+                    return "Tasks? You did them all...";
+                case "home":
+                    return "Home sweet home. Enjoy it.";
+                case "personal":
+                    return "You reached Your goals ?";
+                case "work":
+                    return "Work done? So go home...";
+            }
+        };
+
+        _this.loadData = function () {
+            _this.setState({ loading: true }, function () {
+                fetch("https://coderslabproject.firebaseio.com/tasks.json", {
+                    method: "GET"
+                }).then(function (res) {
+                    return res.json();
+                }).then(function () {
+                    var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                    if (data === null) {
+                        _this.setState({ data: [], loading: false });
+                    } else {
+                        data = Object.keys(data).reduce(function (dataAsArray, key) {
+                            var todo = data[key];
+                            todo.id = key;
+                            dataAsArray.push(todo);
+                            return dataAsArray;
+                        }, []);
+                        data.forEach(function (task) {
+                            if (task.done) {
+                                _this.state.toRemove.push(task.id);
+                            }
+                        });
+                        _this.setState({ data: data, loading: false });
+                    }
+                });
+            });
+        };
+
+        _this.checkData = function (id) {
+            if (_this.state.toRemove.indexOf(id) == -1) {
+
+                fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
+                    method: "PATCH",
+                    body: JSON.stringify({
+                        done: true
+                    })
+                }).then(function () {
+                    _this.state.toRemove.push(id);
+                });
+            } else {
+
+                fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
+                    method: "PATCH",
+                    body: JSON.stringify({
+                        done: false
+                    })
+                }).then(function () {
+                    _this.state.toRemove.splice(_this.state.toRemove.indexOf(id), 1);
+                });
+            }
+        };
+
+        _this.deleteCheckedData = function () {
+            if (_this.state.toRemove.length > 0) {
+                var remove = new Promise(function (res, rej) {
+                    _this.state.toRemove.map(function (url) {
+
+                        fetch('https://coderslabproject.firebaseio.com/tasks/' + url + '.json', {
+                            method: "DELETE"
+                        }).then(function () {
+                            var tempArr = _this.state.toRemove;
+                            tempArr.splice(tempArr.indexOf(url), 1);
+                            _this.setState({ toRemove: [].concat(_toConsumableArray(tempArr)) });
+                        }).then(function () {
+                            if (_this.state.toRemove.length == 0) {
+                                _this.loadData();
+                            }
+                        }).then(function () {
+                            _this.setState({ filtered: false, filteredBy: "" });
+                        });
+                    });
+                });
+            }
+        };
+
+        _this.filterData = function (e, group) {
+            if (group == "") {
+                _this.setState({ filtered: false, filteredBy: "" });
+            } else {
+                _this.setState({ loading: true }, function () {
+                    fetch('https://coderslabproject.firebaseio.com/tasks.json?orderBy="group"&equalTo="' + group + '"', {
+                        method: "GET"
+                    }).then(function (res) {
+                        return res.json();
+                    }).then(function () {
+                        var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                        if (data === null) {
+                            _this.setState({ data: [], loading: false });
+                        } else {
+                            data = Object.keys(data).reduce(function (dataAsArray, key) {
+                                var todo = data[key];
+                                todo.id = key;
+                                dataAsArray.push(todo);
+                                return dataAsArray;
+                            }, []);
+                            data.forEach(function (task) {
+                                if (task.done) {
+                                    _this.state.toRemove.push(task.id);
+                                }
+                            });
+                            _this.setState({ data: data, loading: false, filtered: true, filteredBy: group });
+                        }
+                    });
+                });
+            }
+        };
+
+        _this.linkToAddTask = function () {
+            _this.props.history.push("/addTask");
+        };
+
+        _this.state = {
+            data: [],
+            loading: false,
+            toRemove: [],
+            filteredBy: "",
+            filtered: false
+        };
+        return _this;
+    }
+
+    _createClass(List, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.loadData();
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var emptyMessage = this.getEmptyText();
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'toDoList-main' },
+                    this.state.loading ? _react2.default.createElement(_Loader2.default, null) : _react2.default.createElement(
+                        _react2.default.Fragment,
+                        null,
+                        this.state.data.length > 0 ? _react2.default.createElement(
+                            'ul',
+                            { className: 'list' },
+                            this.state.data.filter(Boolean).map(function (element) {
+                                return _react2.default.createElement(
+                                    'li',
+                                    { key: element.id },
+                                    _react2.default.createElement(_Task2.default, { taskTitle: element.title, group: element.group, id: element.id, check: _this2.checkData, done: element.done })
+                                );
+                            })
+                        ) : _react2.default.createElement(
+                            'div',
+                            { className: 'emptyMessage' },
+                            _react2.default.createElement(
+                                'h1',
+                                null,
+                                emptyMessage
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'menuWrapper' },
+                        _react2.default.createElement(_Filter2.default, { filter: this.filterData, isFiltered: this.state.filtered, filteredBy: this.state.filteredBy, load: this.loadData }),
+                        _react2.default.createElement('div', { className: 'addBtn', onClick: this.linkToAddTask }),
+                        _react2.default.createElement('img', { src: './images/bin.svg', className: 'binIcon', onClick: this.deleteCheckedData })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return List;
+}(_react2.default.Component);
+
+exports.default = List;
+
+/***/ }),
+
+/***/ "./src/components/list/List.scss":
+/*!***************************************!*\
+  !*** ./src/components/list/List.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./List.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/list/List.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./src/components/loader/Loader.jsx":
 /*!******************************************!*\
   !*** ./src/components/loader/Loader.jsx ***!
@@ -28960,9 +29246,17 @@ var _Login = __webpack_require__(/*! ../../components/login/Login.jsx */ "./src/
 
 var _Login2 = _interopRequireDefault(_Login);
 
-var _ToDoList = __webpack_require__(/*! ../../components/todolist/ToDoList.jsx */ "./src/components/todolist/ToDoList.jsx");
+var _List = __webpack_require__(/*! ../../components/list/List.jsx */ "./src/components/list/List.jsx");
 
-var _ToDoList2 = _interopRequireDefault(_ToDoList);
+var _List2 = _interopRequireDefault(_List);
+
+var _Date = __webpack_require__(/*! ../../components/date/Date.jsx */ "./src/components/date/Date.jsx");
+
+var _Date2 = _interopRequireDefault(_Date);
+
+var _Welcome = __webpack_require__(/*! ../../components/welcome/Welcome.jsx */ "./src/components/welcome/Welcome.jsx");
+
+var _Welcome2 = _interopRequireDefault(_Welcome);
 
 var _Taskify = __webpack_require__(/*! ./Taskify.scss */ "./src/components/taskify/Taskify.scss");
 
@@ -29007,20 +29301,36 @@ var Taskify = function (_React$Component) {
             return _react2.default.createElement(
                 _react2.default.Fragment,
                 null,
-                _react2.default.createElement(
-                    'div',
-                    { className: 'taskify-main-container' },
-                    this.state.loggedIn ? _react2.default.createElement(
-                        _reactRouterDom.HashRouter,
-                        null,
+                this.state.loggedIn ? _react2.default.createElement(
+                    _react2.default.Fragment,
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'taskify-main-container' },
+                        _react2.default.createElement(
+                            _reactRouterDom.HashRouter,
+                            null,
+                            _react2.default.createElement(
+                                'div',
+                                null,
+                                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _List2.default }),
+                                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/addTask', component: _AddTask2.default })
+                            )
+                        ),
                         _react2.default.createElement(
                             'div',
-                            null,
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _ToDoList2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/addTask', component: _AddTask2.default })
-                        )
-                    ) : _react2.default.createElement(_Login2.default, { login: this.handleLogin })
-                )
+                            { className: 'widget1' },
+                            _react2.default.createElement(_Welcome2.default, null)
+                        ),
+                        _react2.default.createElement('div', { className: 'widget2' }),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'widget3' },
+                            _react2.default.createElement(_Date2.default, null)
+                        ),
+                        _react2.default.createElement('div', { className: 'widget4' })
+                    )
+                ) : _react2.default.createElement(_Login2.default, { login: this.handleLogin })
             );
         }
     }]);
@@ -29041,312 +29351,6 @@ exports.default = Taskify;
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./Taskify.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/taskify/Taskify.scss");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./src/components/todolist/ToDoList.jsx":
-/*!**********************************************!*\
-  !*** ./src/components/todolist/ToDoList.jsx ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-
-var _Task = __webpack_require__(/*! ../../components/task/Task.jsx */ "./src/components/task/Task.jsx");
-
-var _Task2 = _interopRequireDefault(_Task);
-
-var _Loader = __webpack_require__(/*! ../../components/loader/Loader.jsx */ "./src/components/loader/Loader.jsx");
-
-var _Loader2 = _interopRequireDefault(_Loader);
-
-var _AddTask = __webpack_require__(/*! ../../components/addtask/AddTask.jsx */ "./src/components/addtask/AddTask.jsx");
-
-var _AddTask2 = _interopRequireDefault(_AddTask);
-
-var _Date = __webpack_require__(/*! ../../components/date/Date.jsx */ "./src/components/date/Date.jsx");
-
-var _Date2 = _interopRequireDefault(_Date);
-
-var _Welcome = __webpack_require__(/*! ../../components/welcome/Welcome.jsx */ "./src/components/welcome/Welcome.jsx");
-
-var _Welcome2 = _interopRequireDefault(_Welcome);
-
-var _Filter = __webpack_require__(/*! ../../components/filter/Filter.jsx */ "./src/components/filter/Filter.jsx");
-
-var _Filter2 = _interopRequireDefault(_Filter);
-
-var _ToDoList = __webpack_require__(/*! ./ToDoList.scss */ "./src/components/todolist/ToDoList.scss");
-
-var _ToDoList2 = _interopRequireDefault(_ToDoList);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //--------------Build
-
-//-------------Components
-
-//-------------Style
-
-
-var ToDoList = function (_React$Component) {
-    _inherits(ToDoList, _React$Component);
-
-    function ToDoList(props) {
-        _classCallCheck(this, ToDoList);
-
-        var _this = _possibleConstructorReturn(this, (ToDoList.__proto__ || Object.getPrototypeOf(ToDoList)).call(this, props));
-
-        _this.getEmptyText = function () {
-            switch (_this.state.filteredBy) {
-                case "":
-                    return "Tasks? You did them all...";
-                case "home":
-                    return "Home sweet home. Enjoy it.";
-                case "personal":
-                    return "You reached Your goals ?";
-                case "work":
-                    return "Work done? So go home...";
-            }
-        };
-
-        _this.loadData = function () {
-            _this.setState({ loading: true }, function () {
-                fetch("https://coderslabproject.firebaseio.com/tasks.json", {
-                    method: "GET"
-                }).then(function (res) {
-                    return res.json();
-                }).then(function () {
-                    var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-                    if (data === null) {
-                        _this.setState({ data: [], loading: false });
-                    } else {
-                        data = Object.keys(data).reduce(function (dataAsArray, key) {
-                            var todo = data[key];
-                            todo.id = key;
-                            dataAsArray.push(todo);
-                            return dataAsArray;
-                        }, []);
-                        data.forEach(function (task) {
-                            if (task.done) {
-                                _this.state.toRemove.push(task.id);
-                            }
-                        });
-                        _this.setState({ data: data, loading: false });
-                    }
-                });
-            });
-        };
-
-        _this.checkData = function (id) {
-            if (_this.state.toRemove.indexOf(id) == -1) {
-
-                fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
-                    method: "PATCH",
-                    body: JSON.stringify({
-                        done: true
-                    })
-                }).then(function () {
-                    _this.state.toRemove.push(id);
-                });
-            } else {
-
-                fetch('https://coderslabproject.firebaseio.com/tasks/' + id + '.json', {
-                    method: "PATCH",
-                    body: JSON.stringify({
-                        done: false
-                    })
-                }).then(function () {
-                    _this.state.toRemove.splice(_this.state.toRemove.indexOf(id), 1);
-                });
-            }
-        };
-
-        _this.deleteCheckedData = function () {
-            if (_this.state.toRemove.length > 0) {
-                var remove = new Promise(function (res, rej) {
-                    _this.state.toRemove.map(function (url) {
-
-                        fetch('https://coderslabproject.firebaseio.com/tasks/' + url + '.json', {
-                            method: "DELETE"
-                        }).then(function () {
-                            var tempArr = _this.state.toRemove;
-                            tempArr.splice(tempArr.indexOf(url), 1);
-                            _this.setState({ toRemove: [].concat(_toConsumableArray(tempArr)) });
-                        }).then(function () {
-                            if (_this.state.toRemove.length == 0) {
-                                _this.loadData();
-                            }
-                        }).then(function () {
-                            _this.setState({ filtered: false, filteredBy: "" });
-                        });
-                    });
-                });
-            }
-        };
-
-        _this.filterData = function (e, group) {
-            if (group == "") {
-                _this.setState({ filtered: false, filteredBy: "" });
-            } else {
-                _this.setState({ loading: true }, function () {
-                    fetch('https://coderslabproject.firebaseio.com/tasks.json?orderBy="group"&equalTo="' + group + '"', {
-                        method: "GET"
-                    }).then(function (res) {
-                        return res.json();
-                    }).then(function () {
-                        var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-                        if (data === null) {
-                            _this.setState({ data: [], loading: false });
-                        } else {
-                            data = Object.keys(data).reduce(function (dataAsArray, key) {
-                                var todo = data[key];
-                                todo.id = key;
-                                dataAsArray.push(todo);
-                                return dataAsArray;
-                            }, []);
-                            data.forEach(function (task) {
-                                if (task.done) {
-                                    _this.state.toRemove.push(task.id);
-                                }
-                            });
-                            _this.setState({ data: data, loading: false, filtered: true, filteredBy: group });
-                        }
-                    });
-                });
-            }
-        };
-
-        _this.linkToAddTask = function () {
-            _this.props.history.push("/addTask");
-        };
-
-        _this.state = {
-            data: [],
-            loading: false,
-            toRemove: [],
-            filteredBy: "",
-            filtered: false
-        };
-        return _this;
-    }
-
-    _createClass(ToDoList, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            this.loadData();
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var emptyMessage = this.getEmptyText();
-            return _react2.default.createElement(
-                _react2.default.Fragment,
-                null,
-                this.state.loading ? _react2.default.createElement(_Loader2.default, null) : _react2.default.createElement(
-                    'div',
-                    { className: 'toDoList-main' },
-                    this.state.data.length > 0 ? _react2.default.createElement(
-                        'ul',
-                        { className: 'list' },
-                        this.state.data.filter(Boolean).map(function (element) {
-                            return _react2.default.createElement(
-                                'li',
-                                { key: element.id },
-                                _react2.default.createElement(_Task2.default, { taskTitle: element.title, group: element.group, id: element.id, check: _this2.checkData, done: element.done })
-                            );
-                        })
-                    ) : _react2.default.createElement(
-                        'div',
-                        { className: 'emptyMessage' },
-                        _react2.default.createElement(
-                            'h1',
-                            null,
-                            emptyMessage
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'menuWrapper' },
-                        _react2.default.createElement(_Filter2.default, { filter: this.filterData, isFiltered: this.state.filtered, filteredBy: this.state.filteredBy, load: this.loadData }),
-                        _react2.default.createElement('div', { className: 'addBtn', onClick: this.linkToAddTask }),
-                        _react2.default.createElement('img', { src: './images/bin.svg', className: 'binIcon', onClick: this.deleteCheckedData })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'widget1' },
-                        _react2.default.createElement(_Welcome2.default, null)
-                    ),
-                    _react2.default.createElement('div', { className: 'widget2' }),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'widget3' },
-                        _react2.default.createElement(_Date2.default, null)
-                    ),
-                    _react2.default.createElement('div', { className: 'widget4' })
-                )
-            );
-        }
-    }]);
-
-    return ToDoList;
-}(_react2.default.Component);
-
-exports.default = ToDoList;
-
-/***/ }),
-
-/***/ "./src/components/todolist/ToDoList.scss":
-/*!***********************************************!*\
-  !*** ./src/components/todolist/ToDoList.scss ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./ToDoList.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/todolist/ToDoList.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 

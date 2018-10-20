@@ -1,18 +1,14 @@
 //--------------Build
 import React from 'react';
-import { Link } from 'react-router-dom';
 //-------------Components
 import Task from '../../components/task/Task.jsx';
 import Loader from '../../components/loader/Loader.jsx';
-import AddTask from '../../components/addtask/AddTask.jsx';
-import CurrDate from '../../components/date/Date.jsx';
-import Welcome from '../../components/welcome/Welcome.jsx';
 import Filter from '../../components/filter/Filter.jsx';
 //-------------Style
-import css from './ToDoList.scss'; 
+import css from './List.scss'; 
 
 
-class ToDoList extends React.Component{
+class List extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -160,11 +156,11 @@ class ToDoList extends React.Component{
     
     render(){
         let emptyMessage = this.getEmptyText();
-        return <React.Fragment>
-                    {this.state.loading 
-                        ? <Loader /> 
-                        :<div className="toDoList-main">
-                            {   this.state.data.length > 0
+        return <React.Fragment> 
+                        <div className="toDoList-main">
+                        {this.state.loading 
+                        ? <Loader />
+                        :   <React.Fragment>{   this.state.data.length > 0
                                 ?<ul className="list">
                                 {this.state.data.filter(Boolean).map((element) => {
                                     return <li key={element.id}>
@@ -172,19 +168,15 @@ class ToDoList extends React.Component{
                                             </li>;
                                 })}
                             </ul> 
-                            : <div className="emptyMessage"><h1>{emptyMessage}</h1></div>}
+                            : <div className="emptyMessage"><h1>{emptyMessage}</h1></div>}</React.Fragment>}
                             <div className="menuWrapper">
                                 <Filter filter={this.filterData} isFiltered={this.state.filtered} filteredBy={this.state.filteredBy} load={this.loadData}/>
                                 <div className="addBtn" onClick={this.linkToAddTask}></div>
                                 <img src="./images/bin.svg" className="binIcon" onClick={this.deleteCheckedData}/>
                             </div>
-                            <div className="widget1"><Welcome /></div>
-                            <div className="widget2"></div>
-                            <div className="widget3"><CurrDate /></div>
-                            <div className="widget4"></div>
-                        </div>}
+                        </div>
                </React.Fragment>;
     }
 }
 
-export default ToDoList;
+export default List;
