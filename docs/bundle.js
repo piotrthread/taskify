@@ -191,7 +191,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".fidgetWrapper {\n  width: 90%;\n  height: 90%;\n  position: relative; }\n  .fidgetWrapper:after {\n    content: \"Bored? Try Fidget...\";\n    display: block;\n    color: rgba(255, 255, 255, 0.5);\n    position: absolute;\n    margin: .5vw;\n    font-size: 1vw;\n    left: 4vw; }\n  .fidgetWrapper .element {\n    width: 5%;\n    height: 5%;\n    border-radius: 20px;\n    float: left;\n    background-color: rgba(255, 255, 255, 0);\n    cursor: none; }\n  .fidgetWrapper .element.elementHover {\n    animation: fidgetAnimation 1s ease-out forwards; }\n\n@keyframes fidgetAnimation {\n  0% {\n    background-color: white; }\n  100% {\n    background-color: rgba(255, 255, 255, 0); } }\n", ""]);
+exports.push([module.i, ".fidgetWrapper {\n  width: 90%;\n  height: 90%;\n  position: relative;\n  cursor: none; }\n  .fidgetWrapper:after {\n    content: \"Bored? Try Fidget...\";\n    display: block;\n    color: rgba(255, 255, 255, 0.5);\n    position: absolute;\n    margin: .5vw;\n    font-size: 1vw;\n    left: 4vw; }\n  .fidgetWrapper .element {\n    width: 5%;\n    height: 5%;\n    border-radius: 20px;\n    float: left;\n    background-color: rgba(255, 255, 255, 0);\n    cursor: none; }\n  .fidgetWrapper .element.elementHover {\n    animation: fidgetAnimation 1s ease-out forwards; }\n\n@keyframes fidgetAnimation {\n  0% {\n    background-color: white; }\n  100% {\n    background-color: rgba(255, 255, 255, 0); } }\n", ""]);
 
 // exports
 exports.locals = {
