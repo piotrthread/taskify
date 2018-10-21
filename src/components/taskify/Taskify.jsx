@@ -7,9 +7,9 @@ import Login from '../../components/login/Login.jsx';
 import List from '../../components/list/List.jsx';
 import CurrDate from '../../components/date/Date.jsx';
 import Welcome from '../../components/welcome/Welcome.jsx';
+import Fidget from '../../components/fidget/Fidget.jsx';
 //-----------Style
 import css from './Taskify.scss';
-import { CSSTransitionGroup } from 'react-transition-group';
 
 class Taskify extends React.Component{
     constructor(props){
@@ -37,7 +37,7 @@ class Taskify extends React.Component{
                                 <div className="widget1"><Welcome /></div>
                                 <div className="widget2"></div>
                                 <div className="widget3"><CurrDate /></div>
-                                <div className="widget4"></div>
+                                <div className="widget4"><Fidget /></div>
                             </div>
                         </React.Fragment>
                         : <Login login={this.handleLogin}/>}
