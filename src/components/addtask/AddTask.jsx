@@ -10,7 +10,7 @@ class AddTask extends React.Component{
         super(props);
         this.state={
             taskTitle: "",
-            taskGroup: "personal"
+            taskGroup: "home"
         };
     }
     //handle title input

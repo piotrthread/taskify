@@ -26679,7 +26679,7 @@ var AddTask = function (_React$Component) {
 
         _this.state = {
             taskTitle: "",
-            taskGroup: "personal"
+            taskGroup: "home"
         };
         return _this;
     }
