@@ -323,6 +323,29 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/stopwatch/StopWatch.scss":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/stopwatch/StopWatch.scss ***!
+  \******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".stopWatch {\n  width: 90%;\n  height: 90%;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .stopWatch h1 {\n    color: rgba(255, 255, 255, 0.5);\n    margin: .5vw;\n    font-size: 1vw; }\n  .stopWatch p {\n    color: rgba(255, 255, 255, 0.5);\n    margin: .5vw;\n    font-size: 4vw; }\n  .stopWatch .btnContainer {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 11vw;\n    margin: .5vw; }\n    .stopWatch .btnContainer .btn {\n      cursor: pointer;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      border: 1px solid rgba(255, 255, 255, 0.2);\n      padding: .5vw;\n      font-size: .8vw;\n      width: 5vw;\n      text-align: center;\n      border-radius: 2vw;\n      transition: all .3s; }\n      .stopWatch .btnContainer .btn:hover {\n        background-color: rgba(255, 255, 255, 0); }\n", ""]);
+
+// exports
+exports.locals = {
+	"stopWatch": "stopWatch",
+	"btnContainer": "btnContainer",
+	"btn": "btn"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/task/Task.scss":
 /*!********************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/task/Task.scss ***!
@@ -359,7 +382,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.taskify-main-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  opacity: 0;\n  animation: panelAnimation .3s ease-in forwards; }\n  .taskify-main-container .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .taskify-main-container .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .taskify-main-container .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .taskify-main-container .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n\n@keyframes panelAnimation {\n  0% {\n    transform: scale(1.1);\n    opacity: 0; }\n  50% {\n    opacity: 15%; }\n  100% {\n    transform: scale(1);\n    opacity: 1; } }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\n.taskify-main-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  opacity: 0;\n  animation: panelAnimation .3s ease-in forwards; }\n  .taskify-main-container .widget1 {\n    position: absolute;\n    top: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .taskify-main-container .widget2 {\n    position: absolute;\n    bottom: 0;\n    left: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n  .taskify-main-container .widget3 {\n    position: absolute;\n    top: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 24vw; }\n  .taskify-main-container .widget4 {\n    position: absolute;\n    bottom: 0;\n    right: -21vw;\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    width: 20vw;\n    height: 20vw;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n\n@keyframes panelAnimation {\n  0% {\n    transform: scale(1.1);\n    opacity: 0; }\n  50% {\n    opacity: 15%; }\n  100% {\n    transform: scale(1);\n    opacity: 1; } }\n", ""]);
 
 // exports
 exports.locals = {
@@ -27759,10 +27782,6 @@ var List = function (_React$Component) {
             _this.props.history.push("/addTask");
         };
 
-        _this.getCounterData = function (e, data) {
-            _this.setState({ dataToCount: data });
-        };
-
         _this.state = {
             data: [],
             loading: false,
@@ -28112,6 +28131,163 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/components/stopwatch/StopWatch.jsx":
+/*!************************************************!*\
+  !*** ./src/components/stopwatch/StopWatch.jsx ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _StopWatch = __webpack_require__(/*! ./StopWatch.scss */ "./src/components/stopwatch/StopWatch.scss");
+
+var _StopWatch2 = _interopRequireDefault(_StopWatch);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var msToTime = function msToTime(duration) {
+    var seconds = parseInt(duration / 1000 % 60);
+    var minutes = parseInt(duration / (1000 * 60) % 60);
+    var hours = parseInt(duration / (1000 * 60 * 60) % 24);
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    return hours + ":" + minutes + ":" + seconds;
+};
+
+var StopWatch = function (_React$Component) {
+    _inherits(StopWatch, _React$Component);
+
+    function StopWatch(props) {
+        _classCallCheck(this, StopWatch);
+
+        var _this = _possibleConstructorReturn(this, (StopWatch.__proto__ || Object.getPrototypeOf(StopWatch)).call(this, props));
+
+        _this.startCounter = function (e) {
+            e.preventDefault();
+            _this.setState({ button: false });
+            _this.interval = setInterval(function () {
+                _this.setState({ time: _this.state.time + 1000 });
+            }, 1000);
+        };
+
+        _this.stopCounter = function (e) {
+            e.preventDefault();
+            _this.setState({ button: true });
+            clearInterval(_this.interval);
+        };
+
+        _this.clearCounter = function (e) {
+            e.preventDefault();
+            _this.setState({ time: 0 });
+        };
+
+        _this.state = {
+            time: 0,
+            button: true
+        };
+        return _this;
+    }
+
+    _createClass(StopWatch, [{
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {}
+    }, {
+        key: 'render',
+        value: function render() {
+            var time = msToTime(this.state.time);
+            return _react2.default.createElement(
+                _react2.default.Fragment,
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'stopWatch' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Measure Your Time.'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        time
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'btnContainer' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'btn', onClick: this.state.time > 0 ? this.stopCounter : this.startCounter },
+                            this.state.button ? "START" : "STOP"
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'btn', onClick: this.clearCounter },
+                            'CLEAR'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return StopWatch;
+}(_react2.default.Component);
+
+exports.default = StopWatch;
+
+/***/ }),
+
+/***/ "./src/components/stopwatch/StopWatch.scss":
+/*!*************************************************!*\
+  !*** ./src/components/stopwatch/StopWatch.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/sass-loader/lib/loader.js!./StopWatch.scss */ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/stopwatch/StopWatch.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./src/components/task/Task.jsx":
 /*!**************************************!*\
   !*** ./src/components/task/Task.jsx ***!
@@ -28282,6 +28458,10 @@ var _Fidget = __webpack_require__(/*! ../../components/fidget/Fidget.jsx */ "./s
 
 var _Fidget2 = _interopRequireDefault(_Fidget);
 
+var _StopWatch = __webpack_require__(/*! ../../components/stopwatch/StopWatch.jsx */ "./src/components/stopwatch/StopWatch.jsx");
+
+var _StopWatch2 = _interopRequireDefault(_StopWatch);
+
 var _Taskify = __webpack_require__(/*! ./Taskify.scss */ "./src/components/taskify/Taskify.scss");
 
 var _Taskify2 = _interopRequireDefault(_Taskify);
@@ -28344,7 +28524,11 @@ var Taskify = function (_React$Component) {
                             { className: 'widget1' },
                             _react2.default.createElement(_Welcome2.default, null)
                         ),
-                        _react2.default.createElement('div', { className: 'widget2' }),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'widget2' },
+                            _react2.default.createElement(_StopWatch2.default, null)
+                        ),
                         _react2.default.createElement(
                             'div',
                             { className: 'widget3' },

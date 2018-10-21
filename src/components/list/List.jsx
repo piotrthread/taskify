@@ -153,10 +153,6 @@ class List extends React.Component{
     linkToAddTask = () => {
         this.props.history.push("/addTask");
     }
-
-    getCounterData = (e,data) => {
-        this.setState({dataToCount: data});
-    }
     
     render(){
         let emptyMessage = this.getEmptyText();
