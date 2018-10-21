@@ -22,10 +22,10 @@ class GroupSelector extends React.Component{
                     <img src="./images/home.svg" className="home"/>
                 </div>
                 <div className={this.state.selected == "personal" ? "iconSelected" : "icon"} data-text="personal" onClick={(e,text) =>this.selectOption(e,"personal")}>
-                    <img src="./images/personal.svg" className="home"/>
+                    <img src="./images/personal.svg" className="personal"/>
                 </div>
                 <div className={this.state.selected == "work" ? "iconSelected" : "icon"} data-text="work" onClick={(e,text) =>this.selectOption(e,"work")}>
-                    <img src="./images/work.svg" className="home"/>
+                    <img src="./images/work.svg" className="work"/>
                 </div>
             </div>
         </React.Fragment>;

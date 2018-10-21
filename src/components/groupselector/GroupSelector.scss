@@ -44,12 +44,19 @@
         }
         
         img.home{
+            width:2.1vw;
+            height:2.1vw;
+            position: absolute;
+        }
+        img.personal{
             width:2vw;
             height:2vw;
             position: absolute;
-            
-
-            
+        }
+        img.work{
+            width:1.9vw;
+            height:1.9vw;
+            position: absolute;
         }
     }
 
@@ -92,12 +99,19 @@
         }
         
         img.home{
+            width:2.1vw;
+            height:2.1vw;
+            position: absolute;
+        }
+        img.personal{
             width:2vw;
             height:2vw;
             position: absolute;
-            
-
-            
+        }
+        img.work{
+            width:1.9vw;
+            height:1.9vw;
+            position: absolute;
         }
     }
 }

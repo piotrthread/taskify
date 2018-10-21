@@ -39,13 +39,13 @@ class Filter extends React.Component{
             <div className="filterWrapper">
                 <div className="filtersContainer">
                     <div className={this.state.filter && this.state.filterBy == "home" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"home")}>
-                        <img src="./images/home.svg" className="icon" />
+                        <img src="./images/home.svg" className="home" />
                     </div>
                     <div className={this.state.filter && this.state.filterBy == "personal" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"personal")}>
-                        <img src="./images/personal.svg" className="icon" />
+                        <img src="./images/personal.svg" className="personal" />
                     </div>
                     <div className={this.state.filter && this.state.filterBy == "work" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"work")}>
-                        <img src="./images/work.svg" className="icon" />
+                        <img src="./images/work.svg" className="work" />
                     </div>
                 </div>
             </div>

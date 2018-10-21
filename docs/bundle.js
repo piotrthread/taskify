@@ -215,14 +215,16 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".filterWrapper {\n  position: relative; }\n  .filterWrapper:after {\n    content: \"Filters\";\n    position: absolute;\n    color: white;\n    font-size: 1vw;\n    padding: .3vw .4vw;\n    border-radius: 1vw;\n    top: -2vw;\n    left: 2.6vw;\n    opacity: 0;\n    background-color: rgba(255, 255, 255, 0.2);\n    transition: all .3s; }\n  .filterWrapper:hover:after {\n    opacity: 1; }\n  .filterWrapper .filtersContainer {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n    border-radius: 2vw;\n    width: 9vw;\n    height: 3vw;\n    background-color: rgba(255, 255, 255, 0.2); }\n    .filterWrapper .filtersContainer .filterIcon {\n      position: relative;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      border-radius: 2vw;\n      width: 3vw;\n      height: 3vw;\n      cursor: pointer; }\n      .filterWrapper .filtersContainer .filterIcon img.icon {\n        position: relative;\n        width: 1.6vw;\n        height: 1.6vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon:before {\n        position: absolute;\n        content: \"\";\n        display: block;\n        border-radius: 2vw;\n        width: 3vw;\n        height: 3vw;\n        background-color: rgba(255, 255, 255, 0.2);\n        opacity: 0;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon:hover:before {\n        opacity: 1; }\n    .filterWrapper .filtersContainer .filterIconActive {\n      position: relative;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      border-radius: 2vw;\n      width: 3vw;\n      height: 3vw;\n      cursor: pointer; }\n      .filterWrapper .filtersContainer .filterIconActive img.icon {\n        position: relative;\n        width: 1.6vw;\n        height: 1.6vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIconActive:before {\n        position: absolute;\n        content: \"\";\n        display: block;\n        border-radius: 2vw;\n        width: 3vw;\n        height: 3vw;\n        background-color: rgba(145, 167, 208, 0.3);\n        opacity: 1;\n        transition: all .3; }\n", ""]);
+exports.push([module.i, ".filterWrapper {\n  position: relative; }\n  .filterWrapper:after {\n    content: \"Filters\";\n    position: absolute;\n    color: white;\n    font-size: 1vw;\n    padding: .3vw .4vw;\n    border-radius: 1vw;\n    top: -2vw;\n    left: 2.6vw;\n    opacity: 0;\n    background-color: rgba(255, 255, 255, 0.2);\n    transition: all .3s; }\n  .filterWrapper:hover:after {\n    opacity: 1; }\n  .filterWrapper .filtersContainer {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n    border-radius: 2vw;\n    width: 9vw;\n    height: 3vw;\n    background-color: rgba(255, 255, 255, 0.2); }\n    .filterWrapper .filtersContainer .filterIcon {\n      position: relative;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      border-radius: 2vw;\n      width: 3vw;\n      height: 3vw;\n      cursor: pointer; }\n      .filterWrapper .filtersContainer .filterIcon img.home {\n        position: relative;\n        width: 1.7vw;\n        height: 1.7vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon img.personal {\n        position: relative;\n        width: 1.6vw;\n        height: 1.6vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon img.work {\n        position: relative;\n        width: 1.5vw;\n        height: 1.5vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon:before {\n        position: absolute;\n        content: \"\";\n        display: block;\n        border-radius: 2vw;\n        width: 3vw;\n        height: 3vw;\n        background-color: rgba(255, 255, 255, 0.2);\n        opacity: 0;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIcon:hover:before {\n        opacity: 1; }\n    .filterWrapper .filtersContainer .filterIconActive {\n      position: relative;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      border-radius: 2vw;\n      width: 3vw;\n      height: 3vw;\n      cursor: pointer; }\n      .filterWrapper .filtersContainer .filterIconActive img.home {\n        position: relative;\n        width: 1.7vw;\n        height: 1.7vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIconActive img.personal {\n        position: relative;\n        width: 1.6vw;\n        height: 1.6vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIconActive img.work {\n        position: relative;\n        width: 1.5vw;\n        height: 1.5vw;\n        transition: all .3; }\n      .filterWrapper .filtersContainer .filterIconActive:before {\n        position: absolute;\n        content: \"\";\n        display: block;\n        border-radius: 2vw;\n        width: 3vw;\n        height: 3vw;\n        background-color: rgba(145, 167, 208, 0.3);\n        opacity: 1;\n        transition: all .3; }\n", ""]);
 
 // exports
 exports.locals = {
 	"filterWrapper": "filterWrapper",
 	"filtersContainer": "filtersContainer",
 	"filterIcon": "filterIcon",
-	"icon": "icon",
+	"home": "home",
+	"personal": "personal",
+	"work": "work",
 	"filterIconActive": "filterIconActive"
 };
 
@@ -240,13 +242,15 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".selector {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  width: 15vw; }\n  .selector .icon {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .icon:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 0;\n      transition: all .3s; }\n    .selector .icon:hover:before {\n      opacity: 1; }\n    .selector .icon img.home {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n  .selector .iconSelected {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0.2);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .iconSelected:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 1;\n      transition: all .3s; }\n    .selector .iconSelected:hover:before {\n      opacity: 1; }\n    .selector .iconSelected img.home {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n", ""]);
+exports.push([module.i, ".selector {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  width: 15vw; }\n  .selector .icon {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .icon:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 0;\n      transition: all .3s; }\n    .selector .icon:hover:before {\n      opacity: 1; }\n    .selector .icon img.home {\n      width: 2.1vw;\n      height: 2.1vw;\n      position: absolute; }\n    .selector .icon img.personal {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n    .selector .icon img.work {\n      width: 1.9vw;\n      height: 1.9vw;\n      position: absolute; }\n  .selector .iconSelected {\n    position: relative;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    background-color: rgba(255, 255, 255, 0.2);\n    margin: 1.5vw 1vw;\n    transition: all .3s; }\n    .selector .iconSelected:before {\n      content: attr(data-text);\n      text-transform: capitalize;\n      position: absolute;\n      padding: .3vw;\n      bottom: -1.8vw;\n      display: block;\n      z-index: 1;\n      height: .9vw;\n      text-align: center;\n      font-size: .8vw;\n      border-radius: .5vw;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      opacity: 1;\n      transition: all .3s; }\n    .selector .iconSelected:hover:before {\n      opacity: 1; }\n    .selector .iconSelected img.home {\n      width: 2.1vw;\n      height: 2.1vw;\n      position: absolute; }\n    .selector .iconSelected img.personal {\n      width: 2vw;\n      height: 2vw;\n      position: absolute; }\n    .selector .iconSelected img.work {\n      width: 1.9vw;\n      height: 1.9vw;\n      position: absolute; }\n", ""]);
 
 // exports
 exports.locals = {
 	"selector": "selector",
 	"icon": "icon",
 	"home": "home",
+	"personal": "personal",
+	"work": "work",
 	"iconSelected": "iconSelected"
 };
 
@@ -27410,21 +27414,21 @@ var Filter = function (_React$Component) {
                             { className: this.state.filter && this.state.filterBy == "home" ? "filterIconActive" : "filterIcon", onClick: function onClick(e, group) {
                                     return _this2.filter(e, "home");
                                 } },
-                            _react2.default.createElement('img', { src: './images/home.svg', className: 'icon' })
+                            _react2.default.createElement('img', { src: './images/home.svg', className: 'home' })
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: this.state.filter && this.state.filterBy == "personal" ? "filterIconActive" : "filterIcon", onClick: function onClick(e, group) {
                                     return _this2.filter(e, "personal");
                                 } },
-                            _react2.default.createElement('img', { src: './images/personal.svg', className: 'icon' })
+                            _react2.default.createElement('img', { src: './images/personal.svg', className: 'personal' })
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: this.state.filter && this.state.filterBy == "work" ? "filterIconActive" : "filterIcon", onClick: function onClick(e, group) {
                                     return _this2.filter(e, "work");
                                 } },
-                            _react2.default.createElement('img', { src: './images/work.svg', className: 'icon' })
+                            _react2.default.createElement('img', { src: './images/work.svg', className: 'work' })
                         )
                     )
                 )
@@ -27546,14 +27550,14 @@ var GroupSelector = function (_React$Component) {
                         { className: this.state.selected == "personal" ? "iconSelected" : "icon", 'data-text': 'personal', onClick: function onClick(e, text) {
                                 return _this2.selectOption(e, "personal");
                             } },
-                        _react2.default.createElement('img', { src: './images/personal.svg', className: 'home' })
+                        _react2.default.createElement('img', { src: './images/personal.svg', className: 'personal' })
                     ),
                     _react2.default.createElement(
                         'div',
                         { className: this.state.selected == "work" ? "iconSelected" : "icon", 'data-text': 'work', onClick: function onClick(e, text) {
                                 return _this2.selectOption(e, "work");
                             } },
-                        _react2.default.createElement('img', { src: './images/work.svg', className: 'home' })
+                        _react2.default.createElement('img', { src: './images/work.svg', className: 'work' })
                     )
                 )
             );
