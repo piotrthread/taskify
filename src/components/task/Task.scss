@@ -29,6 +29,7 @@
         left:4vw;
         text-decoration: line-through;
         text-decoration-color: rgba(255,255,255,0);
+        -webkit-text-decoration-color: rgba(255,255,255,0);
         transition: all .2s;
 
         &::first-letter{

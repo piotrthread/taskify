@@ -14,7 +14,7 @@ class AddTask extends React.Component{
         };
     }
     //handle title input
-    handleTitle = (e) => {
+    handleTitle = (e) => {   
         this.setState({taskTitle: e.target.value});
     }
     //handle group input
