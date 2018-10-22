@@ -98,11 +98,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  padding: 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 2vw;\n    height: 2vw;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 2vw;\n    top: 2.3vw; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 2vw;\n      top: .85vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: .85vw;\n      width: 2vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form.taskTitle {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 15vw; }\n    .addTask form.taskTitle input {\n      width: 90%;\n      height: 3.5vw;\n      margin: .8vw;\n      padding: 1.2vw;\n      outline: none;\n      border-radius: 0px;\n      font-size: 1vw;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form.taskTitle input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form.taskTitle input::placeholder {\n        font-size: 1vw;\n        height: 2vw;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 1.3vw;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 1.3vw;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  width: 90%; }\n", ""]);
+exports.push([module.i, ".addTask {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 35vw;\n  height: 45vw;\n  position: relative;\n  padding: 1.5vw;\n  border: 1px solid rgba(255, 255, 255, 0.3); }\n  .addTask .validationAlert {\n    position: absolute;\n    top: 10vw;\n    font-size: 1.1vw;\n    text-align: center;\n    color: rgba(255, 255, 255, 0.7);\n    background-color: rgba(255, 255, 255, 0.2);\n    opacity: 0;\n    transition: all .3s;\n    padding: 1vw; }\n  .addTask .validationAlertVisible {\n    position: absolute;\n    top: 10vw;\n    font-size: 1.1vw;\n    text-align: center;\n    color: rgba(255, 255, 255, 0.7);\n    background-color: rgba(255, 255, 255, 0.2);\n    opacity: 1;\n    padding: 1vw;\n    transition: all .3s; }\n  .addTask .close {\n    position: absolute;\n    cursor: pointer;\n    width: 2vw;\n    height: 2vw;\n    opacity: .7;\n    transform-origin: 50% 50%;\n    right: 2vw;\n    top: 2.3vw; }\n    .addTask .close:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      width: 2vw;\n      top: .85vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(45deg);\n      transition: all .3s; }\n    .addTask .close:after {\n      content: \"\";\n      display: block;\n      background-color: white;\n      top: .85vw;\n      width: 2vw;\n      height: 2px;\n      position: absolute;\n      transform: rotate(-45deg);\n      transition: all .3s; }\n    .addTask .close:hover:after {\n      transform: rotate(180deg); }\n    .addTask .close:hover:before {\n      transform: rotate(180deg); }\n  .addTask form.taskTitle {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    margin-top: 15vw; }\n    .addTask form.taskTitle input {\n      width: 90%;\n      height: 3.5vw;\n      margin: .8vw;\n      padding: 1.2vw;\n      outline: none;\n      border-radius: 0px;\n      font-size: 1vw;\n      color: rgba(0, 0, 0, 0.5);\n      border: 1px solid rgba(255, 255, 255, 0.7);\n      background-color: rgba(255, 255, 255, 0.5);\n      caret-color: rgba(0, 0, 0, 0.3);\n      transition: all .5s;\n      font-weight: 300; }\n      .addTask form.taskTitle input:focus {\n        background-color: rgba(255, 255, 255, 0.3);\n        border: 1px solid rgba(255, 255, 255, 0.9); }\n      .addTask form.taskTitle input::placeholder {\n        font-size: 1vw;\n        height: 2vw;\n        color: rgba(0, 0, 0, 0.3); }\n  .addTask .addBtn {\n    width: 3vw;\n    height: 3vw;\n    border-radius: 1.5vw;\n    border: 1px solid white;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s; }\n    .addTask .addBtn:before {\n      content: \"\";\n      display: block;\n      background-color: white;\n      z-index: 1;\n      position: absolute;\n      width: 2px;\n      border-radius: 1px;\n      height: 1.3vw;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:after {\n      content: \"\";\n      display: block;\n      position: absolute;\n      background-color: white;\n      z-index: 1;\n      width: 1.3vw;\n      border-radius: 1px;\n      height: 2px;\n      transform-origin: 50% 50%;\n      transition: all .3s; }\n    .addTask .addBtn:hover {\n      background-color: rgba(255, 255, 255, 0.3); }\n      .addTask .addBtn:hover:before {\n        transform: rotate(180deg); }\n      .addTask .addBtn:hover:after {\n        transform: rotate(180deg); }\n\n.actions {\n  display: flex;\n  align-items: center;\n  justify-content: space-around;\n  width: 90%; }\n", ""]);
 
 // exports
 exports.locals = {
 	"addTask": "addTask",
+	"validationAlert": "validationAlert",
+	"validationAlertVisible": "validationAlertVisible",
 	"close": "close",
 	"taskTitle": "taskTitle",
 	"addBtn": "addBtn",
@@ -362,7 +364,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".task {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  position: relative;\n  padding: 1.5vw 1vw; }\n  .task .taskIcon {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .task .taskIcon img {\n      width: 1.6vw;\n      height: 1.6vw; }\n  .task .toBeDone {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    max-width: 12.5vw;\n    position: absolute;\n    left: 4vw;\n    text-decoration: line-through;\n    text-decoration-color: rgba(255, 255, 255, 0);\n    -webkit-text-decoration-color: rgba(255, 255, 255, 0);\n    transition: all .2s; }\n    .task .toBeDone::first-letter {\n      text-transform: capitalize; }\n  .task .done {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    max-width: 12.5vw;\n    position: absolute;\n    left: 4vw;\n    text-decoration: line-through;\n    text-decoration-color: white;\n    transition: all .2s; }\n    .task .done::first-letter {\n      text-transform: capitalize; }\n", ""]);
+exports.push([module.i, ".task {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  position: relative;\n  padding: 1.5vw 1vw; }\n  .task .taskIcon {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .task .taskIcon img {\n      width: 1.6vw;\n      height: 1.6vw; }\n  .task .toBeDone {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    max-width: 20vw;\n    position: absolute;\n    left: 4vw;\n    text-decoration: line-through;\n    text-decoration-color: rgba(255, 255, 255, 0);\n    -webkit-text-decoration-color: rgba(255, 255, 255, 0);\n    transition: all .2s; }\n    .task .toBeDone::first-letter {\n      text-transform: capitalize; }\n  .task .done {\n    font-size: 1vw;\n    font-weight: 300;\n    color: white;\n    font-family: 'Raleway', sans-serif;\n    position: relative;\n    max-width: 20vw;\n    position: absolute;\n    left: 4vw;\n    text-decoration: line-through;\n    text-decoration-color: white;\n    transition: all .2s; }\n    .task .done::first-letter {\n      text-transform: capitalize; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -26661,16 +26663,20 @@ var AddTask = function (_React$Component) {
         };
 
         _this.addTask = function () {
-            fetch('https://coderslabproject.firebaseio.com/tasks.json', {
-                method: "POST",
-                body: JSON.stringify({
-                    title: _this.state.taskTitle,
-                    group: _this.state.taskGroup,
-                    done: false
-                })
-            }).then(function () {
-                _this.props.history.push("/");
-            });
+            if (_this.state.taskTitle.length >= 5 && _this.state.taskTitle.length <= 70) {
+                fetch('https://coderslabproject.firebaseio.com/tasks.json', {
+                    method: "POST",
+                    body: JSON.stringify({
+                        title: _this.state.taskTitle,
+                        group: _this.state.taskGroup,
+                        done: false
+                    })
+                }).then(function () {
+                    _this.props.history.push("/");
+                });
+            } else {
+                _this.setState({ valid: false });
+            }
         };
 
         _this.linkToRoot = function () {
@@ -26679,7 +26685,8 @@ var AddTask = function (_React$Component) {
 
         _this.state = {
             taskTitle: "",
-            taskGroup: "home"
+            taskGroup: "home",
+            valid: true
         };
         return _this;
     }
@@ -26709,6 +26716,13 @@ var AddTask = function (_React$Component) {
                     'div',
                     { className: 'addTask' },
                     _react2.default.createElement('div', { className: 'close', onClick: this.linkToRoot }),
+                    _react2.default.createElement(
+                        'p',
+                        { className: this.state.valid ? "validationAlert" : "validationAlertVisible" },
+                        'Task title must be at least 5 ',
+                        _react2.default.createElement('br', null),
+                        'and no more that 70 characters long !'
+                    ),
                     _react2.default.createElement(
                         'form',
                         { className: 'taskTitle' },
@@ -28356,7 +28370,6 @@ var Task = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            console.log(document.querySelector(".widget2"));
             return _react2.default.createElement(
                 _react2.default.Fragment,
                 null,

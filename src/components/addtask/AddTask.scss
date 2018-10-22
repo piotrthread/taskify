@@ -8,6 +8,30 @@
     padding:1.5vw;
     border:1px solid rgba(255,255,255,.3);
 
+    .validationAlert{
+        position: absolute;
+        top:10vw;
+        font-size:1.1vw;
+        text-align: center;
+        color:rgba(255,255,255,.7);
+        background-color: rgba(255,255,255,.2);
+        opacity:0;
+        transition: all .3s;
+        padding:1vw;
+    }
+
+    .validationAlertVisible{
+        position: absolute;
+        top:10vw;
+        font-size:1.1vw;
+        text-align: center;
+        color:rgba(255,255,255,.7);
+        background-color: rgba(255,255,255,.2);
+        opacity:1;
+        padding:1vw;
+        transition: all .3s;
+    }
+
     .close{
         position: absolute;
         cursor: pointer;

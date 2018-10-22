@@ -10,12 +10,13 @@ class AddTask extends React.Component{
         super(props);
         this.state={
             taskTitle: "",
-            taskGroup: "home"
+            taskGroup: "home",
+            valid: true
         };
     }
     //handle title input
-    handleTitle = (e) => {   
-        this.setState({taskTitle: e.target.value});
+    handleTitle = (e) => { 
+            this.setState({taskTitle: e.target.value});
     }
     //handle group input
     chooseGroup = (e,text) => {
@@ -23,20 +24,24 @@ class AddTask extends React.Component{
     }
     //post task to database
     addTask = () => {
-        fetch(`https://coderslabproject.firebaseio.com/tasks.json`,
-            {
-                method: "POST",
-                body: JSON.stringify(
-                    {
-                        title: this.state.taskTitle,
-                        group: this.state.taskGroup, 
-                        done: false
-                    }
-                )
-            })
-        .then(() => {
-            this.props.history.push("/");
-        });
+        if(this.state.taskTitle.length >= 5 && this.state.taskTitle.length <= 70){
+            fetch(`https://coderslabproject.firebaseio.com/tasks.json`,
+                {
+                    method: "POST",
+                    body: JSON.stringify(
+                        {
+                            title: this.state.taskTitle,
+                            group: this.state.taskGroup, 
+                            done: false
+                        }
+                    )
+                })
+            .then(() => {
+                this.props.history.push("/");
+            });
+        }else{
+            this.setState({valid: false});
+        }
     }
     //go back to root
     linkToRoot = () =>{
@@ -51,6 +56,7 @@ class AddTask extends React.Component{
         return <React.Fragment>
             <div className="addTask">
             <div className="close" onClick={this.linkToRoot}></div>
+            <p className={this.state.valid ? "validationAlert" : "validationAlertVisible"}>Task title must be at least 5 <br/>and no more that 70 characters long !</p>
                 <form className="taskTitle">
                     <input type="text" placeholder="Your task here..." onChange={this.handleTitle} ref={(input) => { this.inputTask = input; }}/>
                 </form>

@@ -20,7 +20,6 @@ class Task extends React.Component{
     }
 
     render(){
-        console.log(document.querySelector(".widget2"));
         return <React.Fragment>
             <div className="task">
                 <div className="taskIcon">
