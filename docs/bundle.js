@@ -339,7 +339,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".stopWatch {\n  width: 90%;\n  height: 90%;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .stopWatch h1 {\n    color: rgba(255, 255, 255, 0.5);\n    margin: .5vw;\n    font-size: 1vw; }\n  .stopWatch p {\n    color: rgba(255, 255, 255, 0.5);\n    margin: .5vw;\n    font-size: 4vw; }\n  .stopWatch .btnContainer {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 11vw;\n    margin: .5vw; }\n    .stopWatch .btnContainer .btn {\n      cursor: pointer;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      border: 1px solid rgba(255, 255, 255, 0.2);\n      padding: .5vw;\n      font-size: .8vw;\n      width: 5vw;\n      text-align: center;\n      border-radius: 2vw;\n      transition: all .3s; }\n      .stopWatch .btnContainer .btn:hover {\n        background-color: rgba(255, 255, 255, 0); }\n", ""]);
+exports.push([module.i, ".stopWatch {\n  width: 90%;\n  height: 90%;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .stopWatch h1 {\n    color: rgba(255, 255, 255, 0.5);\n    margin: .5vw;\n    font-size: 1vw; }\n  .stopWatch p {\n    color: rgba(255, 255, 255, 0.5);\n    margin: .5vw;\n    font-size: 4vw;\n    width: 100%;\n    text-indent: 1vw; }\n  .stopWatch .btnContainer {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 11vw;\n    margin: .5vw; }\n    .stopWatch .btnContainer .btn {\n      cursor: pointer;\n      color: white;\n      background-color: rgba(255, 255, 255, 0.2);\n      border: 1px solid rgba(255, 255, 255, 0.2);\n      padding: .5vw;\n      font-size: .8vw;\n      width: 5vw;\n      text-align: center;\n      border-radius: 2vw;\n      transition: all .3s; }\n      .stopWatch .btnContainer .btn:hover {\n        background-color: rgba(255, 255, 255, 0); }\n", ""]);
 
 // exports
 exports.locals = {
@@ -27520,7 +27520,7 @@ var GroupSelector = function (_React$Component) {
         };
 
         _this.state = {
-            selected: "personal"
+            selected: "home"
         };
         return _this;
     }

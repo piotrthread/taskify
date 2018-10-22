@@ -5,7 +5,7 @@ class GroupSelector extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            selected:"personal"
+            selected:"home"
         };
     }
     //handle group choosing in add task
