@@ -28217,7 +28217,8 @@ var StopWatch = function (_React$Component) {
 
         _this.clearCounter = function (e) {
             e.preventDefault();
-            _this.setState({ time: 0 });
+            _this.setState({ time: 0, button: true });
+            clearInterval(_this.interval);
         };
 
         _this.state = {

@@ -38,7 +38,8 @@ class StopWatch extends React.Component{
 
     clearCounter = (e) => {
         e.preventDefault();
-        this.setState({time: 0});
+        this.setState({time: 0, button: true});
+        clearInterval(this.interval);
     }
 
     componentWillUnmount(){
