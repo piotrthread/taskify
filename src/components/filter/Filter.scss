@@ -1,3 +1,4 @@
+@media only screen and (min-width : 1024px){
 
 .filterWrapper{
 position: relative;
@@ -119,4 +120,110 @@ position: relative;
         }
         
     }
+}
+
+}
+
+@media only screen and (max-width : 1023px){
+    .filterWrapper{
+        position: relative;
+            &:after{
+                content:"Filters";
+                position: absolute;
+                color:white;
+                font-size:3vw;
+                padding:1vw 2vw;
+                border-radius:4vw;
+                top:-6vw;
+                left:8vw;
+                opacity:0;
+                background-color: rgba(255,255,255,.2);
+                transition:all .3s;
+            }
+            
+            .filtersContainer{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: 6vw;
+                width: 36vw;
+                height: 12vw;
+                background-color: rgba(255,255,255,.2);
+        
+                .filterIcon{
+                    position: relative;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 6vw;
+                    width:12vw;
+                    height: 12vw;
+                    cursor: pointer;
+                
+                    img.home{
+                        position: relative;
+                        width:5.1vw;
+                        height:5.1vw;
+                        transition: all .3;
+                    }
+                    img.personal{
+                        position: relative;
+                        width:5vw;
+                        height:5vw;
+                        transition: all .3;
+                    }
+                    img.work{
+                        position: relative;
+                        width:4.9vw;
+                        height:4.9vw;
+                        transition: all .3;
+                    }
+                }
+        
+                .filterIconActive{
+                    position: relative;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 6vw;
+                    width:12vw;
+                    height: 12vw;
+                    cursor: pointer;
+        
+                    img.home{
+                        position: relative;
+                        width:5.1vw;
+                        height:5.1vw;
+                        transition: all .3;
+                    }
+                    img.personal{
+                        position: relative;
+                        width:5vw;
+                        height:5vw;
+                        transition: all .3;
+                    }
+                    img.work{
+                        position: relative;
+                        width:4.9vw;
+                        height:4.9vw;
+                        transition: all .3;
+                    }
+        
+                    &:before{
+                        position: absolute;
+                        content:"";
+                        display: block;
+                        border-radius: 6vw;
+                        width:12vw;
+                        height: 12vw;
+                        background-color:#80d0c7;
+                        opacity:1;
+                        transition: all .3;
+                    }
+                }  
+            }
+        }
 }

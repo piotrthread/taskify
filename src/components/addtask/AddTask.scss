@@ -1,3 +1,5 @@
+@media only screen and (min-width : 1024px){
+
 .addTask{
     display: flex;
     flex-direction: column;
@@ -168,3 +170,169 @@
     justify-content: space-around;
     width:90%;
 }
+
+}
+
+@media only screen and (max-width : 1023px){
+
+    .addTask{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100vw;
+        height:100vh;
+        position: relative;
+        padding:1.5vw;
+    
+        .validationAlert{
+            position: absolute;
+            top:40vw;
+            font-size:3.5vw;
+            text-align: center;
+            color:rgba(255,255,255,.7);
+            background-color: rgba(255,255,255,.2);
+            opacity:0;
+            transition: all .3s;
+            padding:3vw;
+        }
+    
+        .validationAlertVisible{
+            position: absolute;
+            top:40vw;
+            font-size:3.5vw;
+            text-align: center;
+            color:rgba(255,255,255,.7);
+            background-color: rgba(255,255,255,.2);
+            opacity:1;
+            padding:3vw;
+            transition: all .3s;
+        }
+    
+        .close{
+            position: absolute;
+            cursor: pointer;
+            width:8vw;
+            height: 8vw;
+            opacity:.7;
+            transform-origin: 50% 50%;
+            right:5vw;
+            top:5.5vw;
+    
+            &:before{
+                content:"";
+                display: block;
+                background-color: white;
+                width:8vw;
+                top:3.5vw;
+                height: 2px;
+                position: absolute;
+                transform: rotate(45deg);
+                transition: all .3s;
+            }
+            
+            &:after{
+                content:"";
+                display: block;
+                background-color: white;
+                top:3.5vw;
+                width:8vw;
+                height: 2px;
+                position: absolute;
+                transform: rotate(-45deg);
+                transition: all .3s;
+            }
+        }
+    
+        form.taskTitle{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            width:100%;
+            margin-top:55vw;
+            input{
+                width:80%;
+                height:10vw;
+                margin:8vw;
+                padding:3vw;
+                outline:none;
+                border-radius:0px;
+                font-size:4vw;
+                color:rgba(0,0,0,.5);
+                border:1px solid rgba(255,255,255,.7);
+                background-color:rgba(255,255,255,.5);
+                caret-color:rgba(0,0,0,.3);
+                transition: all .5s;
+                font-weight:300;
+    
+                &:focus{
+                    background-color:rgba(255,255,255,.3);
+                    border:1px solid rgba(255,255,255,.9);
+                }
+                
+                &::placeholder{
+                    font-size:4vw;
+                    height:2vw;
+                    color:rgba(0,0,0,.3);
+                }
+            }
+        }
+    
+        .addBtn{
+            width:12vw;
+            height: 12vw;
+            border-radius: 6vw;
+            border:1px solid white;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+    
+            &:before{
+                content: "";
+                display: block;
+                background-color: white;
+                z-index: 1;
+                position: absolute;
+                width:2px;
+                border-radius: 1px;
+                height:6vw;
+                transform-origin: 50% 50%;
+                transition: all .3s;
+            }
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: white;
+                z-index: 1;
+                width:6vw;
+                border-radius: 1px;
+                height:2px;
+                transform-origin: 50% 50%;
+                transition: all .3s;
+            }
+    
+            &:hover{
+                background-color: rgba(255,255,255,.3);
+    
+                &:before{
+                    transform: rotate(180deg);
+                }
+    
+                &:after{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    
+    .actions{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        width:90%;
+    }
+    
+    }

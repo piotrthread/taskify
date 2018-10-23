@@ -55,7 +55,7 @@ class List extends React.Component{
                             this.state.toRemove.push(task.id);
                         }
                     });
-                    this.setState({ data, loading: false });
+                    this.setState({ data, loading: false });//rgrhgsrhg
                         
                 }
             });              

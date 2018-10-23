@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@media only screen and (min-width : 1024px){
+
 .taskify-main-container{
     display: flex;
     flex-direction: column;
@@ -63,6 +65,28 @@
     }
 }
 
+
+
+}
+
+@media only screen and (max-width : 1023px){
+ .taskify-main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100vw;
+        height:100vh;
+        position: relative;
+        opacity:0;
+        animation: panelAnimation .3s ease-in forwards;
+
+     .widget1{ display:none;}
+     .widget2{display: none;}
+     .widget3{display: none;}
+     .widget4{display: none;}
+ }
+}
+
 @keyframes panelAnimation{
     0%{
         transform:scale(1.1);
@@ -76,4 +100,3 @@
         opacity:1;
     }
 }
-

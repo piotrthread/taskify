@@ -1,3 +1,5 @@
+@media only screen and (min-width : 1024px){
+
 .task{
     display: flex;
     flex-direction: row;
@@ -55,3 +57,66 @@
         }
     }
 }
+
+}
+
+@media only screen and (max-width : 1023px){
+    .task{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding:4vw 3vw;
+    
+        .taskIcon{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            img{
+                width:5vw;
+                height:5vw;
+            }
+        }
+    
+        .toBeDone{
+            font-size:3.5vw;
+            font-weight: 300;
+            color:white;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            max-width: 59vw;
+            position: absolute;
+            left:11vw;
+            text-decoration: line-through;
+            text-decoration-color: rgba(255,255,255,0);
+            -webkit-text-decoration-color: rgba(255,255,255,0);
+            transition: all .2s;
+    
+            &::first-letter{
+                text-transform: capitalize;
+            }
+        }
+    
+        .done{
+            font-size:3.5vw;
+            font-weight: 300;
+            color:white;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            max-width: 59vw;
+            position: absolute;
+            left:11vw;
+            text-decoration: line-through;
+            text-decoration-color: rgba(255,255,255,1);
+            transition: all .2s;
+            
+            &::first-letter{
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
