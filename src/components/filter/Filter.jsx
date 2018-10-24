@@ -5,7 +5,7 @@ class Filter extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            filter: false,
+            filter: true,
             filterBy: ""
         };
     }
@@ -15,14 +15,17 @@ class Filter extends React.Component{
             this.setState({filter: !this.state.filter, filterBy: group},() => {
                 this.props.filter(e,group);
             });
-        }else if(this.state.filter == true && this.state.filterBy == group){
-            this.setState({filter: !this.state.filter, filterBy: ""},() => {
-                this.props.filter(e,"");
-                this.props.load();
-            });
         }else if(this.state.filter == true && this.state.filterBy !== group){
             this.setState({filterBy: group},() => {
                 this.props.filter(e,group);
+            });
+        }else if(this.state.filter == true && this.state.filterBy == ""){
+            
+        }else if(this.state.filter == true && this.state.filterBy !== "home"
+        && this.state.filterBy !== "work"
+        && this.state.filterBy !== "personal"){
+            this.setState({filterBy: group},() => {
+                this.props.load();
             });
         }
     }
@@ -38,14 +41,17 @@ class Filter extends React.Component{
         return <React.Fragment>
             <div className="filterWrapper">
                 <div className="filtersContainer">
-                    <div className={this.state.filter && this.state.filterBy == "home" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"home")}>
+                    <div data-text="home" className={this.state.filter && this.state.filterBy == "home" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"home")}>
                         <img src="./images/home.svg" className="home" />
                     </div>
-                    <div className={this.state.filter && this.state.filterBy == "personal" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"personal")}>
+                    <div data-text="personal" className={this.state.filter && this.state.filterBy == "personal" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"personal")}>
                         <img src="./images/personal.svg" className="personal" />
                     </div>
-                    <div className={this.state.filter && this.state.filterBy == "work" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"work")}>
+                    <div data-text="work" className={this.state.filter && this.state.filterBy == "work" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"work")}>
                         <img src="./images/work.svg" className="work" />
+                    </div>
+                    <div data-text="all" className={this.state.filterBy == "" ? "filterIconActive" : "filterIcon"} onClick={(e,group) => this.filter(e,"")}>
+                        <img src="./images/all.svg" className="work" />
                     </div>
                 </div>
             </div>

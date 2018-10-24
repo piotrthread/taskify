@@ -15,6 +15,11 @@ class Task extends React.Component{
             this.props.check(this.props.id);
         });
     }
+
+    deleteTask = (e,id) => {
+        this.props.delete(e,this.props.id);
+    }
+
     componentDidMount(){
         this.setState({done: this.props.done});
     }
@@ -26,6 +31,7 @@ class Task extends React.Component{
                     <img src={"./images/"+ this.props.group +".svg"} />
                 </div>
                 <h1 className={(this.state.done) ? "done" : "toBeDone"}>{this.props.taskTitle}</h1>
+                <div className={this.state.done ? "binVisible" : "bin"}><img src="./images/bin.svg" className="binIcon" onClick={this.deleteTask}/></div>
                 <Checker check={this.doneTask} done={this.props.done}/>
             </div>
         </React.Fragment>;

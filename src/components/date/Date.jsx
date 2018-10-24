@@ -68,7 +68,7 @@ class CurrDate extends React.Component{
         }, () => {
             this.interval = setInterval(() => {
                 this.setState({currTime: getTime()});
-            },60000);
+            },1000);
         });
         //-------------------
     }

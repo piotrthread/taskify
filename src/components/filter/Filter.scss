@@ -2,30 +2,14 @@
 
 .filterWrapper{
 position: relative;
-    &:after{
-        content:"Filters";
-        position: absolute;
-        color:white;
-        font-size:1vw;
-        padding:.3vw .4vw;
-        border-radius:1vw;
-        top:-2vw;
-        left:2.6vw;
-        opacity:0;
-        background-color: rgba(255,255,255,.2);
-        transition:all .3s;
-    }
-    &:hover:after{
-        opacity:1;
-    }
-
+   
     .filtersContainer{
         display:flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         border-radius: 2vw;
-        width:9vw;
+        width:13vw;
         height: 3vw;
         background-color: rgba(255,255,255,.2);
 
@@ -40,11 +24,35 @@ position: relative;
             height: 3vw;
             cursor: pointer;
 
+            &:before{
+                content:attr(data-text);
+                text-transform: capitalize;
+                position: absolute;
+                padding:.3vw;
+                bottom:-1.8vw;
+                display:block;
+                z-index: 1;
+                height:.9vw;
+                text-align: center;
+                font-size: .8vw;
+                border-radius:.5vw;
+                color:white;
+                background-color:rgba(255,255,255,.2);
+                opacity:0;
+                transition: all .3s;
+                
+            }
+            &:hover:before{
+                    opacity:1;
+            }
+
             img.home{
                 position: relative;
                 width:1.7vw;
                 height:1.7vw;
                 transition: all .3;
+                
+                
             }
             img.personal{
                 position: relative;
@@ -59,7 +67,7 @@ position: relative;
                 transition: all .3;
             }
 
-            &:before{
+            &:after{
                 position: absolute;
                 content:"";
                 display: block;
@@ -71,7 +79,7 @@ position: relative;
                 transition: all .3;
             }
 
-            &:hover:before{
+            &:hover:after{
                 opacity:1;
             }
         }
@@ -87,6 +95,25 @@ position: relative;
             height: 3vw;
             cursor: pointer;
 
+            &:before{
+                content:attr(data-text);
+                text-transform: capitalize;
+                position: absolute;
+                padding:.3vw;
+                bottom:-1.8vw;
+                display:block;
+                z-index: 1;
+                height:.9vw;
+                text-align: center;
+                font-size: .8vw;
+                border-radius:.5vw;
+                color:white;
+                background-color:rgba(255,255,255,.2);
+                opacity:1;
+                transition: all .3s;
+                
+            }
+
             img.home{
                 position: relative;
                 width:1.7vw;
@@ -106,12 +133,13 @@ position: relative;
                 transition: all .3;
             }
 
-            &:before{
+            &:after{
                 position: absolute;
                 content:"";
                 display: block;
                 border-radius: 2vw;
                 width:3vw;
+                z-index:-1;
                 height: 3vw;
                 background-color:#80d0c7;
                 opacity:1;

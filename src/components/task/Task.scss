@@ -7,6 +7,7 @@
     align-items: center;
     position: relative;
     padding:1.5vw 1vw;
+    transition: all .3;
 
     .taskIcon{
         display:flex;
@@ -19,6 +20,42 @@
             height:1.6vw;
         }
     }
+    .bin{
+            position: absolute;
+            right:3vw;
+            opacity:0;
+            cursor: pointer;
+            width:1.7vw;
+            height:1.7vw;
+            transition: all .3s;
+        .binIcon{
+            width:1.7vw;
+            height:1.7vw;
+            transition: all .3;
+        }
+        &:hover{
+            animation: bin .3s ease forwards;
+        }
+    }
+
+    .binVisible{
+        position: absolute;
+            right:3vw;
+            opacity:1;
+            cursor: pointer;
+            width:1.7vw;
+            height:1.7vw;
+            transition: all .3;
+        .binIcon{
+            width:1.7vw;
+            height:1.7vw;
+            transition: all .3;
+        }
+        &:hover{
+            animation: bin .3s ease forwards;
+        }
+    }
+    
 
     .toBeDone{
         font-size:1vw;
@@ -26,7 +63,7 @@
         color:white;
         font-family: 'Raleway', sans-serif;
         position: relative;
-        max-width: 20vw;
+        max-width: 19vw;
         position: absolute;
         left:4vw;
         text-decoration: line-through;
@@ -45,7 +82,7 @@
         color:white;
         font-family: 'Raleway', sans-serif;
         position: relative;
-        max-width: 20vw;
+        max-width: 19vw;
         position: absolute;
         left:4vw;
         text-decoration: line-through;
@@ -56,6 +93,8 @@
             text-transform: capitalize;
         }
     }
+
+    
 }
 
 }
@@ -94,6 +133,7 @@
             text-decoration-color: rgba(255,255,255,0);
             -webkit-text-decoration-color: rgba(255,255,255,0);
             transition: all .2s;
+           
     
             &::first-letter{
                 text-transform: capitalize;

@@ -29,13 +29,34 @@
     position: relative;
     padding:2.8vw 1.5vw;
     border:1px solid rgba(255,255,255,.3);
+    
+    .leftScroll{
+        position: absolute;
+        width:1.3vw;
+        height:3vw;
+        opacity:.7;
+        top:43%;
+        left:1vw;
+    }
+
+    .rightScroll{
+        position: absolute;
+        width:1.3vw;
+        height:3vw;
+        opacity:.7;
+        top:43%;
+        right:1vw;
+    }
     //opacity:0;
     //animation: panelAnimation .3s ease-in-out .4s forwards;
 
 
     ul.list{
+        position: relative;
         list-style-type: none;
         overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-overflow-scrolling: touch;
         width:90%;
         height:90%;
@@ -49,6 +70,9 @@
                 border-bottom:1px solid rgba(255,255,255,.3);
             }
         }
+
+        
+
     }
 
     .emptyMessage{
@@ -75,18 +99,7 @@
         width:85%;
         margin-top:3vw;
 
-        .binIcon{
-            cursor: pointer;
-            width:2.3vw;
-            height:2.3vw;
-            transition: all .3;
-
-            &:hover{
-                animation: bin .3s ease forwards;
-            }
-        }
-
-
+        
         .addBtn{
             width:3vw;
             height: 3vw;
@@ -97,7 +110,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-right:5vw;
             transition: all .3s;
 
             &:before{
