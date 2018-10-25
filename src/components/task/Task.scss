@@ -1,3 +1,11 @@
+@keyframes bin{
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(15deg)}
+    50%{transform: rotate(-15deg)}
+    75%{transform: rotate(15deg)}
+    100%{transform: rotate(0deg)}
+}
+
 @media only screen and (min-width : 1024px){
 
 .task{
@@ -22,37 +30,34 @@
     }
     .bin{
             position: absolute;
-            right:3vw;
-            opacity:0;
-            cursor: pointer;
+            right:1vw;
             width:1.7vw;
             height:1.7vw;
-            transition: all .3s;
+            opacity:0;
+            transition: all .2s;
         .binIcon{
             width:1.7vw;
             height:1.7vw;
-            transition: all .3;
         }
-        &:hover{
-            animation: bin .3s ease forwards;
-        }
+
     }
 
     .binVisible{
         position: absolute;
             right:3vw;
-            opacity:1;
             cursor: pointer;
             width:1.7vw;
             height:1.7vw;
-            transition: all .3;
+            opacity:1;
+            transition: all .2s;
         .binIcon{
             width:1.7vw;
             height:1.7vw;
-            transition: all .3;
+            
         }
         &:hover{
             animation: bin .3s ease forwards;
+            
         }
     }
     
