@@ -5,7 +5,9 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
+html {
+    overflow: -moz-scrollbars-none;
+}
 
 body{
     width:100vw;

@@ -125,7 +125,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Raleway', sans-serif; }\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Raleway', sans-serif; }\n\nhtml {\n  overflow: -moz-scrollbars-none; }\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n", ""]);
 
 // exports
 
