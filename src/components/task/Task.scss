@@ -124,6 +124,39 @@
                 height:5vw;
             }
         }
+
+        .bin{
+            position: absolute;
+            right:5vw;
+            width:6vw;
+            height:6vw;
+            opacity:0;
+            transition: all .2s;
+        .binIcon{
+            width:6vw;
+            height:6vw;
+        }
+
+    }
+
+    .binVisible{
+        position: absolute;
+            right:12vw;
+            cursor: pointer;
+            width:6vw;
+            height:6vw;
+            opacity:1;
+            transition: all .2s;
+        .binIcon{
+            width:6vw;
+            height:6vw;
+            
+        }
+        &:hover{
+            animation: bin .3s ease forwards;
+            
+        }
+    }
     
         .toBeDone{
             font-size:3.5vw;
