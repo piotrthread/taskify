@@ -138,6 +138,9 @@
         align-items: center;
         justify-content: space-between;
         width:40vw;
+        height:12vw;
+        background-color: rgba(255,255,255,.2);
+        border-radius: 15vw;
     
         .icon{
             position: relative;
@@ -146,11 +149,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width:10vw;
-            height:10vw;
-            border-radius:5vw;
+            width:12vw;
+            height:12vw;
+            border-radius:6vw;
             background-color: rgba(255,255,255,0);
-            margin:1.5vw 1vw;;
             transition: all .3s;
         
             
@@ -161,7 +163,7 @@
                 text-transform: capitalize;
                 position: absolute;
                 padding:1vw 1.5vw;
-                bottom:-4vw;
+                bottom:-6.5vw;
                 display:block;
                 z-index: 1;
                 height:3.5vw;
@@ -169,7 +171,7 @@
                 font-size: 3vw;
                 border-radius:2vw;
                 color:white;
-                background-color:rgba(255,255,255,0);
+                
                 opacity:1;
                 transition: all .3s;
                 
@@ -200,11 +202,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width:10vw;
-            height:10vw;
-            border-radius:5vw;
-            background-color: rgba(255,255,255,.2);
-            margin:1.5vw 1vw;
+            width:12vw;
+            height:12vw;
+            border-radius:6vw;
+            background-color:#80d0c7;
+            
             transition: all .3s;
             
 
@@ -221,7 +223,7 @@
                 font-size: 3vw;
                 border-radius:2vw;
                 color:white;
-                background-color:rgba(255,255,255,.2);
+                
                 opacity:1;
                 transition: all .3s;
                 
