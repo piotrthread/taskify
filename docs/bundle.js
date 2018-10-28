@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./docs/images/background.jpg":
+/*!************************************!*\
+  !*** ./docs/images/background.jpg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "04f422c3ddab14873162b100d420d7eb.jpg";
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js!./src/components/addtask/AddTask.scss":
 /*!**************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./src/components/addtask/AddTask.scss ***!
@@ -121,12 +132,13 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Raleway', sans-serif; }\n\nhtml {\n  overflow: -moz-scrollbars-none; }\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Raleway', sans-serif; }\n\nhtml {\n  overflow: -moz-scrollbars-none; }\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);\n  background-image: url(" + escape(__webpack_require__(/*! ../../../docs/images/background.jpg */ "./docs/images/background.jpg")) + ");\n  background-size: cover;\n  background-position: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n", ""]);
 
 // exports
 
@@ -513,6 +525,33 @@ function toComment(sourceMap) {
 	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
 
 	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/lib/url/escape.js":
+/*!***************************************************!*\
+  !*** ./node_modules/css-loader/lib/url/escape.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+    }
+
+    return url
 }
 
 
