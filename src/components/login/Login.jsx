@@ -32,6 +32,7 @@ class Login extends React.Component{
     render(){
         return <React.Fragment>
                     <div className="login">
+                        {/* <img className="logo" src="./images/logo.svg"/> */}
                         <h1>@taskify</h1>
                         <form>
                             <input type="email" placeholder="e-mail" onChange={this.handleEmail}/>
