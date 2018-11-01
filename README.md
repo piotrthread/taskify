@@ -1,6 +1,6 @@
 taskify - menage your tasks easly
 ---------------------------------
-https://piotrthread.github.io/taskify/
+https://piotrthread.github.io/taskify/<br/>
 Final Project for Coderslab.<br/><br/>
 
 It’s a simple task menager build with React.js and Firebase API for database storing.<br/>
