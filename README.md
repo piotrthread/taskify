@@ -1,10 +1,8 @@
 taskify - menage your tasks easly
 ---------------------------------
-Final Project for Coderslab.<br/>
 https://piotrthread.github.io/taskify/
+Final Project for Coderslab.<br/><br/>
 
-Login form is just for fun :) Just hit the button and Log in.<br/>
-Final project at Coders Lab. <br/>
 It’s a simple task menager build with React.js and Firebase API for database storing.<br/>
 Desktop & mobile version is available.<br/>
 You can ADD | REMOVE | FILTER tasks in three groups.<br/>
